@@ -33,7 +33,7 @@ def get_neighbor_id(ent, h2t, t2h, A):
 
     return hrt
 
-
+# 取给定三元组（h, r, t）周围的邻居节点
 def get_triple_neighbor(h, r, t, dataset, num_neighbor):
     h_neighbor = 0
     h2t = dataset.h2t
@@ -69,7 +69,7 @@ def get_triple_neighbor(h, r, t, dataset, num_neighbor):
     else:
         tt_neighbors = tail_neighbor
 
-    hrt_neighbor = [(h, r, t)] + hh_neighbors + [(h, r, t)] + tt_neighbors
+    hrt_neighbor = [(h, r, t)] + hh_neighbors + [(h, r, t)] + tt_neighbors # （h,r,t） 头邻居节点  (h,r,t) 尾邻居节点
     # print('hrt_neighbor', len(hrt_neighbor))
     # print("hn, tn", (len(head_neighbor), len(tail_neighbor)))
 
@@ -302,7 +302,7 @@ def get_batch_baseline_test(args, all_triples, labels, train_idx, n_batch):
 
     return batch_h, batch_t, batch_r, batch_y, label
 
-
+# 为每个三元组获取邻居三元组，并返回这些邻居三元组的头实体、关系和尾实体。
 def get_pair_batch_train_common(args, dataset, n_batch, train_idx, batch_size, num_neighbor):
     all_triples = dataset.train_data
     # all_triples_labels = torch.cat((all_triples, labels), dim=1)

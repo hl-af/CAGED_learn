@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/backup" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/backups" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.9.5 (sftp://lab401@116.57.77.216:22/usr/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

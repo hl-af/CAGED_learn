@@ -1,6 +1,8 @@
 # Contrastive Knowledge Graph Error Detection
 Pytorch-based implementation of CAGED, and the description of the model and the results can be found in the paper: "Contrastive Knowledge Graph Error Detection".
 
+学习CAGED模型
+
 ## Requirements
 
 All the required packages can be installed by running `pip install -r requirements.txt`.

@@ -27,6 +27,7 @@ class GraphAttentionLayer1(nn.Module):
         
         self.leakyrelu = nn.LeakyReLU(self.alpha)
 
+    # 图注意力网络（Graph Attention Network，GAT）
     def forward(self, inp):
         """
         inp: input_fea [Batch_size, N, in_features]
@@ -77,14 +78,14 @@ class BiLSTM_Attention(torch.nn.Module):
         #                    range(nheads)]
         # for i, attention in enumerate(self.attentions):
         #     self.add_module('attention_{}'.format(i), attention)
-        self.ent_embeddings = nn.Embedding(args.total_ent, args.embedding_dim)
-        self.rel_embeddings = nn.Embedding(args.total_rel, args.embedding_dim)
+        self.ent_embeddings = nn.Embedding(args.total_ent, args.embedding_dim) # （40943，100）
+        self.rel_embeddings = nn.Embedding(args.total_rel, args.embedding_dim) # （11，100）
 
         # print(toarray_float(ent_vec).shape)
         # print(args.total_ent, args.total_rel, args.embedding_dim)
         # self.ent_embeddings.weight.data.copy_(torch.from_numpy(ent_vec))
         # self.rel_embeddings.weight.data.copy_(torch.from_numpy(rel_vec))
-        uniform_range = 6 / np.sqrt(args.embedding_dim)
+        uniform_range = 6 / np.sqrt(args.embedding_dim) # 0.6
         self.ent_embeddings.weight.data.uniform_(-uniform_range, uniform_range)
         self.rel_embeddings.weight.data.uniform_(-uniform_range, uniform_range)
 
@@ -97,12 +98,12 @@ class BiLSTM_Attention(torch.nn.Module):
         # relation = torch.squeeze(self.rel_embeddings(relation), dim=1)
         # print(batch_t.cpu())
         # print(batch_r.cpu())
-        head = self.ent_embeddings(batch_h)
-        relation = self.rel_embeddings(batch_r)
-        tail = self.ent_embeddings(batch_t)
+        head = self.ent_embeddings(batch_h) # 获取嵌入向量 (40960,100)
+        relation = self.rel_embeddings(batch_r) # (40960,100)
+        tail = self.ent_embeddings(batch_t) #(40960,100)
 
         batch_triples_emb = torch.cat((head, relation), dim=1)
-        batch_triples_emb = torch.cat((batch_triples_emb, tail), dim=1)
+        batch_triples_emb = torch.cat((batch_triples_emb, tail), dim=1) # (40960,300)
         x = batch_triples_emb.view(-1, 3, self.BiLSTM_input_size)
         # ent_vec, rel_vec = dataset.ent_vec, dataset.rel_vec
         #
@@ -128,7 +129,7 @@ class BiLSTM_Attention(torch.nn.Module):
         c0 = torch.zeros(self.num_layers * 2, x.size(0), self.hidden_size).to(self.device)
 
         # Forward propagate LSTM
-        out, _ = self.lstm(x, (h0, c0))  # out: tensor of shape (B, seq_length, hidden_size*2)
+        out, _ = self.lstm(x, (h0, c0)) # 前向传播，得到输出向量 # out: tensor of shape (B, seq_length, hidden_size*2)
 
         # print('out_lstm', out_lstm.shape)
         out = out.reshape(-1, self.hidden_size * 2 * self.seq_length)

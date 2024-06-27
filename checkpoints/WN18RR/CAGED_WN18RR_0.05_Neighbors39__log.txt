@@ -18080,3 +18080,2751 @@ K = 6
 [Test][WN18RR][CAGED] Precision 0.050000 -- 0.100000 : 0.326237
 [Test][WN18RR][CAGED] Recall  0.050000-- 0.100000 : 0.652473
 [Test][WN18RR][CAGED] anomalies in total: 4650 -- discovered:3034 -- K : 9300
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 256 Triples in this batch.
+Epoch: 0-1, pos_loss: 0.292528, neg_loss: 0.294262, Loss: 0.496533
+There are 256 Triples in this batch.
+Epoch: 0-2, pos_loss: 0.260980, neg_loss: 0.281692, Loss: 0.458577
+There are 256 Triples in this batch.
+Epoch: 0-3, pos_loss: 0.248174, neg_loss: 0.290524, Loss: 0.415301
+There are 256 Triples in this batch.
+Epoch: 0-4, pos_loss: 0.262353, neg_loss: 0.323995, Loss: 0.387554
+There are 256 Triples in this batch.
+Epoch: 0-5, pos_loss: 0.318316, neg_loss: 0.416872, Loss: 0.365781
+There are 256 Triples in this batch.
+Epoch: 0-6, pos_loss: 0.355930, neg_loss: 0.485364, Loss: 0.357548
+There are 256 Triples in this batch.
+Epoch: 0-7, pos_loss: 0.412979, neg_loss: 0.587348, Loss: 0.336715
+There are 256 Triples in this batch.
+Epoch: 0-8, pos_loss: 0.486261, neg_loss: 0.657488, Loss: 0.338174
+There are 256 Triples in this batch.
+Epoch: 0-9, pos_loss: 0.467243, neg_loss: 0.676506, Loss: 0.310763
+There are 256 Triples in this batch.
+Epoch: 0-10, pos_loss: 0.541976, neg_loss: 0.740676, Loss: 0.316609
+There are 256 Triples in this batch.
+Epoch: 0-11, pos_loss: 0.530370, neg_loss: 0.745481, Loss: 0.296232
+There are 256 Triples in this batch.
+Epoch: 0-12, pos_loss: 0.598150, neg_loss: 0.846117, Loss: 0.244905
+There are 256 Triples in this batch.
+Epoch: 0-13, pos_loss: 0.635127, neg_loss: 0.858994, Loss: 0.312952
+There are 256 Triples in this batch.
+Epoch: 0-14, pos_loss: 0.677191, neg_loss: 0.912986, Loss: 0.295453
+There are 256 Triples in this batch.
+Epoch: 0-15, pos_loss: 0.652985, neg_loss: 0.880946, Loss: 0.277125
+There are 256 Triples in this batch.
+Epoch: 0-16, pos_loss: 0.652365, neg_loss: 0.908588, Loss: 0.254657
+There are 256 Triples in this batch.
+Epoch: 0-17, pos_loss: 0.675566, neg_loss: 0.904974, Loss: 0.280814
+There are 256 Triples in this batch.
+Epoch: 0-18, pos_loss: 0.706796, neg_loss: 0.939994, Loss: 0.268532
+There are 256 Triples in this batch.
+Epoch: 0-19, pos_loss: 0.687935, neg_loss: 0.933574, Loss: 0.235311
+There are 256 Triples in this batch.
+Epoch: 0-20, pos_loss: 0.670946, neg_loss: 0.914093, Loss: 0.234860
+There are 256 Triples in this batch.
+Epoch: 0-21, pos_loss: 0.703474, neg_loss: 0.909532, Loss: 0.282138
+There are 256 Triples in this batch.
+Epoch: 0-22, pos_loss: 0.680171, neg_loss: 0.908119, Loss: 0.251673
+There are 256 Triples in this batch.
+Epoch: 0-23, pos_loss: 0.714789, neg_loss: 0.931700, Loss: 0.252247
+There are 256 Triples in this batch.
+Epoch: 0-24, pos_loss: 0.709319, neg_loss: 0.937577, Loss: 0.241833
+There are 256 Triples in this batch.
+Epoch: 0-25, pos_loss: 0.688458, neg_loss: 0.921329, Loss: 0.254276
+There are 256 Triples in this batch.
+Epoch: 0-26, pos_loss: 0.704280, neg_loss: 0.947564, Loss: 0.234944
+There are 256 Triples in this batch.
+Epoch: 0-27, pos_loss: 0.697764, neg_loss: 0.948746, Loss: 0.220168
+There are 256 Triples in this batch.
+Epoch: 0-28, pos_loss: 0.722442, neg_loss: 0.959496, Loss: 0.256126
+There are 256 Triples in this batch.
+Epoch: 0-29, pos_loss: 0.739666, neg_loss: 0.998127, Loss: 0.245274
+There are 256 Triples in this batch.
+Epoch: 0-30, pos_loss: 0.703184, neg_loss: 0.933764, Loss: 0.267303
+There are 256 Triples in this batch.
+Epoch: 0-31, pos_loss: 0.683278, neg_loss: 0.926687, Loss: 0.244936
+There are 256 Triples in this batch.
+Epoch: 0-32, pos_loss: 0.687441, neg_loss: 0.928420, Loss: 0.249616
+There are 256 Triples in this batch.
+Epoch: 0-33, pos_loss: 0.682992, neg_loss: 0.960313, Loss: 0.196689
+There are 256 Triples in this batch.
+Epoch: 0-34, pos_loss: 0.682315, neg_loss: 0.882597, Loss: 0.283463
+There are 256 Triples in this batch.
+Epoch: 0-35, pos_loss: 0.689079, neg_loss: 0.916179, Loss: 0.267774
+There are 256 Triples in this batch.
+Epoch: 0-36, pos_loss: 0.675220, neg_loss: 0.906635, Loss: 0.240361
+There are 256 Triples in this batch.
+Epoch: 0-37, pos_loss: 0.685656, neg_loss: 0.943147, Loss: 0.223879
+There are 256 Triples in this batch.
+Epoch: 0-38, pos_loss: 0.679043, neg_loss: 0.903338, Loss: 0.236694
+There are 256 Triples in this batch.
+Epoch: 0-39, pos_loss: 0.698277, neg_loss: 0.883337, Loss: 0.280331
+There are 256 Triples in this batch.
+Epoch: 0-40, pos_loss: 0.724532, neg_loss: 0.969041, Loss: 0.229840
+There are 256 Triples in this batch.
+Epoch: 0-41, pos_loss: 0.732147, neg_loss: 0.949195, Loss: 0.263144
+There are 256 Triples in this batch.
+Epoch: 0-42, pos_loss: 0.716155, neg_loss: 0.969200, Loss: 0.227854
+There are 256 Triples in this batch.
+Epoch: 0-43, pos_loss: 0.750380, neg_loss: 0.982522, Loss: 0.265115
+There are 256 Triples in this batch.
+Epoch: 0-44, pos_loss: 0.712834, neg_loss: 0.979834, Loss: 0.234214
+There are 256 Triples in this batch.
+Epoch: 0-45, pos_loss: 0.724393, neg_loss: 0.987782, Loss: 0.240995
+There are 256 Triples in this batch.
+Epoch: 0-46, pos_loss: 0.737673, neg_loss: 0.973315, Loss: 0.277316
+There are 256 Triples in this batch.
+Epoch: 0-47, pos_loss: 0.712115, neg_loss: 0.956392, Loss: 0.258184
+There are 256 Triples in this batch.
+Epoch: 0-48, pos_loss: 0.709666, neg_loss: 0.954661, Loss: 0.239653
+There are 256 Triples in this batch.
+Epoch: 0-49, pos_loss: 0.684671, neg_loss: 0.953058, Loss: 0.225146
+There are 256 Triples in this batch.
+Epoch: 0-50, pos_loss: 0.695645, neg_loss: 0.949493, Loss: 0.256516
+There are 256 Triples in this batch.
+Epoch: 0-51, pos_loss: 0.696562, neg_loss: 0.950509, Loss: 0.247993
+There are 256 Triples in this batch.
+Epoch: 0-52, pos_loss: 0.655964, neg_loss: 0.897775, Loss: 0.244451
+There are 256 Triples in this batch.
+Epoch: 0-53, pos_loss: 0.625200, neg_loss: 0.886738, Loss: 0.219097
+There are 256 Triples in this batch.
+Epoch: 0-54, pos_loss: 0.639986, neg_loss: 0.872344, Loss: 0.258088
+There are 256 Triples in this batch.
+Epoch: 0-55, pos_loss: 0.619356, neg_loss: 0.881236, Loss: 0.225883
+There are 256 Triples in this batch.
+Epoch: 0-56, pos_loss: 0.636861, neg_loss: 0.827715, Loss: 0.296975
+There are 256 Triples in this batch.
+Epoch: 0-57, pos_loss: 0.638547, neg_loss: 0.866099, Loss: 0.258396
+There are 256 Triples in this batch.
+Epoch: 0-58, pos_loss: 0.633830, neg_loss: 0.881831, Loss: 0.227198
+There are 256 Triples in this batch.
+Epoch: 0-59, pos_loss: 0.631962, neg_loss: 0.873917, Loss: 0.240096
+There are 256 Triples in this batch.
+Epoch: 0-60, pos_loss: 0.606807, neg_loss: 0.854511, Loss: 0.218513
+There are 256 Triples in this batch.
+Epoch: 0-61, pos_loss: 0.626945, neg_loss: 0.834734, Loss: 0.279698
+There are 256 Triples in this batch.
+Epoch: 0-62, pos_loss: 0.584742, neg_loss: 0.853497, Loss: 0.236910
+There are 256 Triples in this batch.
+Epoch: 0-63, pos_loss: 0.602806, neg_loss: 0.857993, Loss: 0.231849
+There are 256 Triples in this batch.
+Epoch: 0-64, pos_loss: 0.647506, neg_loss: 0.902978, Loss: 0.245705
+There are 256 Triples in this batch.
+Epoch: 0-65, pos_loss: 0.615514, neg_loss: 0.862495, Loss: 0.224864
+There are 256 Triples in this batch.
+Epoch: 0-66, pos_loss: 0.659171, neg_loss: 0.901738, Loss: 0.270418
+There are 256 Triples in this batch.
+Epoch: 0-67, pos_loss: 0.641548, neg_loss: 0.930994, Loss: 0.226212
+There are 256 Triples in this batch.
+Epoch: 0-68, pos_loss: 0.687586, neg_loss: 0.969654, Loss: 0.240394
+There are 256 Triples in this batch.
+Epoch: 0-69, pos_loss: 0.654723, neg_loss: 0.917288, Loss: 0.257370
+There are 256 Triples in this batch.
+Epoch: 0-70, pos_loss: 0.679946, neg_loss: 0.950047, Loss: 0.256358
+There are 256 Triples in this batch.
+Epoch: 0-71, pos_loss: 0.693771, neg_loss: 0.996794, Loss: 0.223997
+There are 256 Triples in this batch.
+Epoch: 0-72, pos_loss: 0.718091, neg_loss: 0.995417, Loss: 0.227964
+There are 256 Triples in this batch.
+Epoch: 0-73, pos_loss: 0.734324, neg_loss: 1.010477, Loss: 0.233099
+There are 256 Triples in this batch.
+Epoch: 0-74, pos_loss: 0.734690, neg_loss: 1.011194, Loss: 0.223063
+There are 256 Triples in this batch.
+Epoch: 0-75, pos_loss: 0.746279, neg_loss: 1.025718, Loss: 0.233094
+There are 256 Triples in this batch.
+Epoch: 0-76, pos_loss: 0.736637, neg_loss: 1.001489, Loss: 0.236379
+There are 256 Triples in this batch.
+Epoch: 0-77, pos_loss: 0.759155, neg_loss: 1.062440, Loss: 0.219612
+There are 256 Triples in this batch.
+Epoch: 0-78, pos_loss: 0.762875, neg_loss: 1.015464, Loss: 0.259860
+There are 256 Triples in this batch.
+Epoch: 0-79, pos_loss: 0.741024, neg_loss: 1.041545, Loss: 0.199738
+There are 256 Triples in this batch.
+Epoch: 0-80, pos_loss: 0.788373, neg_loss: 1.049362, Loss: 0.238143
+There are 256 Triples in this batch.
+Epoch: 0-81, pos_loss: 0.752795, neg_loss: 1.036810, Loss: 0.183580
+There are 256 Triples in this batch.
+Epoch: 0-82, pos_loss: 0.800095, neg_loss: 1.084705, Loss: 0.219376
+There are 256 Triples in this batch.
+Epoch: 0-83, pos_loss: 0.772523, neg_loss: 1.016228, Loss: 0.255790
+There are 256 Triples in this batch.
+Epoch: 0-84, pos_loss: 0.784266, neg_loss: 1.067669, Loss: 0.226313
+There are 256 Triples in this batch.
+Epoch: 0-85, pos_loss: 0.744549, neg_loss: 1.039270, Loss: 0.234701
+There are 256 Triples in this batch.
+Epoch: 0-86, pos_loss: 0.745791, neg_loss: 1.030923, Loss: 0.221904
+There are 256 Triples in this batch.
+Epoch: 0-87, pos_loss: 0.757048, neg_loss: 1.039685, Loss: 0.208560
+There are 256 Triples in this batch.
+Epoch: 0-88, pos_loss: 0.738846, neg_loss: 1.011405, Loss: 0.205553
+There are 256 Triples in this batch.
+Epoch: 0-89, pos_loss: 0.760619, neg_loss: 1.011667, Loss: 0.247476
+There are 256 Triples in this batch.
+Epoch: 0-90, pos_loss: 0.778086, neg_loss: 1.049431, Loss: 0.232994
+There are 256 Triples in this batch.
+Epoch: 0-91, pos_loss: 0.785999, neg_loss: 1.048720, Loss: 0.228856
+There are 256 Triples in this batch.
+Epoch: 0-92, pos_loss: 0.779578, neg_loss: 1.073520, Loss: 0.213944
+There are 256 Triples in this batch.
+Epoch: 0-93, pos_loss: 0.774770, neg_loss: 1.069024, Loss: 0.197964
+There are 256 Triples in this batch.
+Epoch: 0-94, pos_loss: 0.795928, neg_loss: 1.087494, Loss: 0.217164
+There are 256 Triples in this batch.
+Epoch: 0-95, pos_loss: 0.781946, neg_loss: 1.045606, Loss: 0.230161
+There are 256 Triples in this batch.
+Epoch: 0-96, pos_loss: 0.794054, neg_loss: 1.088034, Loss: 0.204956
+There are 256 Triples in this batch.
+Epoch: 0-97, pos_loss: 0.786751, neg_loss: 1.061750, Loss: 0.235778
+There are 256 Triples in this batch.
+Epoch: 0-98, pos_loss: 0.814180, neg_loss: 1.129960, Loss: 0.213619
+There are 256 Triples in this batch.
+Epoch: 0-99, pos_loss: 0.828795, neg_loss: 1.156480, Loss: 0.200679
+There are 256 Triples in this batch.
+Epoch: 0-100, pos_loss: 0.843806, neg_loss: 1.161855, Loss: 0.214715
+There are 256 Triples in this batch.
+Epoch: 0-101, pos_loss: 0.815268, neg_loss: 1.123590, Loss: 0.207916
+There are 256 Triples in this batch.
+Epoch: 0-102, pos_loss: 0.821357, neg_loss: 1.134261, Loss: 0.235131
+There are 256 Triples in this batch.
+Epoch: 0-103, pos_loss: 0.829777, neg_loss: 1.114185, Loss: 0.247026
+There are 256 Triples in this batch.
+Epoch: 0-104, pos_loss: 0.848687, neg_loss: 1.161991, Loss: 0.215597
+There are 256 Triples in this batch.
+Epoch: 0-105, pos_loss: 0.824977, neg_loss: 1.139260, Loss: 0.194395
+There are 256 Triples in this batch.
+Epoch: 0-106, pos_loss: 0.824915, neg_loss: 1.139119, Loss: 0.203788
+There are 256 Triples in this batch.
+Epoch: 0-107, pos_loss: 0.868511, neg_loss: 1.146391, Loss: 0.255642
+There are 256 Triples in this batch.
+Epoch: 0-108, pos_loss: 0.903686, neg_loss: 1.195956, Loss: 0.225290
+There are 256 Triples in this batch.
+Epoch: 0-109, pos_loss: 0.873668, neg_loss: 1.136060, Loss: 0.243110
+There are 256 Triples in this batch.
+Epoch: 0-110, pos_loss: 0.863293, neg_loss: 1.188684, Loss: 0.185108
+There are 256 Triples in this batch.
+Epoch: 0-111, pos_loss: 0.897641, neg_loss: 1.217513, Loss: 0.189399
+There are 256 Triples in this batch.
+Epoch: 0-112, pos_loss: 0.910126, neg_loss: 1.211107, Loss: 0.199242
+There are 256 Triples in this batch.
+Epoch: 0-113, pos_loss: 0.897611, neg_loss: 1.221083, Loss: 0.192312
+There are 256 Triples in this batch.
+Epoch: 0-114, pos_loss: 0.892656, neg_loss: 1.246496, Loss: 0.165867
+There are 256 Triples in this batch.
+Epoch: 0-115, pos_loss: 0.892624, neg_loss: 1.203131, Loss: 0.212540
+There are 256 Triples in this batch.
+Epoch: 0-116, pos_loss: 0.944412, neg_loss: 1.281839, Loss: 0.184267
+There are 256 Triples in this batch.
+Epoch: 0-117, pos_loss: 0.931529, neg_loss: 1.297797, Loss: 0.169086
+There are 256 Triples in this batch.
+Epoch: 0-118, pos_loss: 0.975709, neg_loss: 1.320409, Loss: 0.208010
+There are 256 Triples in this batch.
+Epoch: 0-119, pos_loss: 1.003390, neg_loss: 1.335547, Loss: 0.204315
+There are 256 Triples in this batch.
+Epoch: 0-120, pos_loss: 0.996887, neg_loss: 1.333672, Loss: 0.221488
+There are 256 Triples in this batch.
+Epoch: 0-121, pos_loss: 0.971317, neg_loss: 1.338316, Loss: 0.175613
+There are 256 Triples in this batch.
+Epoch: 0-122, pos_loss: 0.979396, neg_loss: 1.335881, Loss: 0.195478
+There are 256 Triples in this batch.
+Epoch: 0-123, pos_loss: 0.999393, neg_loss: 1.349041, Loss: 0.227754
+There are 256 Triples in this batch.
+Epoch: 0-124, pos_loss: 1.012493, neg_loss: 1.381127, Loss: 0.174803
+There are 256 Triples in this batch.
+Epoch: 0-125, pos_loss: 1.033229, neg_loss: 1.380406, Loss: 0.202630
+There are 256 Triples in this batch.
+Epoch: 0-126, pos_loss: 1.044389, neg_loss: 1.415057, Loss: 0.172622
+There are 256 Triples in this batch.
+Epoch: 0-127, pos_loss: 1.058346, neg_loss: 1.413333, Loss: 0.187187
+There are 256 Triples in this batch.
+Epoch: 0-128, pos_loss: 1.056014, neg_loss: 1.449930, Loss: 0.156864
+There are 256 Triples in this batch.
+Epoch: 0-129, pos_loss: 1.094880, neg_loss: 1.421328, Loss: 0.221768
+There are 256 Triples in this batch.
+Epoch: 0-130, pos_loss: 1.089814, neg_loss: 1.440968, Loss: 0.212391
+There are 256 Triples in this batch.
+Epoch: 0-131, pos_loss: 1.075226, neg_loss: 1.440788, Loss: 0.194481
+There are 256 Triples in this batch.
+Epoch: 0-132, pos_loss: 1.076571, neg_loss: 1.411639, Loss: 0.214131
+There are 256 Triples in this batch.
+Epoch: 0-133, pos_loss: 1.072501, neg_loss: 1.423138, Loss: 0.193819
+There are 256 Triples in this batch.
+Epoch: 0-134, pos_loss: 1.046136, neg_loss: 1.422983, Loss: 0.176157
+There are 256 Triples in this batch.
+Epoch: 0-135, pos_loss: 1.040202, neg_loss: 1.410389, Loss: 0.180117
+There are 256 Triples in this batch.
+Epoch: 0-136, pos_loss: 1.029303, neg_loss: 1.447539, Loss: 0.155751
+There are 256 Triples in this batch.
+Epoch: 0-137, pos_loss: 1.039636, neg_loss: 1.416555, Loss: 0.183421
+There are 256 Triples in this batch.
+Epoch: 0-138, pos_loss: 1.085820, neg_loss: 1.442397, Loss: 0.217750
+There are 256 Triples in this batch.
+Epoch: 0-139, pos_loss: 1.035194, neg_loss: 1.393520, Loss: 0.233141
+There are 256 Triples in this batch.
+Epoch: 0-140, pos_loss: 1.032024, neg_loss: 1.430425, Loss: 0.197697
+There are 256 Triples in this batch.
+Epoch: 0-141, pos_loss: 1.043668, neg_loss: 1.399138, Loss: 0.190955
+There are 256 Triples in this batch.
+Epoch: 0-142, pos_loss: 1.035421, neg_loss: 1.435293, Loss: 0.184818
+There are 256 Triples in this batch.
+Epoch: 0-143, pos_loss: 1.052659, neg_loss: 1.441625, Loss: 0.160415
+There are 256 Triples in this batch.
+Epoch: 0-144, pos_loss: 1.066219, neg_loss: 1.452040, Loss: 0.171418
+There are 256 Triples in this batch.
+Epoch: 0-145, pos_loss: 1.030731, neg_loss: 1.386132, Loss: 0.192573
+There are 256 Triples in this batch.
+Epoch: 0-146, pos_loss: 1.084966, neg_loss: 1.406110, Loss: 0.237236
+There are 256 Triples in this batch.
+Epoch: 0-147, pos_loss: 1.064119, neg_loss: 1.391872, Loss: 0.205068
+There are 256 Triples in this batch.
+Epoch: 0-148, pos_loss: 1.024815, neg_loss: 1.367118, Loss: 0.188990
+There are 256 Triples in this batch.
+Epoch: 0-149, pos_loss: 0.968736, neg_loss: 1.356795, Loss: 0.147802
+There are 256 Triples in this batch.
+Epoch: 0-150, pos_loss: 0.999501, neg_loss: 1.346606, Loss: 0.186155
+There are 256 Triples in this batch.
+Epoch: 0-151, pos_loss: 1.022402, neg_loss: 1.372640, Loss: 0.181550
+There are 256 Triples in this batch.
+Epoch: 0-152, pos_loss: 1.048790, neg_loss: 1.377325, Loss: 0.243286
+There are 256 Triples in this batch.
+Epoch: 0-153, pos_loss: 1.018922, neg_loss: 1.389992, Loss: 0.216071
+There are 256 Triples in this batch.
+Epoch: 0-154, pos_loss: 0.989104, neg_loss: 1.368554, Loss: 0.203192
+There are 256 Triples in this batch.
+Epoch: 0-155, pos_loss: 0.972417, neg_loss: 1.392342, Loss: 0.155807
+There are 256 Triples in this batch.
+Epoch: 0-156, pos_loss: 1.000563, neg_loss: 1.371775, Loss: 0.189211
+There are 256 Triples in this batch.
+Epoch: 0-157, pos_loss: 0.995876, neg_loss: 1.366678, Loss: 0.222906
+There are 256 Triples in this batch.
+Epoch: 0-158, pos_loss: 0.998070, neg_loss: 1.372071, Loss: 0.190680
+There are 256 Triples in this batch.
+Epoch: 0-159, pos_loss: 0.939155, neg_loss: 1.304585, Loss: 0.179503
+There are 256 Triples in this batch.
+Epoch: 0-160, pos_loss: 0.966192, neg_loss: 1.351233, Loss: 0.168846
+There are 256 Triples in this batch.
+Epoch: 0-161, pos_loss: 0.946768, neg_loss: 1.332455, Loss: 0.172540
+There are 256 Triples in this batch.
+Epoch: 0-162, pos_loss: 0.961881, neg_loss: 1.319327, Loss: 0.162130
+There are 256 Triples in this batch.
+Epoch: 0-163, pos_loss: 0.980273, neg_loss: 1.314338, Loss: 0.189163
+There are 256 Triples in this batch.
+Epoch: 0-164, pos_loss: 0.988210, neg_loss: 1.322876, Loss: 0.186048
+There are 256 Triples in this batch.
+Epoch: 0-165, pos_loss: 0.973536, neg_loss: 1.286795, Loss: 0.214124
+There are 256 Triples in this batch.
+Epoch: 0-166, pos_loss: 0.950552, neg_loss: 1.301147, Loss: 0.189628
+There are 256 Triples in this batch.
+Epoch: 0-167, pos_loss: 0.934502, neg_loss: 1.284796, Loss: 0.173118
+There are 256 Triples in this batch.
+Epoch: 0-168, pos_loss: 0.960454, neg_loss: 1.295211, Loss: 0.174884
+There are 256 Triples in this batch.
+Epoch: 0-169, pos_loss: 0.923582, neg_loss: 1.270915, Loss: 0.162665
+There are 256 Triples in this batch.
+Epoch: 0-170, pos_loss: 0.933717, neg_loss: 1.251060, Loss: 0.188952
+There are 256 Triples in this batch.
+Epoch: 0-171, pos_loss: 0.934148, neg_loss: 1.297175, Loss: 0.178872
+There are 256 Triples in this batch.
+Epoch: 0-172, pos_loss: 0.948578, neg_loss: 1.245998, Loss: 0.222922
+There are 256 Triples in this batch.
+Epoch: 0-173, pos_loss: 0.965194, neg_loss: 1.261158, Loss: 0.209318
+There are 256 Triples in this batch.
+Epoch: 0-174, pos_loss: 0.959933, neg_loss: 1.327927, Loss: 0.149698
+There are 256 Triples in this batch.
+Epoch: 0-175, pos_loss: 0.922051, neg_loss: 1.266413, Loss: 0.154567
+There are 256 Triples in this batch.
+Epoch: 0-176, pos_loss: 0.967971, neg_loss: 1.281559, Loss: 0.196131
+There are 256 Triples in this batch.
+Epoch: 0-177, pos_loss: 0.977261, neg_loss: 1.313525, Loss: 0.187605
+There are 256 Triples in this batch.
+Epoch: 0-178, pos_loss: 0.983518, neg_loss: 1.358493, Loss: 0.146052
+There are 256 Triples in this batch.
+Epoch: 0-179, pos_loss: 0.986153, neg_loss: 1.341051, Loss: 0.182617
+There are 256 Triples in this batch.
+Epoch: 0-180, pos_loss: 0.998222, neg_loss: 1.319746, Loss: 0.216808
+There are 256 Triples in this batch.
+Epoch: 0-181, pos_loss: 1.005725, neg_loss: 1.341213, Loss: 0.193336
+There are 256 Triples in this batch.
+Epoch: 0-182, pos_loss: 1.019235, neg_loss: 1.390543, Loss: 0.186616
+There are 256 Triples in this batch.
+Epoch: 0-183, pos_loss: 0.997211, neg_loss: 1.347741, Loss: 0.210609
+There are 256 Triples in this batch.
+Epoch: 0-184, pos_loss: 1.019194, neg_loss: 1.405923, Loss: 0.165749
+There are 256 Triples in this batch.
+Epoch: 0-185, pos_loss: 1.044667, neg_loss: 1.408089, Loss: 0.170414
+There are 256 Triples in this batch.
+Epoch: 0-186, pos_loss: 1.038783, neg_loss: 1.420172, Loss: 0.174014
+There are 256 Triples in this batch.
+Epoch: 0-187, pos_loss: 1.056550, neg_loss: 1.410557, Loss: 0.201677
+There are 256 Triples in this batch.
+Epoch: 0-188, pos_loss: 1.053363, neg_loss: 1.436146, Loss: 0.175100
+There are 256 Triples in this batch.
+Epoch: 0-189, pos_loss: 1.040272, neg_loss: 1.432752, Loss: 0.180770
+There are 256 Triples in this batch.
+Epoch: 0-190, pos_loss: 1.092471, neg_loss: 1.418641, Loss: 0.206808
+There are 256 Triples in this batch.
+Epoch: 0-191, pos_loss: 1.041922, neg_loss: 1.398517, Loss: 0.184200
+There are 256 Triples in this batch.
+Epoch: 0-192, pos_loss: 1.101499, neg_loss: 1.493301, Loss: 0.188632
+There are 256 Triples in this batch.
+Epoch: 0-193, pos_loss: 1.086414, neg_loss: 1.447014, Loss: 0.204222
+There are 256 Triples in this batch.
+Epoch: 0-194, pos_loss: 1.064302, neg_loss: 1.377652, Loss: 0.221211
+There are 256 Triples in this batch.
+Epoch: 0-195, pos_loss: 1.057621, neg_loss: 1.403429, Loss: 0.174805
+There are 256 Triples in this batch.
+Epoch: 0-196, pos_loss: 1.057619, neg_loss: 1.387602, Loss: 0.196224
+There are 256 Triples in this batch.
+Epoch: 0-197, pos_loss: 1.063711, neg_loss: 1.356137, Loss: 0.207433
+There are 256 Triples in this batch.
+Epoch: 0-198, pos_loss: 1.057422, neg_loss: 1.423156, Loss: 0.147322
+There are 256 Triples in this batch.
+Epoch: 0-199, pos_loss: 1.055024, neg_loss: 1.387874, Loss: 0.171732
+There are 256 Triples in this batch.
+Epoch: 0-200, pos_loss: 1.025918, neg_loss: 1.378191, Loss: 0.180203
+There are 256 Triples in this batch.
+Epoch: 0-201, pos_loss: 1.029404, neg_loss: 1.431813, Loss: 0.138215
+There are 256 Triples in this batch.
+Epoch: 0-202, pos_loss: 1.049853, neg_loss: 1.412739, Loss: 0.164615
+There are 256 Triples in this batch.
+Epoch: 0-203, pos_loss: 1.054627, neg_loss: 1.416682, Loss: 0.169907
+There are 256 Triples in this batch.
+Epoch: 0-204, pos_loss: 1.077370, neg_loss: 1.415634, Loss: 0.205061
+There are 256 Triples in this batch.
+Epoch: 0-205, pos_loss: 1.083354, neg_loss: 1.415691, Loss: 0.190743
+There are 256 Triples in this batch.
+Epoch: 0-206, pos_loss: 1.064331, neg_loss: 1.457038, Loss: 0.147411
+There are 256 Triples in this batch.
+Epoch: 0-207, pos_loss: 1.055764, neg_loss: 1.474846, Loss: 0.140760
+There are 256 Triples in this batch.
+Epoch: 0-208, pos_loss: 1.058767, neg_loss: 1.424310, Loss: 0.174461
+There are 256 Triples in this batch.
+Epoch: 0-209, pos_loss: 1.049351, neg_loss: 1.428564, Loss: 0.173231
+There are 256 Triples in this batch.
+Epoch: 0-210, pos_loss: 1.020299, neg_loss: 1.439910, Loss: 0.160735
+There are 256 Triples in this batch.
+Epoch: 0-211, pos_loss: 1.028511, neg_loss: 1.471486, Loss: 0.171260
+There are 256 Triples in this batch.
+Epoch: 0-212, pos_loss: 1.054275, neg_loss: 1.462047, Loss: 0.178305
+There are 256 Triples in this batch.
+Epoch: 0-213, pos_loss: 1.033169, neg_loss: 1.493660, Loss: 0.165744
+There are 256 Triples in this batch.
+Epoch: 0-214, pos_loss: 1.048867, neg_loss: 1.466263, Loss: 0.173232
+There are 256 Triples in this batch.
+Epoch: 0-215, pos_loss: 1.050214, neg_loss: 1.471051, Loss: 0.156869
+There are 256 Triples in this batch.
+Epoch: 0-216, pos_loss: 1.098286, neg_loss: 1.534103, Loss: 0.156220
+There are 256 Triples in this batch.
+Epoch: 0-217, pos_loss: 1.068719, neg_loss: 1.456451, Loss: 0.190919
+There are 256 Triples in this batch.
+Epoch: 0-218, pos_loss: 1.058954, neg_loss: 1.449559, Loss: 0.179203
+There are 256 Triples in this batch.
+Epoch: 0-219, pos_loss: 1.028056, neg_loss: 1.444302, Loss: 0.158123
+There are 256 Triples in this batch.
+Epoch: 0-220, pos_loss: 1.054895, neg_loss: 1.482656, Loss: 0.182358
+There are 256 Triples in this batch.
+Epoch: 0-221, pos_loss: 1.055173, neg_loss: 1.460188, Loss: 0.204199
+There are 256 Triples in this batch.
+Epoch: 0-222, pos_loss: 1.077115, neg_loss: 1.476771, Loss: 0.195395
+There are 256 Triples in this batch.
+Epoch: 0-223, pos_loss: 1.042445, neg_loss: 1.461535, Loss: 0.160231
+There are 256 Triples in this batch.
+Epoch: 0-224, pos_loss: 1.019373, neg_loss: 1.471917, Loss: 0.145989
+There are 256 Triples in this batch.
+Epoch: 0-225, pos_loss: 1.037228, neg_loss: 1.431220, Loss: 0.185581
+There are 256 Triples in this batch.
+Epoch: 0-226, pos_loss: 1.032036, neg_loss: 1.407797, Loss: 0.196846
+There are 256 Triples in this batch.
+Epoch: 0-227, pos_loss: 1.037523, neg_loss: 1.450721, Loss: 0.157527
+There are 256 Triples in this batch.
+Epoch: 0-228, pos_loss: 1.034403, neg_loss: 1.421735, Loss: 0.182495
+There are 256 Triples in this batch.
+Epoch: 0-229, pos_loss: 1.037399, neg_loss: 1.410853, Loss: 0.172921
+There are 256 Triples in this batch.
+Epoch: 0-230, pos_loss: 1.066851, neg_loss: 1.490323, Loss: 0.119654
+There are 256 Triples in this batch.
+Epoch: 0-231, pos_loss: 1.076628, neg_loss: 1.451762, Loss: 0.177624
+There are 256 Triples in this batch.
+Epoch: 0-232, pos_loss: 1.069321, neg_loss: 1.434558, Loss: 0.174240
+There are 256 Triples in this batch.
+Epoch: 0-233, pos_loss: 1.070900, neg_loss: 1.436452, Loss: 0.181131
+There are 256 Triples in this batch.
+Epoch: 0-234, pos_loss: 1.049903, neg_loss: 1.428528, Loss: 0.173850
+There are 256 Triples in this batch.
+Epoch: 0-235, pos_loss: 1.128302, neg_loss: 1.453523, Loss: 0.216243
+There are 256 Triples in this batch.
+Epoch: 0-236, pos_loss: 1.052500, neg_loss: 1.391781, Loss: 0.186587
+There are 256 Triples in this batch.
+Epoch: 0-237, pos_loss: 1.048717, neg_loss: 1.426907, Loss: 0.157801
+There are 256 Triples in this batch.
+Epoch: 0-238, pos_loss: 1.068486, neg_loss: 1.421987, Loss: 0.148534
+There are 256 Triples in this batch.
+Epoch: 0-239, pos_loss: 1.089784, neg_loss: 1.449369, Loss: 0.169519
+There are 256 Triples in this batch.
+Epoch: 0-240, pos_loss: 1.050490, neg_loss: 1.425766, Loss: 0.159589
+There are 256 Triples in this batch.
+Epoch: 0-241, pos_loss: 1.087970, neg_loss: 1.479634, Loss: 0.150524
+There are 256 Triples in this batch.
+Epoch: 0-242, pos_loss: 1.092679, neg_loss: 1.467624, Loss: 0.201698
+There are 256 Triples in this batch.
+Epoch: 0-243, pos_loss: 1.090371, neg_loss: 1.521647, Loss: 0.124067
+There are 256 Triples in this batch.
+Epoch: 0-244, pos_loss: 1.078902, neg_loss: 1.469968, Loss: 0.153772
+There are 256 Triples in this batch.
+Epoch: 0-245, pos_loss: 1.089668, neg_loss: 1.486417, Loss: 0.150713
+There are 256 Triples in this batch.
+Epoch: 0-246, pos_loss: 1.073931, neg_loss: 1.465572, Loss: 0.143088
+There are 256 Triples in this batch.
+Epoch: 0-247, pos_loss: 1.118491, neg_loss: 1.519293, Loss: 0.180686
+There are 256 Triples in this batch.
+Epoch: 0-248, pos_loss: 1.120562, neg_loss: 1.490729, Loss: 0.188325
+There are 256 Triples in this batch.
+Epoch: 0-249, pos_loss: 1.099413, neg_loss: 1.542727, Loss: 0.134569
+There are 256 Triples in this batch.
+Epoch: 0-250, pos_loss: 1.098658, neg_loss: 1.552914, Loss: 0.137778
+There are 256 Triples in this batch.
+Epoch: 0-251, pos_loss: 1.125321, neg_loss: 1.531511, Loss: 0.167176
+There are 256 Triples in this batch.
+Epoch: 0-252, pos_loss: 1.136180, neg_loss: 1.544302, Loss: 0.167747
+There are 256 Triples in this batch.
+Epoch: 0-253, pos_loss: 1.104304, neg_loss: 1.544507, Loss: 0.128315
+There are 256 Triples in this batch.
+Epoch: 0-254, pos_loss: 1.142897, neg_loss: 1.521894, Loss: 0.184276
+There are 256 Triples in this batch.
+Epoch: 0-255, pos_loss: 1.149897, neg_loss: 1.528571, Loss: 0.187749
+There are 256 Triples in this batch.
+Epoch: 0-256, pos_loss: 1.149683, neg_loss: 1.556795, Loss: 0.160479
+There are 256 Triples in this batch.
+Epoch: 0-257, pos_loss: 1.137889, neg_loss: 1.489583, Loss: 0.207874
+There are 256 Triples in this batch.
+Epoch: 0-258, pos_loss: 1.178100, neg_loss: 1.549759, Loss: 0.200283
+There are 256 Triples in this batch.
+Epoch: 0-259, pos_loss: 1.154509, neg_loss: 1.524304, Loss: 0.183897
+There are 256 Triples in this batch.
+Epoch: 0-260, pos_loss: 1.151976, neg_loss: 1.500417, Loss: 0.218060
+There are 256 Triples in this batch.
+Epoch: 0-261, pos_loss: 1.148347, neg_loss: 1.484338, Loss: 0.193778
+There are 256 Triples in this batch.
+Epoch: 0-262, pos_loss: 1.134118, neg_loss: 1.505198, Loss: 0.183334
+There are 256 Triples in this batch.
+Epoch: 0-263, pos_loss: 1.124828, neg_loss: 1.504426, Loss: 0.131271
+There are 256 Triples in this batch.
+Epoch: 0-264, pos_loss: 1.133588, neg_loss: 1.533042, Loss: 0.131172
+There are 256 Triples in this batch.
+Epoch: 0-265, pos_loss: 1.133059, neg_loss: 1.486453, Loss: 0.187639
+There are 256 Triples in this batch.
+Epoch: 0-266, pos_loss: 1.135923, neg_loss: 1.524269, Loss: 0.150127
+There are 256 Triples in this batch.
+Epoch: 0-267, pos_loss: 1.176015, neg_loss: 1.513803, Loss: 0.180876
+There are 256 Triples in this batch.
+Epoch: 0-268, pos_loss: 1.120334, neg_loss: 1.502336, Loss: 0.154013
+There are 256 Triples in this batch.
+Epoch: 0-269, pos_loss: 1.104001, neg_loss: 1.531176, Loss: 0.122712
+There are 256 Triples in this batch.
+Epoch: 0-270, pos_loss: 1.108016, neg_loss: 1.496174, Loss: 0.171696
+There are 256 Triples in this batch.
+Epoch: 0-271, pos_loss: 1.151375, neg_loss: 1.545033, Loss: 0.166113
+There are 256 Triples in this batch.
+Epoch: 0-272, pos_loss: 1.104609, neg_loss: 1.499822, Loss: 0.157842
+There are 256 Triples in this batch.
+Epoch: 0-273, pos_loss: 1.134805, neg_loss: 1.549505, Loss: 0.156579
+There are 256 Triples in this batch.
+Epoch: 0-274, pos_loss: 1.125438, neg_loss: 1.590264, Loss: 0.144023
+There are 256 Triples in this batch.
+Epoch: 0-275, pos_loss: 1.142440, neg_loss: 1.555683, Loss: 0.186917
+There are 256 Triples in this batch.
+Epoch: 0-276, pos_loss: 1.110262, neg_loss: 1.529870, Loss: 0.151909
+There are 256 Triples in this batch.
+Epoch: 0-277, pos_loss: 1.111882, neg_loss: 1.531807, Loss: 0.143430
+There are 256 Triples in this batch.
+Epoch: 0-278, pos_loss: 1.139786, neg_loss: 1.557034, Loss: 0.166725
+There are 256 Triples in this batch.
+Epoch: 0-279, pos_loss: 1.123513, neg_loss: 1.580582, Loss: 0.151188
+There are 256 Triples in this batch.
+Epoch: 0-280, pos_loss: 1.098944, neg_loss: 1.515249, Loss: 0.155618
+There are 256 Triples in this batch.
+Epoch: 0-281, pos_loss: 1.134540, neg_loss: 1.556782, Loss: 0.163570
+There are 256 Triples in this batch.
+Epoch: 0-282, pos_loss: 1.139346, neg_loss: 1.546543, Loss: 0.193857
+There are 256 Triples in this batch.
+Epoch: 0-283, pos_loss: 1.142658, neg_loss: 1.566198, Loss: 0.183056
+There are 256 Triples in this batch.
+Epoch: 0-284, pos_loss: 1.112751, neg_loss: 1.581424, Loss: 0.116311
+There are 256 Triples in this batch.
+Epoch: 0-285, pos_loss: 1.133941, neg_loss: 1.553507, Loss: 0.152087
+There are 256 Triples in this batch.
+Epoch: 0-286, pos_loss: 1.141804, neg_loss: 1.549718, Loss: 0.164818
+There are 256 Triples in this batch.
+Epoch: 0-287, pos_loss: 1.141541, neg_loss: 1.591487, Loss: 0.140681
+There are 256 Triples in this batch.
+Epoch: 0-288, pos_loss: 1.140074, neg_loss: 1.524495, Loss: 0.165570
+There are 256 Triples in this batch.
+Epoch: 0-289, pos_loss: 1.111620, neg_loss: 1.481675, Loss: 0.173376
+There are 256 Triples in this batch.
+Epoch: 0-290, pos_loss: 1.172498, neg_loss: 1.518972, Loss: 0.205682
+There are 256 Triples in this batch.
+Epoch: 0-291, pos_loss: 1.160537, neg_loss: 1.560749, Loss: 0.172119
+There are 256 Triples in this batch.
+Epoch: 0-292, pos_loss: 1.121109, neg_loss: 1.500842, Loss: 0.160466
+There are 256 Triples in this batch.
+Epoch: 0-293, pos_loss: 1.158259, neg_loss: 1.525459, Loss: 0.182393
+There are 256 Triples in this batch.
+Epoch: 0-294, pos_loss: 1.132918, neg_loss: 1.475242, Loss: 0.181985
+There are 256 Triples in this batch.
+Epoch: 0-295, pos_loss: 1.151733, neg_loss: 1.548942, Loss: 0.143503
+There are 256 Triples in this batch.
+Epoch: 0-296, pos_loss: 1.144991, neg_loss: 1.530118, Loss: 0.154044
+There are 256 Triples in this batch.
+Epoch: 0-297, pos_loss: 1.145668, neg_loss: 1.497505, Loss: 0.174946
+There are 256 Triples in this batch.
+Epoch: 0-298, pos_loss: 1.139439, neg_loss: 1.520173, Loss: 0.158852
+There are 256 Triples in this batch.
+Epoch: 0-299, pos_loss: 1.169675, neg_loss: 1.536243, Loss: 0.172089
+There are 256 Triples in this batch.
+Epoch: 0-300, pos_loss: 1.134508, neg_loss: 1.541363, Loss: 0.114872
+There are 256 Triples in this batch.
+Epoch: 0-301, pos_loss: 1.133504, neg_loss: 1.530152, Loss: 0.149759
+There are 256 Triples in this batch.
+Epoch: 0-302, pos_loss: 1.153859, neg_loss: 1.571758, Loss: 0.133816
+There are 256 Triples in this batch.
+Epoch: 0-303, pos_loss: 1.113758, neg_loss: 1.553523, Loss: 0.116259
+There are 256 Triples in this batch.
+Epoch: 0-304, pos_loss: 1.144918, neg_loss: 1.563008, Loss: 0.150593
+There are 256 Triples in this batch.
+Epoch: 0-305, pos_loss: 1.139987, neg_loss: 1.557814, Loss: 0.159752
+There are 256 Triples in this batch.
+Epoch: 0-306, pos_loss: 1.162417, neg_loss: 1.573141, Loss: 0.175762
+There are 256 Triples in this batch.
+Epoch: 0-307, pos_loss: 1.180348, neg_loss: 1.583325, Loss: 0.175680
+There are 256 Triples in this batch.
+Epoch: 0-308, pos_loss: 1.147936, neg_loss: 1.596381, Loss: 0.153707
+There are 256 Triples in this batch.
+Epoch: 0-309, pos_loss: 1.184500, neg_loss: 1.625474, Loss: 0.197001
+There are 256 Triples in this batch.
+Epoch: 0-310, pos_loss: 1.173021, neg_loss: 1.633961, Loss: 0.143034
+There are 256 Triples in this batch.
+Epoch: 0-311, pos_loss: 1.167694, neg_loss: 1.639152, Loss: 0.140412
+There are 256 Triples in this batch.
+Epoch: 0-312, pos_loss: 1.214447, neg_loss: 1.666779, Loss: 0.143131
+There are 256 Triples in this batch.
+Epoch: 0-313, pos_loss: 1.168125, neg_loss: 1.654121, Loss: 0.162543
+There are 256 Triples in this batch.
+Epoch: 0-314, pos_loss: 1.182612, neg_loss: 1.646763, Loss: 0.167789
+There are 256 Triples in this batch.
+Epoch: 0-315, pos_loss: 1.169501, neg_loss: 1.590007, Loss: 0.165047
+There are 256 Triples in this batch.
+Epoch: 0-316, pos_loss: 1.185090, neg_loss: 1.626381, Loss: 0.166324
+There are 256 Triples in this batch.
+Epoch: 0-317, pos_loss: 1.179976, neg_loss: 1.673210, Loss: 0.123266
+There are 256 Triples in this batch.
+Epoch: 0-318, pos_loss: 1.190522, neg_loss: 1.622185, Loss: 0.166779
+There are 256 Triples in this batch.
+Epoch: 0-319, pos_loss: 1.180291, neg_loss: 1.622475, Loss: 0.165628
+There are 256 Triples in this batch.
+Epoch: 0-320, pos_loss: 1.204621, neg_loss: 1.638682, Loss: 0.156011
+There are 256 Triples in this batch.
+Epoch: 0-321, pos_loss: 1.176831, neg_loss: 1.635029, Loss: 0.149444
+There are 256 Triples in this batch.
+Epoch: 0-322, pos_loss: 1.178220, neg_loss: 1.608359, Loss: 0.164925
+There are 256 Triples in this batch.
+Epoch: 0-323, pos_loss: 1.227208, neg_loss: 1.646425, Loss: 0.180160
+There are 256 Triples in this batch.
+Epoch: 0-324, pos_loss: 1.206519, neg_loss: 1.667335, Loss: 0.142232
+There are 256 Triples in this batch.
+Epoch: 0-325, pos_loss: 1.185029, neg_loss: 1.643693, Loss: 0.125217
+There are 256 Triples in this batch.
+Epoch: 0-326, pos_loss: 1.203716, neg_loss: 1.622348, Loss: 0.156177
+There are 256 Triples in this batch.
+Epoch: 0-327, pos_loss: 1.201652, neg_loss: 1.643382, Loss: 0.144730
+There are 256 Triples in this batch.
+Epoch: 0-328, pos_loss: 1.230662, neg_loss: 1.645659, Loss: 0.160901
+There are 256 Triples in this batch.
+Epoch: 0-329, pos_loss: 1.205569, neg_loss: 1.658664, Loss: 0.152583
+There are 256 Triples in this batch.
+Epoch: 0-330, pos_loss: 1.211108, neg_loss: 1.627064, Loss: 0.168329
+There are 256 Triples in this batch.
+Epoch: 0-331, pos_loss: 1.235845, neg_loss: 1.711850, Loss: 0.150466
+There are 256 Triples in this batch.
+Epoch: 0-332, pos_loss: 1.217999, neg_loss: 1.646324, Loss: 0.177726
+There are 256 Triples in this batch.
+Epoch: 0-333, pos_loss: 1.225809, neg_loss: 1.670888, Loss: 0.143106
+There are 256 Triples in this batch.
+Epoch: 0-334, pos_loss: 1.250680, neg_loss: 1.668163, Loss: 0.165839
+There are 256 Triples in this batch.
+Epoch: 0-335, pos_loss: 1.249957, neg_loss: 1.703564, Loss: 0.152841
+There are 256 Triples in this batch.
+Epoch: 0-336, pos_loss: 1.233832, neg_loss: 1.630988, Loss: 0.176986
+There are 256 Triples in this batch.
+Epoch: 0-337, pos_loss: 1.235476, neg_loss: 1.661596, Loss: 0.191578
+There are 256 Triples in this batch.
+Epoch: 0-338, pos_loss: 1.260810, neg_loss: 1.647771, Loss: 0.188095
+There are 256 Triples in this batch.
+Epoch: 0-339, pos_loss: 1.238519, neg_loss: 1.662238, Loss: 0.167681
+There are 256 Triples in this batch.
+Epoch: 0-340, pos_loss: 1.241710, neg_loss: 1.694953, Loss: 0.141507
+There are 256 Triples in this batch.
+Epoch: 0-341, pos_loss: 1.197285, neg_loss: 1.649462, Loss: 0.138064
+There are 256 Triples in this batch.
+Epoch: 0-342, pos_loss: 1.271453, neg_loss: 1.644367, Loss: 0.194363
+There are 256 Triples in this batch.
+Epoch: 0-343, pos_loss: 1.259036, neg_loss: 1.710675, Loss: 0.143849
+There are 256 Triples in this batch.
+Epoch: 0-344, pos_loss: 1.206218, neg_loss: 1.650143, Loss: 0.126170
+There are 256 Triples in this batch.
+Epoch: 0-345, pos_loss: 1.231370, neg_loss: 1.681631, Loss: 0.155434
+There are 256 Triples in this batch.
+Epoch: 0-346, pos_loss: 1.217616, neg_loss: 1.642124, Loss: 0.149185
+There are 256 Triples in this batch.
+Epoch: 0-347, pos_loss: 1.209659, neg_loss: 1.675467, Loss: 0.147039
+There are 256 Triples in this batch.
+Epoch: 0-348, pos_loss: 1.230186, neg_loss: 1.677357, Loss: 0.152184
+There are 256 Triples in this batch.
+Epoch: 0-349, pos_loss: 1.238502, neg_loss: 1.667091, Loss: 0.160569
+There are 256 Triples in this batch.
+Epoch: 0-350, pos_loss: 1.242459, neg_loss: 1.685161, Loss: 0.155733
+There are 256 Triples in this batch.
+Epoch: 0-351, pos_loss: 1.231691, neg_loss: 1.651245, Loss: 0.160285
+There are 256 Triples in this batch.
+Epoch: 0-352, pos_loss: 1.224445, neg_loss: 1.668491, Loss: 0.161352
+There are 256 Triples in this batch.
+Epoch: 0-353, pos_loss: 1.220520, neg_loss: 1.668177, Loss: 0.157387
+There are 256 Triples in this batch.
+Epoch: 0-354, pos_loss: 1.248674, neg_loss: 1.736258, Loss: 0.160233
+There are 256 Triples in this batch.
+Epoch: 0-355, pos_loss: 1.230986, neg_loss: 1.693643, Loss: 0.135709
+There are 256 Triples in this batch.
+Epoch: 0-356, pos_loss: 1.224974, neg_loss: 1.670379, Loss: 0.150641
+There are 256 Triples in this batch.
+Epoch: 0-357, pos_loss: 1.234775, neg_loss: 1.676754, Loss: 0.126206
+There are 256 Triples in this batch.
+Epoch: 0-358, pos_loss: 1.268116, neg_loss: 1.706898, Loss: 0.146668
+There are 256 Triples in this batch.
+Epoch: 0-359, pos_loss: 1.266141, neg_loss: 1.717033, Loss: 0.167323
+There are 256 Triples in this batch.
+Epoch: 0-360, pos_loss: 1.259847, neg_loss: 1.691454, Loss: 0.167308
+There are 256 Triples in this batch.
+Epoch: 0-361, pos_loss: 1.265685, neg_loss: 1.655151, Loss: 0.215414
+There are 256 Triples in this batch.
+Epoch: 0-362, pos_loss: 1.242133, neg_loss: 1.669917, Loss: 0.137784
+There are 256 Triples in this batch.
+Epoch: 0-363, pos_loss: 1.251982, neg_loss: 1.649263, Loss: 0.132279
+There are 256 Triples in this batch.
+Epoch: 0-364, pos_loss: 1.255280, neg_loss: 1.630874, Loss: 0.193948
+There are 256 Triples in this batch.
+Epoch: 0-365, pos_loss: 1.302149, neg_loss: 1.681727, Loss: 0.175474
+There are 256 Triples in this batch.
+Epoch: 0-366, pos_loss: 1.275865, neg_loss: 1.656008, Loss: 0.172078
+There are 256 Triples in this batch.
+Epoch: 0-367, pos_loss: 1.231602, neg_loss: 1.625120, Loss: 0.133965
+There are 256 Triples in this batch.
+Epoch: 0-368, pos_loss: 1.276702, neg_loss: 1.629325, Loss: 0.191831
+There are 256 Triples in this batch.
+Epoch: 0-369, pos_loss: 1.267149, neg_loss: 1.670606, Loss: 0.155025
+There are 256 Triples in this batch.
+Epoch: 0-370, pos_loss: 1.268810, neg_loss: 1.663082, Loss: 0.145987
+There are 256 Triples in this batch.
+Epoch: 0-371, pos_loss: 1.250161, neg_loss: 1.663191, Loss: 0.126604
+There are 256 Triples in this batch.
+Epoch: 0-372, pos_loss: 1.269669, neg_loss: 1.651512, Loss: 0.150454
+There are 256 Triples in this batch.
+Epoch: 0-373, pos_loss: 1.248158, neg_loss: 1.645398, Loss: 0.155348
+There are 256 Triples in this batch.
+Epoch: 0-374, pos_loss: 1.270787, neg_loss: 1.654286, Loss: 0.158677
+There are 256 Triples in this batch.
+Epoch: 0-375, pos_loss: 1.300747, neg_loss: 1.715500, Loss: 0.133339
+There are 256 Triples in this batch.
+Epoch: 0-376, pos_loss: 1.280439, neg_loss: 1.639284, Loss: 0.196839
+There are 256 Triples in this batch.
+Epoch: 0-377, pos_loss: 1.293640, neg_loss: 1.695355, Loss: 0.150338
+There are 256 Triples in this batch.
+Epoch: 0-378, pos_loss: 1.258511, neg_loss: 1.686467, Loss: 0.111780
+There are 256 Triples in this batch.
+Epoch: 0-379, pos_loss: 1.275482, neg_loss: 1.699272, Loss: 0.151363
+There are 256 Triples in this batch.
+Epoch: 0-380, pos_loss: 1.294158, neg_loss: 1.675004, Loss: 0.169298
+There are 256 Triples in this batch.
+Epoch: 0-381, pos_loss: 1.274780, neg_loss: 1.705670, Loss: 0.153582
+There are 117 Triples in this batch.
+Epoch: 0-382, pos_loss: 1.318762, neg_loss: 1.767542, Loss: 0.136063
+There are 256 Triples in this batch.
+Epoch: 1-1, pos_loss: 1.274393, neg_loss: 1.739368, Loss: 0.103513
+There are 256 Triples in this batch.
+Epoch: 1-2, pos_loss: 1.330183, neg_loss: 1.805141, Loss: 0.101699
+There are 256 Triples in this batch.
+Epoch: 1-3, pos_loss: 1.303731, neg_loss: 1.786988, Loss: 0.111890
+There are 256 Triples in this batch.
+Epoch: 1-4, pos_loss: 1.315977, neg_loss: 1.787464, Loss: 0.120432
+There are 256 Triples in this batch.
+Epoch: 1-5, pos_loss: 1.316966, neg_loss: 1.801137, Loss: 0.110935
+There are 256 Triples in this batch.
+Epoch: 1-6, pos_loss: 1.302667, neg_loss: 1.763067, Loss: 0.102228
+There are 256 Triples in this batch.
+Epoch: 1-7, pos_loss: 1.286448, neg_loss: 1.809397, Loss: 0.091445
+There are 256 Triples in this batch.
+Epoch: 1-8, pos_loss: 1.321519, neg_loss: 1.845528, Loss: 0.105750
+There are 256 Triples in this batch.
+Epoch: 1-9, pos_loss: 1.377316, neg_loss: 1.896572, Loss: 0.113413
+There are 256 Triples in this batch.
+Epoch: 1-10, pos_loss: 1.326291, neg_loss: 1.863459, Loss: 0.085577
+There are 256 Triples in this batch.
+Epoch: 1-11, pos_loss: 1.344827, neg_loss: 1.909690, Loss: 0.077213
+There are 256 Triples in this batch.
+Epoch: 1-12, pos_loss: 1.395183, neg_loss: 1.922413, Loss: 0.119842
+There are 256 Triples in this batch.
+Epoch: 1-13, pos_loss: 1.388268, neg_loss: 1.935438, Loss: 0.114022
+There are 256 Triples in this batch.
+Epoch: 1-14, pos_loss: 1.415791, neg_loss: 1.972305, Loss: 0.109553
+There are 256 Triples in this batch.
+Epoch: 1-15, pos_loss: 1.380261, neg_loss: 1.978746, Loss: 0.058365
+There are 256 Triples in this batch.
+Epoch: 1-16, pos_loss: 1.407736, neg_loss: 1.994958, Loss: 0.068375
+There are 256 Triples in this batch.
+Epoch: 1-17, pos_loss: 1.405776, neg_loss: 1.947861, Loss: 0.124143
+There are 256 Triples in this batch.
+Epoch: 1-18, pos_loss: 1.443411, neg_loss: 2.023983, Loss: 0.109858
+There are 256 Triples in this batch.
+Epoch: 1-19, pos_loss: 1.412251, neg_loss: 1.997853, Loss: 0.092881
+There are 256 Triples in this batch.
+Epoch: 1-20, pos_loss: 1.393801, neg_loss: 2.021869, Loss: 0.082002
+There are 256 Triples in this batch.
+Epoch: 1-21, pos_loss: 1.433875, neg_loss: 1.978481, Loss: 0.121732
+There are 256 Triples in this batch.
+Epoch: 1-22, pos_loss: 1.427200, neg_loss: 2.053085, Loss: 0.089811
+There are 256 Triples in this batch.
+Epoch: 1-23, pos_loss: 1.431195, neg_loss: 2.054515, Loss: 0.072891
+There are 256 Triples in this batch.
+Epoch: 1-24, pos_loss: 1.456357, neg_loss: 2.046282, Loss: 0.105982
+There are 256 Triples in this batch.
+Epoch: 1-25, pos_loss: 1.422026, neg_loss: 2.018697, Loss: 0.089604
+There are 256 Triples in this batch.
+Epoch: 1-26, pos_loss: 1.457024, neg_loss: 2.072141, Loss: 0.088810
+There are 256 Triples in this batch.
+Epoch: 1-27, pos_loss: 1.426371, neg_loss: 1.992466, Loss: 0.133826
+There are 256 Triples in this batch.
+Epoch: 1-28, pos_loss: 1.458693, neg_loss: 2.040759, Loss: 0.134157
+There are 256 Triples in this batch.
+Epoch: 1-29, pos_loss: 1.436861, neg_loss: 2.091886, Loss: 0.078910
+There are 256 Triples in this batch.
+Epoch: 1-30, pos_loss: 1.460230, neg_loss: 2.090073, Loss: 0.080839
+There are 256 Triples in this batch.
+Epoch: 1-31, pos_loss: 1.450681, neg_loss: 1.996396, Loss: 0.145070
+There are 256 Triples in this batch.
+Epoch: 1-32, pos_loss: 1.467903, neg_loss: 2.057086, Loss: 0.126743
+There are 256 Triples in this batch.
+Epoch: 1-33, pos_loss: 1.446339, neg_loss: 2.021092, Loss: 0.129735
+There are 256 Triples in this batch.
+Epoch: 1-34, pos_loss: 1.400254, neg_loss: 2.019173, Loss: 0.103351
+There are 256 Triples in this batch.
+Epoch: 1-35, pos_loss: 1.399371, neg_loss: 1.964524, Loss: 0.098482
+There are 256 Triples in this batch.
+Epoch: 1-36, pos_loss: 1.399942, neg_loss: 1.925205, Loss: 0.116978
+There are 256 Triples in this batch.
+Epoch: 1-37, pos_loss: 1.421498, neg_loss: 1.960383, Loss: 0.090175
+There are 256 Triples in this batch.
+Epoch: 1-38, pos_loss: 1.440889, neg_loss: 1.986183, Loss: 0.090485
+There are 256 Triples in this batch.
+Epoch: 1-39, pos_loss: 1.404034, neg_loss: 1.958228, Loss: 0.074872
+There are 256 Triples in this batch.
+Epoch: 1-40, pos_loss: 1.466845, neg_loss: 1.976901, Loss: 0.102469
+There are 256 Triples in this batch.
+Epoch: 1-41, pos_loss: 1.413659, neg_loss: 1.963650, Loss: 0.095255
+There are 256 Triples in this batch.
+Epoch: 1-42, pos_loss: 1.449224, neg_loss: 1.992749, Loss: 0.073708
+There are 256 Triples in this batch.
+Epoch: 1-43, pos_loss: 1.426921, neg_loss: 1.990120, Loss: 0.060910
+There are 256 Triples in this batch.
+Epoch: 1-44, pos_loss: 1.435737, neg_loss: 1.964852, Loss: 0.130331
+There are 256 Triples in this batch.
+Epoch: 1-45, pos_loss: 1.454490, neg_loss: 1.983897, Loss: 0.089235
+There are 256 Triples in this batch.
+Epoch: 1-46, pos_loss: 1.433172, neg_loss: 1.998239, Loss: 0.079437
+There are 256 Triples in this batch.
+Epoch: 1-47, pos_loss: 1.437024, neg_loss: 2.029205, Loss: 0.071313
+There are 256 Triples in this batch.
+Epoch: 1-48, pos_loss: 1.443767, neg_loss: 1.986462, Loss: 0.109186
+There are 256 Triples in this batch.
+Epoch: 1-49, pos_loss: 1.439819, neg_loss: 2.051423, Loss: 0.103083
+There are 256 Triples in this batch.
+Epoch: 1-50, pos_loss: 1.482871, neg_loss: 2.108080, Loss: 0.081439
+There are 256 Triples in this batch.
+Epoch: 1-51, pos_loss: 1.484061, neg_loss: 2.085395, Loss: 0.100196
+There are 256 Triples in this batch.
+Epoch: 1-52, pos_loss: 1.462946, neg_loss: 2.071521, Loss: 0.074321
+There are 256 Triples in this batch.
+Epoch: 1-53, pos_loss: 1.456309, neg_loss: 2.077310, Loss: 0.120284
+There are 256 Triples in this batch.
+Epoch: 1-54, pos_loss: 1.456085, neg_loss: 2.096648, Loss: 0.097513
+There are 256 Triples in this batch.
+Epoch: 1-55, pos_loss: 1.461556, neg_loss: 2.147803, Loss: 0.095848
+There are 256 Triples in this batch.
+Epoch: 1-56, pos_loss: 1.434590, neg_loss: 2.100423, Loss: 0.118221
+There are 256 Triples in this batch.
+Epoch: 1-57, pos_loss: 1.458769, neg_loss: 2.123651, Loss: 0.098199
+There are 256 Triples in this batch.
+Epoch: 1-58, pos_loss: 1.482007, neg_loss: 2.128440, Loss: 0.086277
+There are 256 Triples in this batch.
+Epoch: 1-59, pos_loss: 1.457061, neg_loss: 2.117196, Loss: 0.092906
+There are 256 Triples in this batch.
+Epoch: 1-60, pos_loss: 1.433734, neg_loss: 2.117645, Loss: 0.065429
+There are 256 Triples in this batch.
+Epoch: 1-61, pos_loss: 1.461199, neg_loss: 2.057325, Loss: 0.102453
+There are 256 Triples in this batch.
+Epoch: 1-62, pos_loss: 1.513352, neg_loss: 2.153506, Loss: 0.099349
+There are 256 Triples in this batch.
+Epoch: 1-63, pos_loss: 1.504108, neg_loss: 2.130628, Loss: 0.113910
+There are 256 Triples in this batch.
+Epoch: 1-64, pos_loss: 1.437520, neg_loss: 2.049279, Loss: 0.092523
+There are 256 Triples in this batch.
+Epoch: 1-65, pos_loss: 1.522451, neg_loss: 2.085460, Loss: 0.119344
+There are 256 Triples in this batch.
+Epoch: 1-66, pos_loss: 1.481621, neg_loss: 2.101255, Loss: 0.085909
+There are 256 Triples in this batch.
+Epoch: 1-67, pos_loss: 1.448220, neg_loss: 2.038162, Loss: 0.131304
+There are 256 Triples in this batch.
+Epoch: 1-68, pos_loss: 1.449751, neg_loss: 2.045898, Loss: 0.126217
+There are 256 Triples in this batch.
+Epoch: 1-69, pos_loss: 1.462785, neg_loss: 2.055225, Loss: 0.112996
+There are 256 Triples in this batch.
+Epoch: 1-70, pos_loss: 1.514218, neg_loss: 2.134522, Loss: 0.095055
+There are 256 Triples in this batch.
+Epoch: 1-71, pos_loss: 1.506944, neg_loss: 2.105322, Loss: 0.095407
+There are 256 Triples in this batch.
+Epoch: 1-72, pos_loss: 1.450161, neg_loss: 2.063341, Loss: 0.076130
+There are 256 Triples in this batch.
+Epoch: 1-73, pos_loss: 1.474331, neg_loss: 2.095206, Loss: 0.097285
+There are 256 Triples in this batch.
+Epoch: 1-74, pos_loss: 1.488948, neg_loss: 2.044019, Loss: 0.133102
+There are 256 Triples in this batch.
+Epoch: 1-75, pos_loss: 1.496812, neg_loss: 2.128809, Loss: 0.108048
+There are 256 Triples in this batch.
+Epoch: 1-76, pos_loss: 1.465878, neg_loss: 2.051393, Loss: 0.067151
+There are 256 Triples in this batch.
+Epoch: 1-77, pos_loss: 1.511267, neg_loss: 2.096523, Loss: 0.106143
+There are 256 Triples in this batch.
+Epoch: 1-78, pos_loss: 1.496187, neg_loss: 2.030018, Loss: 0.112367
+There are 256 Triples in this batch.
+Epoch: 1-79, pos_loss: 1.508518, neg_loss: 2.082530, Loss: 0.100477
+There are 256 Triples in this batch.
+Epoch: 1-80, pos_loss: 1.504023, neg_loss: 2.047395, Loss: 0.114789
+There are 256 Triples in this batch.
+Epoch: 1-81, pos_loss: 1.508430, neg_loss: 2.118221, Loss: 0.075367
+There are 256 Triples in this batch.
+Epoch: 1-82, pos_loss: 1.494509, neg_loss: 2.036583, Loss: 0.118008
+There are 256 Triples in this batch.
+Epoch: 1-83, pos_loss: 1.515823, neg_loss: 2.085763, Loss: 0.109587
+There are 256 Triples in this batch.
+Epoch: 1-84, pos_loss: 1.541184, neg_loss: 2.060849, Loss: 0.132208
+There are 256 Triples in this batch.
+Epoch: 1-85, pos_loss: 1.477484, neg_loss: 2.053441, Loss: 0.087082
+There are 256 Triples in this batch.
+Epoch: 1-86, pos_loss: 1.509931, neg_loss: 2.015207, Loss: 0.132511
+There are 256 Triples in this batch.
+Epoch: 1-87, pos_loss: 1.512852, neg_loss: 2.048703, Loss: 0.076202
+There are 256 Triples in this batch.
+Epoch: 1-88, pos_loss: 1.481341, neg_loss: 2.002209, Loss: 0.107627
+There are 256 Triples in this batch.
+Epoch: 1-89, pos_loss: 1.489315, neg_loss: 2.072406, Loss: 0.078291
+There are 256 Triples in this batch.
+Epoch: 1-90, pos_loss: 1.540848, neg_loss: 2.074991, Loss: 0.111306
+There are 256 Triples in this batch.
+Epoch: 1-91, pos_loss: 1.504016, neg_loss: 2.089171, Loss: 0.096838
+There are 256 Triples in this batch.
+Epoch: 1-92, pos_loss: 1.496549, neg_loss: 2.013861, Loss: 0.126944
+There are 256 Triples in this batch.
+Epoch: 1-93, pos_loss: 1.463620, neg_loss: 2.025364, Loss: 0.115603
+There are 256 Triples in this batch.
+Epoch: 1-94, pos_loss: 1.445282, neg_loss: 2.017079, Loss: 0.102535
+There are 256 Triples in this batch.
+Epoch: 1-95, pos_loss: 1.475641, neg_loss: 2.061120, Loss: 0.088140
+There are 256 Triples in this batch.
+Epoch: 1-96, pos_loss: 1.466921, neg_loss: 2.066930, Loss: 0.066929
+There are 256 Triples in this batch.
+Epoch: 1-97, pos_loss: 1.476264, neg_loss: 2.080413, Loss: 0.091614
+There are 256 Triples in this batch.
+Epoch: 1-98, pos_loss: 1.443315, neg_loss: 2.097995, Loss: 0.054438
+There are 256 Triples in this batch.
+Epoch: 1-99, pos_loss: 1.476835, neg_loss: 2.067915, Loss: 0.136918
+There are 256 Triples in this batch.
+Epoch: 1-100, pos_loss: 1.474122, neg_loss: 2.057702, Loss: 0.089449
+There are 256 Triples in this batch.
+Epoch: 1-101, pos_loss: 1.454564, neg_loss: 2.092577, Loss: 0.070569
+There are 256 Triples in this batch.
+Epoch: 1-102, pos_loss: 1.470662, neg_loss: 2.012484, Loss: 0.099807
+There are 256 Triples in this batch.
+Epoch: 1-103, pos_loss: 1.464326, neg_loss: 2.033858, Loss: 0.104292
+There are 256 Triples in this batch.
+Epoch: 1-104, pos_loss: 1.468649, neg_loss: 2.073400, Loss: 0.084668
+There are 256 Triples in this batch.
+Epoch: 1-105, pos_loss: 1.468613, neg_loss: 2.069145, Loss: 0.113128
+There are 256 Triples in this batch.
+Epoch: 1-106, pos_loss: 1.442657, neg_loss: 2.060385, Loss: 0.077071
+There are 256 Triples in this batch.
+Epoch: 1-107, pos_loss: 1.441327, neg_loss: 2.037506, Loss: 0.090005
+There are 256 Triples in this batch.
+Epoch: 1-108, pos_loss: 1.426730, neg_loss: 2.021219, Loss: 0.088836
+There are 256 Triples in this batch.
+Epoch: 1-109, pos_loss: 1.472460, neg_loss: 2.089793, Loss: 0.094688
+There are 256 Triples in this batch.
+Epoch: 1-110, pos_loss: 1.460202, neg_loss: 2.056834, Loss: 0.121302
+There are 256 Triples in this batch.
+Epoch: 1-111, pos_loss: 1.468104, neg_loss: 2.070326, Loss: 0.107697
+There are 256 Triples in this batch.
+Epoch: 1-112, pos_loss: 1.474378, neg_loss: 2.113169, Loss: 0.107122
+There are 256 Triples in this batch.
+Epoch: 1-113, pos_loss: 1.484999, neg_loss: 2.116246, Loss: 0.091457
+There are 256 Triples in this batch.
+Epoch: 1-114, pos_loss: 1.477290, neg_loss: 2.083284, Loss: 0.094993
+There are 256 Triples in this batch.
+Epoch: 1-115, pos_loss: 1.448389, neg_loss: 2.087603, Loss: 0.082101
+There are 256 Triples in this batch.
+Epoch: 1-116, pos_loss: 1.518180, neg_loss: 2.104808, Loss: 0.115795
+There are 256 Triples in this batch.
+Epoch: 1-117, pos_loss: 1.524407, neg_loss: 2.099645, Loss: 0.121570
+There are 256 Triples in this batch.
+Epoch: 1-118, pos_loss: 1.504997, neg_loss: 2.122435, Loss: 0.094715
+There are 256 Triples in this batch.
+Epoch: 1-119, pos_loss: 1.470375, neg_loss: 2.086191, Loss: 0.084105
+There are 256 Triples in this batch.
+Epoch: 1-120, pos_loss: 1.537146, neg_loss: 2.125211, Loss: 0.080666
+There are 256 Triples in this batch.
+Epoch: 1-121, pos_loss: 1.500725, neg_loss: 2.104505, Loss: 0.087483
+There are 256 Triples in this batch.
+Epoch: 1-122, pos_loss: 1.518322, neg_loss: 2.102288, Loss: 0.092044
+There are 256 Triples in this batch.
+Epoch: 1-123, pos_loss: 1.539821, neg_loss: 2.105037, Loss: 0.112775
+There are 256 Triples in this batch.
+Epoch: 1-124, pos_loss: 1.513022, neg_loss: 2.177998, Loss: 0.069450
+There are 256 Triples in this batch.
+Epoch: 1-125, pos_loss: 1.541199, neg_loss: 2.160477, Loss: 0.090391
+There are 256 Triples in this batch.
+Epoch: 1-126, pos_loss: 1.478348, neg_loss: 2.132541, Loss: 0.081038
+There are 256 Triples in this batch.
+Epoch: 1-127, pos_loss: 1.539490, neg_loss: 2.106466, Loss: 0.121583
+There are 256 Triples in this batch.
+Epoch: 1-128, pos_loss: 1.540477, neg_loss: 2.150089, Loss: 0.109364
+There are 256 Triples in this batch.
+Epoch: 1-129, pos_loss: 1.539199, neg_loss: 2.183438, Loss: 0.091467
+There are 256 Triples in this batch.
+Epoch: 1-130, pos_loss: 1.522173, neg_loss: 2.128806, Loss: 0.092371
+There are 256 Triples in this batch.
+Epoch: 1-131, pos_loss: 1.527837, neg_loss: 2.182321, Loss: 0.080203
+There are 256 Triples in this batch.
+Epoch: 1-132, pos_loss: 1.538808, neg_loss: 2.175236, Loss: 0.082857
+There are 256 Triples in this batch.
+Epoch: 1-133, pos_loss: 1.549957, neg_loss: 2.148354, Loss: 0.100988
+There are 256 Triples in this batch.
+Epoch: 1-134, pos_loss: 1.611365, neg_loss: 2.210995, Loss: 0.104888
+There are 256 Triples in this batch.
+Epoch: 1-135, pos_loss: 1.557670, neg_loss: 2.156540, Loss: 0.125756
+There are 256 Triples in this batch.
+Epoch: 1-136, pos_loss: 1.549066, neg_loss: 2.198548, Loss: 0.088604
+There are 256 Triples in this batch.
+Epoch: 1-137, pos_loss: 1.544196, neg_loss: 2.157736, Loss: 0.095443
+There are 256 Triples in this batch.
+Epoch: 1-138, pos_loss: 1.576735, neg_loss: 2.179641, Loss: 0.099463
+There are 256 Triples in this batch.
+Epoch: 1-139, pos_loss: 1.568672, neg_loss: 2.157079, Loss: 0.115785
+There are 256 Triples in this batch.
+Epoch: 1-140, pos_loss: 1.568942, neg_loss: 2.164306, Loss: 0.135821
+There are 256 Triples in this batch.
+Epoch: 1-141, pos_loss: 1.535567, neg_loss: 2.113638, Loss: 0.120927
+There are 256 Triples in this batch.
+Epoch: 1-142, pos_loss: 1.523690, neg_loss: 2.153209, Loss: 0.102064
+There are 256 Triples in this batch.
+Epoch: 1-143, pos_loss: 1.547887, neg_loss: 2.137350, Loss: 0.115368
+There are 256 Triples in this batch.
+Epoch: 1-144, pos_loss: 1.526153, neg_loss: 2.105967, Loss: 0.093430
+There are 256 Triples in this batch.
+Epoch: 1-145, pos_loss: 1.515663, neg_loss: 2.110444, Loss: 0.099502
+There are 256 Triples in this batch.
+Epoch: 1-146, pos_loss: 1.550638, neg_loss: 2.121327, Loss: 0.110501
+There are 256 Triples in this batch.
+Epoch: 1-147, pos_loss: 1.498114, neg_loss: 2.086302, Loss: 0.106522
+There are 256 Triples in this batch.
+Epoch: 1-148, pos_loss: 1.558112, neg_loss: 2.128121, Loss: 0.090252
+There are 256 Triples in this batch.
+Epoch: 1-149, pos_loss: 1.529959, neg_loss: 2.110678, Loss: 0.087731
+There are 256 Triples in this batch.
+Epoch: 1-150, pos_loss: 1.524428, neg_loss: 2.115383, Loss: 0.093612
+There are 256 Triples in this batch.
+Epoch: 1-151, pos_loss: 1.510534, neg_loss: 2.088665, Loss: 0.092641
+There are 256 Triples in this batch.
+Epoch: 1-152, pos_loss: 1.571335, neg_loss: 2.121462, Loss: 0.105433
+There are 256 Triples in this batch.
+Epoch: 1-153, pos_loss: 1.563541, neg_loss: 2.134476, Loss: 0.100110
+There are 256 Triples in this batch.
+Epoch: 1-154, pos_loss: 1.541720, neg_loss: 2.093969, Loss: 0.112147
+There are 256 Triples in this batch.
+Epoch: 1-155, pos_loss: 1.549937, neg_loss: 2.095182, Loss: 0.104732
+There are 256 Triples in this batch.
+Epoch: 1-156, pos_loss: 1.545521, neg_loss: 2.091125, Loss: 0.117325
+There are 256 Triples in this batch.
+Epoch: 1-157, pos_loss: 1.539659, neg_loss: 2.123287, Loss: 0.090601
+There are 256 Triples in this batch.
+Epoch: 1-158, pos_loss: 1.545527, neg_loss: 2.159677, Loss: 0.112680
+There are 256 Triples in this batch.
+Epoch: 1-159, pos_loss: 1.563733, neg_loss: 2.149357, Loss: 0.094629
+There are 256 Triples in this batch.
+Epoch: 1-160, pos_loss: 1.553470, neg_loss: 2.082658, Loss: 0.135916
+There are 256 Triples in this batch.
+Epoch: 1-161, pos_loss: 1.545545, neg_loss: 2.145085, Loss: 0.079982
+There are 256 Triples in this batch.
+Epoch: 1-162, pos_loss: 1.538829, neg_loss: 2.147309, Loss: 0.109013
+There are 256 Triples in this batch.
+Epoch: 1-163, pos_loss: 1.545633, neg_loss: 2.099796, Loss: 0.107102
+There are 256 Triples in this batch.
+Epoch: 1-164, pos_loss: 1.512789, neg_loss: 2.123521, Loss: 0.087066
+There are 256 Triples in this batch.
+Epoch: 1-165, pos_loss: 1.576859, neg_loss: 2.134861, Loss: 0.097913
+There are 256 Triples in this batch.
+Epoch: 1-166, pos_loss: 1.490648, neg_loss: 2.095847, Loss: 0.091372
+There are 256 Triples in this batch.
+Epoch: 1-167, pos_loss: 1.528813, neg_loss: 2.140277, Loss: 0.093288
+There are 256 Triples in this batch.
+Epoch: 1-168, pos_loss: 1.511676, neg_loss: 2.095535, Loss: 0.113060
+There are 256 Triples in this batch.
+Epoch: 1-169, pos_loss: 1.526777, neg_loss: 2.116610, Loss: 0.102652
+There are 256 Triples in this batch.
+Epoch: 1-170, pos_loss: 1.528697, neg_loss: 2.155044, Loss: 0.073047
+There are 256 Triples in this batch.
+Epoch: 1-171, pos_loss: 1.535657, neg_loss: 2.141660, Loss: 0.090008
+There are 256 Triples in this batch.
+Epoch: 1-172, pos_loss: 1.554025, neg_loss: 2.117169, Loss: 0.094126
+There are 256 Triples in this batch.
+Epoch: 1-173, pos_loss: 1.538733, neg_loss: 2.134371, Loss: 0.060648
+There are 256 Triples in this batch.
+Epoch: 1-174, pos_loss: 1.549242, neg_loss: 2.130727, Loss: 0.117892
+There are 256 Triples in this batch.
+Epoch: 1-175, pos_loss: 1.526017, neg_loss: 2.078478, Loss: 0.092432
+There are 256 Triples in this batch.
+Epoch: 1-176, pos_loss: 1.546273, neg_loss: 2.187488, Loss: 0.076334
+There are 256 Triples in this batch.
+Epoch: 1-177, pos_loss: 1.569221, neg_loss: 2.120430, Loss: 0.113400
+There are 256 Triples in this batch.
+Epoch: 1-178, pos_loss: 1.524032, neg_loss: 2.152184, Loss: 0.082479
+There are 256 Triples in this batch.
+Epoch: 1-179, pos_loss: 1.521900, neg_loss: 2.149658, Loss: 0.064849
+There are 256 Triples in this batch.
+Epoch: 1-180, pos_loss: 1.520472, neg_loss: 2.151445, Loss: 0.077168
+There are 256 Triples in this batch.
+Epoch: 1-181, pos_loss: 1.528331, neg_loss: 2.110686, Loss: 0.095886
+There are 256 Triples in this batch.
+Epoch: 1-182, pos_loss: 1.577932, neg_loss: 2.183871, Loss: 0.114235
+There are 256 Triples in this batch.
+Epoch: 1-183, pos_loss: 1.563941, neg_loss: 2.136509, Loss: 0.099739
+There are 256 Triples in this batch.
+Epoch: 1-184, pos_loss: 1.526357, neg_loss: 2.167243, Loss: 0.075105
+There are 256 Triples in this batch.
+Epoch: 1-185, pos_loss: 1.559927, neg_loss: 2.180311, Loss: 0.103196
+There are 256 Triples in this batch.
+Epoch: 1-186, pos_loss: 1.535664, neg_loss: 2.134936, Loss: 0.081123
+There are 256 Triples in this batch.
+Epoch: 1-187, pos_loss: 1.563006, neg_loss: 2.201113, Loss: 0.091574
+There are 256 Triples in this batch.
+Epoch: 1-188, pos_loss: 1.560486, neg_loss: 2.143398, Loss: 0.099404
+There are 256 Triples in this batch.
+Epoch: 1-189, pos_loss: 1.539805, neg_loss: 2.124354, Loss: 0.084931
+There are 256 Triples in this batch.
+Epoch: 1-190, pos_loss: 1.611630, neg_loss: 2.183624, Loss: 0.117712
+There are 256 Triples in this batch.
+Epoch: 1-191, pos_loss: 1.541165, neg_loss: 2.195250, Loss: 0.068322
+There are 256 Triples in this batch.
+Epoch: 1-192, pos_loss: 1.576608, neg_loss: 2.172909, Loss: 0.070237
+There are 256 Triples in this batch.
+Epoch: 1-193, pos_loss: 1.575531, neg_loss: 2.172289, Loss: 0.097446
+There are 256 Triples in this batch.
+Epoch: 1-194, pos_loss: 1.533960, neg_loss: 2.157647, Loss: 0.074200
+There are 256 Triples in this batch.
+Epoch: 1-195, pos_loss: 1.531830, neg_loss: 2.144907, Loss: 0.096680
+There are 256 Triples in this batch.
+Epoch: 1-196, pos_loss: 1.590965, neg_loss: 2.193585, Loss: 0.103489
+There are 256 Triples in this batch.
+Epoch: 1-197, pos_loss: 1.644757, neg_loss: 2.217392, Loss: 0.124031
+There are 256 Triples in this batch.
+Epoch: 1-198, pos_loss: 1.525942, neg_loss: 2.202495, Loss: 0.055570
+There are 256 Triples in this batch.
+Epoch: 1-199, pos_loss: 1.552907, neg_loss: 2.165007, Loss: 0.091459
+There are 256 Triples in this batch.
+Epoch: 1-200, pos_loss: 1.571841, neg_loss: 2.150927, Loss: 0.108037
+There are 256 Triples in this batch.
+Epoch: 1-201, pos_loss: 1.555047, neg_loss: 2.148952, Loss: 0.100981
+There are 256 Triples in this batch.
+Epoch: 1-202, pos_loss: 1.567640, neg_loss: 2.191236, Loss: 0.115001
+There are 256 Triples in this batch.
+Epoch: 1-203, pos_loss: 1.583970, neg_loss: 2.168120, Loss: 0.098319
+There are 256 Triples in this batch.
+Epoch: 1-204, pos_loss: 1.577808, neg_loss: 2.204669, Loss: 0.096066
+There are 256 Triples in this batch.
+Epoch: 1-205, pos_loss: 1.564355, neg_loss: 2.160728, Loss: 0.098982
+There are 256 Triples in this batch.
+Epoch: 1-206, pos_loss: 1.568641, neg_loss: 2.205960, Loss: 0.059166
+There are 256 Triples in this batch.
+Epoch: 1-207, pos_loss: 1.610688, neg_loss: 2.189505, Loss: 0.121690
+There are 256 Triples in this batch.
+Epoch: 1-208, pos_loss: 1.574001, neg_loss: 2.205097, Loss: 0.072525
+There are 256 Triples in this batch.
+Epoch: 1-209, pos_loss: 1.619682, neg_loss: 2.248108, Loss: 0.114898
+There are 256 Triples in this batch.
+Epoch: 1-210, pos_loss: 1.598883, neg_loss: 2.235455, Loss: 0.081887
+There are 256 Triples in this batch.
+Epoch: 1-211, pos_loss: 1.622034, neg_loss: 2.264666, Loss: 0.092798
+There are 256 Triples in this batch.
+Epoch: 1-212, pos_loss: 1.607907, neg_loss: 2.137547, Loss: 0.140657
+There are 256 Triples in this batch.
+Epoch: 1-213, pos_loss: 1.564538, neg_loss: 2.149691, Loss: 0.098375
+There are 256 Triples in this batch.
+Epoch: 1-214, pos_loss: 1.579856, neg_loss: 2.222383, Loss: 0.085949
+There are 256 Triples in this batch.
+Epoch: 1-215, pos_loss: 1.567109, neg_loss: 2.210234, Loss: 0.064647
+There are 256 Triples in this batch.
+Epoch: 1-216, pos_loss: 1.608378, neg_loss: 2.204459, Loss: 0.099420
+There are 256 Triples in this batch.
+Epoch: 1-217, pos_loss: 1.628705, neg_loss: 2.229120, Loss: 0.082306
+There are 256 Triples in this batch.
+Epoch: 1-218, pos_loss: 1.596361, neg_loss: 2.191366, Loss: 0.096114
+There are 256 Triples in this batch.
+Epoch: 1-219, pos_loss: 1.619234, neg_loss: 2.223577, Loss: 0.078197
+There are 256 Triples in this batch.
+Epoch: 1-220, pos_loss: 1.635116, neg_loss: 2.222994, Loss: 0.095737
+There are 256 Triples in this batch.
+Epoch: 1-221, pos_loss: 1.584410, neg_loss: 2.214486, Loss: 0.066024
+There are 256 Triples in this batch.
+Epoch: 1-222, pos_loss: 1.587598, neg_loss: 2.221773, Loss: 0.073874
+There are 256 Triples in this batch.
+Epoch: 1-223, pos_loss: 1.588508, neg_loss: 2.229043, Loss: 0.068439
+There are 256 Triples in this batch.
+Epoch: 1-224, pos_loss: 1.601410, neg_loss: 2.238159, Loss: 0.078493
+There are 256 Triples in this batch.
+Epoch: 1-225, pos_loss: 1.608720, neg_loss: 2.207160, Loss: 0.104539
+There are 256 Triples in this batch.
+Epoch: 1-226, pos_loss: 1.566373, neg_loss: 2.211344, Loss: 0.052793
+There are 256 Triples in this batch.
+Epoch: 1-227, pos_loss: 1.612672, neg_loss: 2.217053, Loss: 0.100101
+There are 256 Triples in this batch.
+Epoch: 1-228, pos_loss: 1.573972, neg_loss: 2.212240, Loss: 0.096225
+There are 256 Triples in this batch.
+Epoch: 1-229, pos_loss: 1.576647, neg_loss: 2.199867, Loss: 0.086054
+There are 256 Triples in this batch.
+Epoch: 1-230, pos_loss: 1.640017, neg_loss: 2.249084, Loss: 0.100689
+There are 256 Triples in this batch.
+Epoch: 1-231, pos_loss: 1.660332, neg_loss: 2.317907, Loss: 0.111609
+There are 256 Triples in this batch.
+Epoch: 1-232, pos_loss: 1.596958, neg_loss: 2.227979, Loss: 0.112637
+There are 256 Triples in this batch.
+Epoch: 1-233, pos_loss: 1.626575, neg_loss: 2.288939, Loss: 0.089873
+There are 256 Triples in this batch.
+Epoch: 1-234, pos_loss: 1.630517, neg_loss: 2.304276, Loss: 0.108657
+There are 256 Triples in this batch.
+Epoch: 1-235, pos_loss: 1.637393, neg_loss: 2.292578, Loss: 0.085018
+There are 256 Triples in this batch.
+Epoch: 1-236, pos_loss: 1.575636, neg_loss: 2.286574, Loss: 0.069238
+There are 256 Triples in this batch.
+Epoch: 1-237, pos_loss: 1.632978, neg_loss: 2.278098, Loss: 0.097635
+There are 256 Triples in this batch.
+Epoch: 1-238, pos_loss: 1.635984, neg_loss: 2.277724, Loss: 0.108233
+There are 256 Triples in this batch.
+Epoch: 1-239, pos_loss: 1.597579, neg_loss: 2.216906, Loss: 0.090120
+There are 256 Triples in this batch.
+Epoch: 1-240, pos_loss: 1.588347, neg_loss: 2.282363, Loss: 0.083734
+There are 256 Triples in this batch.
+Epoch: 1-241, pos_loss: 1.637282, neg_loss: 2.278615, Loss: 0.110467
+There are 256 Triples in this batch.
+Epoch: 1-242, pos_loss: 1.603305, neg_loss: 2.281896, Loss: 0.080976
+There are 256 Triples in this batch.
+Epoch: 1-243, pos_loss: 1.636357, neg_loss: 2.261083, Loss: 0.097278
+There are 256 Triples in this batch.
+Epoch: 1-244, pos_loss: 1.621672, neg_loss: 2.297608, Loss: 0.091128
+There are 256 Triples in this batch.
+Epoch: 1-245, pos_loss: 1.603194, neg_loss: 2.279917, Loss: 0.059030
+There are 256 Triples in this batch.
+Epoch: 1-246, pos_loss: 1.648268, neg_loss: 2.330271, Loss: 0.072309
+There are 256 Triples in this batch.
+Epoch: 1-247, pos_loss: 1.602128, neg_loss: 2.314550, Loss: 0.089953
+There are 256 Triples in this batch.
+Epoch: 1-248, pos_loss: 1.591691, neg_loss: 2.272925, Loss: 0.072523
+There are 256 Triples in this batch.
+Epoch: 1-249, pos_loss: 1.668378, neg_loss: 2.322206, Loss: 0.100295
+There are 256 Triples in this batch.
+Epoch: 1-250, pos_loss: 1.614562, neg_loss: 2.282701, Loss: 0.089426
+There are 256 Triples in this batch.
+Epoch: 1-251, pos_loss: 1.652313, neg_loss: 2.312045, Loss: 0.106267
+There are 256 Triples in this batch.
+Epoch: 1-252, pos_loss: 1.597353, neg_loss: 2.306985, Loss: 0.082462
+There are 256 Triples in this batch.
+Epoch: 1-253, pos_loss: 1.555231, neg_loss: 2.257976, Loss: 0.084097
+There are 256 Triples in this batch.
+Epoch: 1-254, pos_loss: 1.610919, neg_loss: 2.249078, Loss: 0.097613
+There are 256 Triples in this batch.
+Epoch: 1-255, pos_loss: 1.590850, neg_loss: 2.271516, Loss: 0.107870
+There are 256 Triples in this batch.
+Epoch: 1-256, pos_loss: 1.594353, neg_loss: 2.260406, Loss: 0.111919
+There are 256 Triples in this batch.
+Epoch: 1-257, pos_loss: 1.636999, neg_loss: 2.315166, Loss: 0.079030
+There are 256 Triples in this batch.
+Epoch: 1-258, pos_loss: 1.597884, neg_loss: 2.282237, Loss: 0.084113
+There are 256 Triples in this batch.
+Epoch: 1-259, pos_loss: 1.604131, neg_loss: 2.250885, Loss: 0.104970
+There are 256 Triples in this batch.
+Epoch: 1-260, pos_loss: 1.658157, neg_loss: 2.306199, Loss: 0.087152
+There are 256 Triples in this batch.
+Epoch: 1-261, pos_loss: 1.587290, neg_loss: 2.227231, Loss: 0.070922
+There are 256 Triples in this batch.
+Epoch: 1-262, pos_loss: 1.662664, neg_loss: 2.335434, Loss: 0.066611
+There are 256 Triples in this batch.
+Epoch: 1-263, pos_loss: 1.597833, neg_loss: 2.234010, Loss: 0.084195
+There are 256 Triples in this batch.
+Epoch: 1-264, pos_loss: 1.600722, neg_loss: 2.275275, Loss: 0.071504
+There are 256 Triples in this batch.
+Epoch: 1-265, pos_loss: 1.602777, neg_loss: 2.259134, Loss: 0.077459
+There are 256 Triples in this batch.
+Epoch: 1-266, pos_loss: 1.616699, neg_loss: 2.257359, Loss: 0.081056
+There are 256 Triples in this batch.
+Epoch: 1-267, pos_loss: 1.626905, neg_loss: 2.274079, Loss: 0.123240
+There are 256 Triples in this batch.
+Epoch: 1-268, pos_loss: 1.636744, neg_loss: 2.253509, Loss: 0.095309
+There are 256 Triples in this batch.
+Epoch: 1-269, pos_loss: 1.576705, neg_loss: 2.303486, Loss: 0.040089
+There are 256 Triples in this batch.
+Epoch: 1-270, pos_loss: 1.584128, neg_loss: 2.242876, Loss: 0.089805
+There are 256 Triples in this batch.
+Epoch: 1-271, pos_loss: 1.607985, neg_loss: 2.283319, Loss: 0.090136
+There are 256 Triples in this batch.
+Epoch: 1-272, pos_loss: 1.584715, neg_loss: 2.225805, Loss: 0.078335
+There are 256 Triples in this batch.
+Epoch: 1-273, pos_loss: 1.603605, neg_loss: 2.265001, Loss: 0.091578
+There are 256 Triples in this batch.
+Epoch: 1-274, pos_loss: 1.566005, neg_loss: 2.259199, Loss: 0.077882
+There are 256 Triples in this batch.
+Epoch: 1-275, pos_loss: 1.615744, neg_loss: 2.323669, Loss: 0.084429
+There are 256 Triples in this batch.
+Epoch: 1-276, pos_loss: 1.604030, neg_loss: 2.299285, Loss: 0.082033
+There are 256 Triples in this batch.
+Epoch: 1-277, pos_loss: 1.624149, neg_loss: 2.268456, Loss: 0.116671
+There are 256 Triples in this batch.
+Epoch: 1-278, pos_loss: 1.613966, neg_loss: 2.314994, Loss: 0.049169
+There are 256 Triples in this batch.
+Epoch: 1-279, pos_loss: 1.632655, neg_loss: 2.311201, Loss: 0.103159
+There are 256 Triples in this batch.
+Epoch: 1-280, pos_loss: 1.611378, neg_loss: 2.312072, Loss: 0.088813
+There are 256 Triples in this batch.
+Epoch: 1-281, pos_loss: 1.593220, neg_loss: 2.266466, Loss: 0.083327
+There are 256 Triples in this batch.
+Epoch: 1-282, pos_loss: 1.610387, neg_loss: 2.294324, Loss: 0.085545
+There are 256 Triples in this batch.
+Epoch: 1-283, pos_loss: 1.632457, neg_loss: 2.314219, Loss: 0.090549
+There are 256 Triples in this batch.
+Epoch: 1-284, pos_loss: 1.663813, neg_loss: 2.333355, Loss: 0.114890
+There are 256 Triples in this batch.
+Epoch: 1-285, pos_loss: 1.641755, neg_loss: 2.324987, Loss: 0.071542
+There are 256 Triples in this batch.
+Epoch: 1-286, pos_loss: 1.644927, neg_loss: 2.308228, Loss: 0.083188
+There are 256 Triples in this batch.
+Epoch: 1-287, pos_loss: 1.653903, neg_loss: 2.297200, Loss: 0.107576
+There are 256 Triples in this batch.
+Epoch: 1-288, pos_loss: 1.654796, neg_loss: 2.292020, Loss: 0.116249
+There are 256 Triples in this batch.
+Epoch: 1-289, pos_loss: 1.630204, neg_loss: 2.332722, Loss: 0.065809
+There are 256 Triples in this batch.
+Epoch: 1-290, pos_loss: 1.646490, neg_loss: 2.270258, Loss: 0.136368
+There are 256 Triples in this batch.
+Epoch: 1-291, pos_loss: 1.654751, neg_loss: 2.326731, Loss: 0.066227
+There are 256 Triples in this batch.
+Epoch: 1-292, pos_loss: 1.639844, neg_loss: 2.292798, Loss: 0.085688
+There are 256 Triples in this batch.
+Epoch: 1-293, pos_loss: 1.629606, neg_loss: 2.236720, Loss: 0.098562
+There are 256 Triples in this batch.
+Epoch: 1-294, pos_loss: 1.641997, neg_loss: 2.288506, Loss: 0.119329
+There are 256 Triples in this batch.
+Epoch: 1-295, pos_loss: 1.654984, neg_loss: 2.315601, Loss: 0.090989
+There are 256 Triples in this batch.
+Epoch: 1-296, pos_loss: 1.645398, neg_loss: 2.291714, Loss: 0.084393
+There are 256 Triples in this batch.
+Epoch: 1-297, pos_loss: 1.626029, neg_loss: 2.277073, Loss: 0.077755
+There are 256 Triples in this batch.
+Epoch: 1-298, pos_loss: 1.688681, neg_loss: 2.361522, Loss: 0.091841
+There are 256 Triples in this batch.
+Epoch: 1-299, pos_loss: 1.674425, neg_loss: 2.355169, Loss: 0.067704
+There are 256 Triples in this batch.
+Epoch: 1-300, pos_loss: 1.659475, neg_loss: 2.348414, Loss: 0.066315
+There are 256 Triples in this batch.
+Epoch: 1-301, pos_loss: 1.650350, neg_loss: 2.322235, Loss: 0.059597
+There are 256 Triples in this batch.
+Epoch: 1-302, pos_loss: 1.682431, neg_loss: 2.326801, Loss: 0.087803
+There are 256 Triples in this batch.
+Epoch: 1-303, pos_loss: 1.706295, neg_loss: 2.353737, Loss: 0.100166
+There are 256 Triples in this batch.
+Epoch: 1-304, pos_loss: 1.701981, neg_loss: 2.309421, Loss: 0.087967
+There are 256 Triples in this batch.
+Epoch: 1-305, pos_loss: 1.708479, neg_loss: 2.381462, Loss: 0.076881
+There are 256 Triples in this batch.
+Epoch: 1-306, pos_loss: 1.627378, neg_loss: 2.240988, Loss: 0.088009
+There are 256 Triples in this batch.
+Epoch: 1-307, pos_loss: 1.621469, neg_loss: 2.324528, Loss: 0.061365
+There are 256 Triples in this batch.
+Epoch: 1-308, pos_loss: 1.621994, neg_loss: 2.339664, Loss: 0.054472
+There are 256 Triples in this batch.
+Epoch: 1-309, pos_loss: 1.683989, neg_loss: 2.327950, Loss: 0.090650
+There are 256 Triples in this batch.
+Epoch: 1-310, pos_loss: 1.659715, neg_loss: 2.365650, Loss: 0.110772
+There are 256 Triples in this batch.
+Epoch: 1-311, pos_loss: 1.703712, neg_loss: 2.370558, Loss: 0.100946
+There are 256 Triples in this batch.
+Epoch: 1-312, pos_loss: 1.675590, neg_loss: 2.316018, Loss: 0.116892
+There are 256 Triples in this batch.
+Epoch: 1-313, pos_loss: 1.668993, neg_loss: 2.339229, Loss: 0.112574
+There are 256 Triples in this batch.
+Epoch: 1-314, pos_loss: 1.645028, neg_loss: 2.296680, Loss: 0.099821
+There are 256 Triples in this batch.
+Epoch: 1-315, pos_loss: 1.661314, neg_loss: 2.360633, Loss: 0.071884
+There are 256 Triples in this batch.
+Epoch: 1-316, pos_loss: 1.649369, neg_loss: 2.360221, Loss: 0.092831
+There are 256 Triples in this batch.
+Epoch: 1-317, pos_loss: 1.697329, neg_loss: 2.346078, Loss: 0.085732
+There are 256 Triples in this batch.
+Epoch: 1-318, pos_loss: 1.688783, neg_loss: 2.342144, Loss: 0.116010
+There are 256 Triples in this batch.
+Epoch: 1-319, pos_loss: 1.639854, neg_loss: 2.364932, Loss: 0.065413
+There are 256 Triples in this batch.
+Epoch: 1-320, pos_loss: 1.708092, neg_loss: 2.381123, Loss: 0.088005
+There are 256 Triples in this batch.
+Epoch: 1-321, pos_loss: 1.673641, neg_loss: 2.353095, Loss: 0.061439
+There are 256 Triples in this batch.
+Epoch: 1-322, pos_loss: 1.677704, neg_loss: 2.316516, Loss: 0.106357
+There are 256 Triples in this batch.
+Epoch: 1-323, pos_loss: 1.676482, neg_loss: 2.311463, Loss: 0.107188
+There are 256 Triples in this batch.
+Epoch: 1-324, pos_loss: 1.651585, neg_loss: 2.321178, Loss: 0.100687
+There are 256 Triples in this batch.
+Epoch: 1-325, pos_loss: 1.642802, neg_loss: 2.300054, Loss: 0.095040
+There are 256 Triples in this batch.
+Epoch: 1-326, pos_loss: 1.734939, neg_loss: 2.353245, Loss: 0.132322
+There are 256 Triples in this batch.
+Epoch: 1-327, pos_loss: 1.714382, neg_loss: 2.352883, Loss: 0.094472
+There are 256 Triples in this batch.
+Epoch: 1-328, pos_loss: 1.731188, neg_loss: 2.328049, Loss: 0.111741
+There are 256 Triples in this batch.
+Epoch: 1-329, pos_loss: 1.691597, neg_loss: 2.333990, Loss: 0.098535
+There are 256 Triples in this batch.
+Epoch: 1-330, pos_loss: 1.730745, neg_loss: 2.325493, Loss: 0.123377
+There are 256 Triples in this batch.
+Epoch: 1-331, pos_loss: 1.679626, neg_loss: 2.373217, Loss: 0.069750
+There are 256 Triples in this batch.
+Epoch: 1-332, pos_loss: 1.681249, neg_loss: 2.281352, Loss: 0.084781
+There are 256 Triples in this batch.
+Epoch: 1-333, pos_loss: 1.665122, neg_loss: 2.323263, Loss: 0.088795
+There are 256 Triples in this batch.
+Epoch: 1-334, pos_loss: 1.680131, neg_loss: 2.337524, Loss: 0.100581
+There are 256 Triples in this batch.
+Epoch: 1-335, pos_loss: 1.653533, neg_loss: 2.363911, Loss: 0.059920
+There are 256 Triples in this batch.
+Epoch: 1-336, pos_loss: 1.695971, neg_loss: 2.345903, Loss: 0.102791
+There are 256 Triples in this batch.
+Epoch: 1-337, pos_loss: 1.701807, neg_loss: 2.400279, Loss: 0.083212
+There are 256 Triples in this batch.
+Epoch: 1-338, pos_loss: 1.697775, neg_loss: 2.403904, Loss: 0.077717
+There are 256 Triples in this batch.
+Epoch: 1-339, pos_loss: 1.647540, neg_loss: 2.307531, Loss: 0.091160
+There are 256 Triples in this batch.
+Epoch: 1-340, pos_loss: 1.705798, neg_loss: 2.382479, Loss: 0.078425
+There are 256 Triples in this batch.
+Epoch: 1-341, pos_loss: 1.677137, neg_loss: 2.342043, Loss: 0.088404
+There are 256 Triples in this batch.
+Epoch: 1-342, pos_loss: 1.701968, neg_loss: 2.327624, Loss: 0.106969
+There are 256 Triples in this batch.
+Epoch: 1-343, pos_loss: 1.657477, neg_loss: 2.318353, Loss: 0.076804
+There are 256 Triples in this batch.
+Epoch: 1-344, pos_loss: 1.758837, neg_loss: 2.427104, Loss: 0.087701
+There are 256 Triples in this batch.
+Epoch: 1-345, pos_loss: 1.666833, neg_loss: 2.311507, Loss: 0.078637
+There are 256 Triples in this batch.
+Epoch: 1-346, pos_loss: 1.683159, neg_loss: 2.337217, Loss: 0.076963
+There are 256 Triples in this batch.
+Epoch: 1-347, pos_loss: 1.674497, neg_loss: 2.350478, Loss: 0.067774
+There are 256 Triples in this batch.
+Epoch: 1-348, pos_loss: 1.689648, neg_loss: 2.310398, Loss: 0.094249
+There are 256 Triples in this batch.
+Epoch: 1-349, pos_loss: 1.666559, neg_loss: 2.302476, Loss: 0.085658
+There are 256 Triples in this batch.
+Epoch: 1-350, pos_loss: 1.643205, neg_loss: 2.291457, Loss: 0.063953
+There are 256 Triples in this batch.
+Epoch: 1-351, pos_loss: 1.662170, neg_loss: 2.288563, Loss: 0.072057
+There are 256 Triples in this batch.
+Epoch: 1-352, pos_loss: 1.673555, neg_loss: 2.323252, Loss: 0.072918
+There are 256 Triples in this batch.
+Epoch: 1-353, pos_loss: 1.666538, neg_loss: 2.361767, Loss: 0.044364
+There are 256 Triples in this batch.
+Epoch: 1-354, pos_loss: 1.750993, neg_loss: 2.362372, Loss: 0.118052
+There are 256 Triples in this batch.
+Epoch: 1-355, pos_loss: 1.666381, neg_loss: 2.365216, Loss: 0.071837
+There are 256 Triples in this batch.
+Epoch: 1-356, pos_loss: 1.690904, neg_loss: 2.340698, Loss: 0.090863
+There are 256 Triples in this batch.
+Epoch: 1-357, pos_loss: 1.726609, neg_loss: 2.390570, Loss: 0.079421
+There are 256 Triples in this batch.
+Epoch: 1-358, pos_loss: 1.712349, neg_loss: 2.408035, Loss: 0.083864
+There are 256 Triples in this batch.
+Epoch: 1-359, pos_loss: 1.724028, neg_loss: 2.388151, Loss: 0.111093
+There are 256 Triples in this batch.
+Epoch: 1-360, pos_loss: 1.716551, neg_loss: 2.350302, Loss: 0.134012
+There are 256 Triples in this batch.
+Epoch: 1-361, pos_loss: 1.718427, neg_loss: 2.386116, Loss: 0.107126
+There are 256 Triples in this batch.
+Epoch: 1-362, pos_loss: 1.682839, neg_loss: 2.356547, Loss: 0.086923
+There are 256 Triples in this batch.
+Epoch: 1-363, pos_loss: 1.764782, neg_loss: 2.433026, Loss: 0.095627
+There are 256 Triples in this batch.
+Epoch: 1-364, pos_loss: 1.682851, neg_loss: 2.333571, Loss: 0.054730
+There are 256 Triples in this batch.
+Epoch: 1-365, pos_loss: 1.694237, neg_loss: 2.382780, Loss: 0.099115
+There are 256 Triples in this batch.
+Epoch: 1-366, pos_loss: 1.752281, neg_loss: 2.365783, Loss: 0.136653
+There are 256 Triples in this batch.
+Epoch: 1-367, pos_loss: 1.739201, neg_loss: 2.379436, Loss: 0.096275
+There are 256 Triples in this batch.
+Epoch: 1-368, pos_loss: 1.718946, neg_loss: 2.384678, Loss: 0.092039
+There are 256 Triples in this batch.
+Epoch: 1-369, pos_loss: 1.740888, neg_loss: 2.365595, Loss: 0.116390
+There are 256 Triples in this batch.
+Epoch: 1-370, pos_loss: 1.722455, neg_loss: 2.373281, Loss: 0.090873
+There are 256 Triples in this batch.
+Epoch: 1-371, pos_loss: 1.703156, neg_loss: 2.387769, Loss: 0.082362
+There are 256 Triples in this batch.
+Epoch: 1-372, pos_loss: 1.668492, neg_loss: 2.341639, Loss: 0.074980
+There are 256 Triples in this batch.
+Epoch: 1-373, pos_loss: 1.719431, neg_loss: 2.403000, Loss: 0.070271
+There are 256 Triples in this batch.
+Epoch: 1-374, pos_loss: 1.681541, neg_loss: 2.283239, Loss: 0.099773
+There are 256 Triples in this batch.
+Epoch: 1-375, pos_loss: 1.742332, neg_loss: 2.403970, Loss: 0.112028
+There are 256 Triples in this batch.
+Epoch: 1-376, pos_loss: 1.708139, neg_loss: 2.340797, Loss: 0.088394
+There are 256 Triples in this batch.
+Epoch: 1-377, pos_loss: 1.700137, neg_loss: 2.353589, Loss: 0.082755
+There are 256 Triples in this batch.
+Epoch: 1-378, pos_loss: 1.717515, neg_loss: 2.339347, Loss: 0.092143
+There are 256 Triples in this batch.
+Epoch: 1-379, pos_loss: 1.754004, neg_loss: 2.357976, Loss: 0.119448
+There are 256 Triples in this batch.
+Epoch: 1-380, pos_loss: 1.703729, neg_loss: 2.362494, Loss: 0.105914
+There are 256 Triples in this batch.
+Epoch: 1-381, pos_loss: 1.689707, neg_loss: 2.382812, Loss: 0.064610
+There are 117 Triples in this batch.
+Epoch: 1-382, pos_loss: 1.736286, neg_loss: 2.354284, Loss: 0.077996
+There are 256 Triples in this batch.
+Epoch: 2-1, pos_loss: 1.710347, neg_loss: 2.395547, Loss: 0.061927
+There are 256 Triples in this batch.
+Epoch: 2-2, pos_loss: 1.725998, neg_loss: 2.390778, Loss: 0.065936
+There are 256 Triples in this batch.
+Epoch: 2-3, pos_loss: 1.681608, neg_loss: 2.338250, Loss: 0.054578
+There are 256 Triples in this batch.
+Epoch: 2-4, pos_loss: 1.687895, neg_loss: 2.394898, Loss: 0.056406
+There are 256 Triples in this batch.
+Epoch: 2-5, pos_loss: 1.721573, neg_loss: 2.365314, Loss: 0.069314
+There are 256 Triples in this batch.
+Epoch: 2-6, pos_loss: 1.667045, neg_loss: 2.402520, Loss: 0.052799
+There are 256 Triples in this batch.
+Epoch: 2-7, pos_loss: 1.726479, neg_loss: 2.380036, Loss: 0.058035
+There are 256 Triples in this batch.
+Epoch: 2-8, pos_loss: 1.687730, neg_loss: 2.416194, Loss: 0.045373
+There are 256 Triples in this batch.
+Epoch: 2-9, pos_loss: 1.714305, neg_loss: 2.350502, Loss: 0.059316
+There are 256 Triples in this batch.
+Epoch: 2-10, pos_loss: 1.698480, neg_loss: 2.374084, Loss: 0.060341
+There are 256 Triples in this batch.
+Epoch: 2-11, pos_loss: 1.688316, neg_loss: 2.340449, Loss: 0.065528
+There are 256 Triples in this batch.
+Epoch: 2-12, pos_loss: 1.721866, neg_loss: 2.416246, Loss: 0.033865
+There are 256 Triples in this batch.
+Epoch: 2-13, pos_loss: 1.711282, neg_loss: 2.435117, Loss: 0.052759
+There are 256 Triples in this batch.
+Epoch: 2-14, pos_loss: 1.703225, neg_loss: 2.360931, Loss: 0.069479
+There are 256 Triples in this batch.
+Epoch: 2-15, pos_loss: 1.671473, neg_loss: 2.395227, Loss: 0.033722
+There are 256 Triples in this batch.
+Epoch: 2-16, pos_loss: 1.736774, neg_loss: 2.472654, Loss: 0.033157
+There are 256 Triples in this batch.
+Epoch: 2-17, pos_loss: 1.739357, neg_loss: 2.428236, Loss: 0.059616
+There are 256 Triples in this batch.
+Epoch: 2-18, pos_loss: 1.702362, neg_loss: 2.414260, Loss: 0.043032
+There are 256 Triples in this batch.
+Epoch: 2-19, pos_loss: 1.711842, neg_loss: 2.465950, Loss: 0.033392
+There are 256 Triples in this batch.
+Epoch: 2-20, pos_loss: 1.718966, neg_loss: 2.439425, Loss: 0.034321
+There are 256 Triples in this batch.
+Epoch: 2-21, pos_loss: 1.722297, neg_loss: 2.437598, Loss: 0.045607
+There are 256 Triples in this batch.
+Epoch: 2-22, pos_loss: 1.742229, neg_loss: 2.480332, Loss: 0.039394
+There are 256 Triples in this batch.
+Epoch: 2-23, pos_loss: 1.736310, neg_loss: 2.472224, Loss: 0.023580
+There are 256 Triples in this batch.
+Epoch: 2-24, pos_loss: 1.742666, neg_loss: 2.443546, Loss: 0.053572
+There are 256 Triples in this batch.
+Epoch: 2-25, pos_loss: 1.759504, neg_loss: 2.527759, Loss: 0.052350
+There are 256 Triples in this batch.
+Epoch: 2-26, pos_loss: 1.760315, neg_loss: 2.484663, Loss: 0.053369
+There are 256 Triples in this batch.
+Epoch: 2-27, pos_loss: 1.707854, neg_loss: 2.477724, Loss: 0.040960
+There are 256 Triples in this batch.
+Epoch: 2-28, pos_loss: 1.800670, neg_loss: 2.513899, Loss: 0.063576
+There are 256 Triples in this batch.
+Epoch: 2-29, pos_loss: 1.743044, neg_loss: 2.563553, Loss: 0.056524
+There are 256 Triples in this batch.
+Epoch: 2-30, pos_loss: 1.724872, neg_loss: 2.549726, Loss: 0.050835
+There are 256 Triples in this batch.
+Epoch: 2-31, pos_loss: 1.676502, neg_loss: 2.507890, Loss: 0.046083
+There are 256 Triples in this batch.
+Epoch: 2-32, pos_loss: 1.773547, neg_loss: 2.585248, Loss: 0.037702
+There are 256 Triples in this batch.
+Epoch: 2-33, pos_loss: 1.760717, neg_loss: 2.547848, Loss: 0.058596
+There are 256 Triples in this batch.
+Epoch: 2-34, pos_loss: 1.743635, neg_loss: 2.585593, Loss: 0.050883
+There are 256 Triples in this batch.
+Epoch: 2-35, pos_loss: 1.735494, neg_loss: 2.552693, Loss: 0.031618
+There are 256 Triples in this batch.
+Epoch: 2-36, pos_loss: 1.752892, neg_loss: 2.597451, Loss: 0.046529
+There are 256 Triples in this batch.
+Epoch: 2-37, pos_loss: 1.740200, neg_loss: 2.588760, Loss: 0.044000
+There are 256 Triples in this batch.
+Epoch: 2-38, pos_loss: 1.727562, neg_loss: 2.584120, Loss: 0.043015
+There are 256 Triples in this batch.
+Epoch: 2-39, pos_loss: 1.760203, neg_loss: 2.561192, Loss: 0.066745
+There are 256 Triples in this batch.
+Epoch: 2-40, pos_loss: 1.744758, neg_loss: 2.570016, Loss: 0.044635
+There are 256 Triples in this batch.
+Epoch: 2-41, pos_loss: 1.788462, neg_loss: 2.612880, Loss: 0.046844
+There are 256 Triples in this batch.
+Epoch: 2-42, pos_loss: 1.700677, neg_loss: 2.592195, Loss: 0.027366
+There are 256 Triples in this batch.
+Epoch: 2-43, pos_loss: 1.747202, neg_loss: 2.582988, Loss: 0.059848
+There are 256 Triples in this batch.
+Epoch: 2-44, pos_loss: 1.794515, neg_loss: 2.614839, Loss: 0.056992
+There are 256 Triples in this batch.
+Epoch: 2-45, pos_loss: 1.766303, neg_loss: 2.621858, Loss: 0.038618
+There are 256 Triples in this batch.
+Epoch: 2-46, pos_loss: 1.742565, neg_loss: 2.605141, Loss: 0.040833
+There are 256 Triples in this batch.
+Epoch: 2-47, pos_loss: 1.727844, neg_loss: 2.659723, Loss: 0.034094
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 256 Triples in this batch.
+Epoch: 0-1, pos_loss: 0.292528, neg_loss: 0.294262, Loss: 0.496533
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 256 Triples in this batch.
+Epoch: 0-1, pos_loss: 0.292528, neg_loss: 0.294262, Loss: 0.496533
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.
+There are 256 Triples in this batch.
+Epoch: 0-1, pos_loss: 0.292528, neg_loss: 0.294262, Loss: 0.496533
+There are 256 Triples in this batch.
+Epoch: 0-2, pos_loss: 0.260980, neg_loss: 0.281692, Loss: 0.458577
+There are 256 Triples in this batch.
+Epoch: 0-3, pos_loss: 0.248174, neg_loss: 0.290524, Loss: 0.415301
+There are 256 Triples in this batch.
+Epoch: 0-4, pos_loss: 0.262353, neg_loss: 0.323995, Loss: 0.387554
+There are 256 Triples in this batch.
+Epoch: 0-5, pos_loss: 0.318316, neg_loss: 0.416872, Loss: 0.365781
+There are 256 Triples in this batch.
+Epoch: 0-6, pos_loss: 0.355930, neg_loss: 0.485364, Loss: 0.357548
+There are 256 Triples in this batch.
+Epoch: 0-7, pos_loss: 0.412979, neg_loss: 0.587348, Loss: 0.336715
+There are 256 Triples in this batch.
+Epoch: 0-8, pos_loss: 0.486261, neg_loss: 0.657488, Loss: 0.338174
+There are 256 Triples in this batch.
+Epoch: 0-9, pos_loss: 0.467243, neg_loss: 0.676506, Loss: 0.310763
+There are 256 Triples in this batch.
+Epoch: 0-10, pos_loss: 0.541976, neg_loss: 0.740676, Loss: 0.316609
+There are 256 Triples in this batch.
+Epoch: 0-11, pos_loss: 0.530370, neg_loss: 0.745481, Loss: 0.296232
+There are 256 Triples in this batch.
+Epoch: 0-12, pos_loss: 0.598150, neg_loss: 0.846117, Loss: 0.244905
+There are 256 Triples in this batch.
+Epoch: 0-13, pos_loss: 0.635127, neg_loss: 0.858994, Loss: 0.312952
+There are 256 Triples in this batch.
+Epoch: 0-14, pos_loss: 0.677191, neg_loss: 0.912986, Loss: 0.295453
+There are 256 Triples in this batch.
+Epoch: 0-15, pos_loss: 0.652985, neg_loss: 0.880946, Loss: 0.277125
+There are 256 Triples in this batch.
+Epoch: 0-16, pos_loss: 0.652365, neg_loss: 0.908588, Loss: 0.254657
+There are 256 Triples in this batch.
+Epoch: 0-17, pos_loss: 0.675566, neg_loss: 0.904974, Loss: 0.280814
+There are 256 Triples in this batch.
+Epoch: 0-18, pos_loss: 0.706796, neg_loss: 0.939994, Loss: 0.268532
+There are 256 Triples in this batch.
+Epoch: 0-19, pos_loss: 0.687935, neg_loss: 0.933574, Loss: 0.235311
+There are 256 Triples in this batch.
+Epoch: 0-20, pos_loss: 0.670946, neg_loss: 0.914093, Loss: 0.234860
+There are 256 Triples in this batch.
+Epoch: 0-21, pos_loss: 0.703474, neg_loss: 0.909532, Loss: 0.282138
+There are 256 Triples in this batch.
+Epoch: 0-22, pos_loss: 0.680171, neg_loss: 0.908119, Loss: 0.251673
+There are 256 Triples in this batch.
+Epoch: 0-23, pos_loss: 0.714789, neg_loss: 0.931700, Loss: 0.252247
+There are 256 Triples in this batch.
+Epoch: 0-24, pos_loss: 0.709319, neg_loss: 0.937577, Loss: 0.241833
+There are 256 Triples in this batch.
+Epoch: 0-25, pos_loss: 0.688458, neg_loss: 0.921329, Loss: 0.254276
+There are 256 Triples in this batch.
+Epoch: 0-26, pos_loss: 0.704280, neg_loss: 0.947564, Loss: 0.234944
+There are 256 Triples in this batch.
+Epoch: 0-27, pos_loss: 0.697764, neg_loss: 0.948746, Loss: 0.220168
+There are 256 Triples in this batch.
+Epoch: 0-28, pos_loss: 0.722442, neg_loss: 0.959496, Loss: 0.256126
+There are 256 Triples in this batch.
+Epoch: 0-29, pos_loss: 0.739666, neg_loss: 0.998127, Loss: 0.245274
+There are 256 Triples in this batch.
+Epoch: 0-30, pos_loss: 0.703184, neg_loss: 0.933764, Loss: 0.267303
+There are 256 Triples in this batch.
+Epoch: 0-31, pos_loss: 0.683278, neg_loss: 0.926687, Loss: 0.244936
+There are 256 Triples in this batch.
+Epoch: 0-32, pos_loss: 0.687441, neg_loss: 0.928420, Loss: 0.249616
+There are 256 Triples in this batch.
+Epoch: 0-33, pos_loss: 0.682992, neg_loss: 0.960313, Loss: 0.196689
+There are 256 Triples in this batch.
+Epoch: 0-34, pos_loss: 0.682315, neg_loss: 0.882597, Loss: 0.283463
+There are 256 Triples in this batch.
+Epoch: 0-35, pos_loss: 0.689079, neg_loss: 0.916179, Loss: 0.267774
+There are 256 Triples in this batch.
+Epoch: 0-36, pos_loss: 0.675220, neg_loss: 0.906635, Loss: 0.240361
+There are 256 Triples in this batch.
+Epoch: 0-37, pos_loss: 0.685656, neg_loss: 0.943147, Loss: 0.223879
+There are 256 Triples in this batch.
+Epoch: 0-38, pos_loss: 0.679043, neg_loss: 0.903338, Loss: 0.236694
+There are 256 Triples in this batch.
+Epoch: 0-39, pos_loss: 0.698277, neg_loss: 0.883337, Loss: 0.280331
+There are 256 Triples in this batch.
+Epoch: 0-40, pos_loss: 0.724532, neg_loss: 0.969041, Loss: 0.229840
+There are 256 Triples in this batch.
+Epoch: 0-41, pos_loss: 0.732147, neg_loss: 0.949195, Loss: 0.263144
+There are 256 Triples in this batch.
+Epoch: 0-42, pos_loss: 0.716155, neg_loss: 0.969200, Loss: 0.227854
+There are 256 Triples in this batch.
+Epoch: 0-43, pos_loss: 0.750380, neg_loss: 0.982522, Loss: 0.265115
+There are 256 Triples in this batch.
+Epoch: 0-44, pos_loss: 0.712834, neg_loss: 0.979834, Loss: 0.234214
+There are 256 Triples in this batch.
+Epoch: 0-45, pos_loss: 0.724393, neg_loss: 0.987782, Loss: 0.240995
+There are 256 Triples in this batch.
+Epoch: 0-46, pos_loss: 0.737673, neg_loss: 0.973315, Loss: 0.277316
+There are 256 Triples in this batch.
+Epoch: 0-47, pos_loss: 0.712115, neg_loss: 0.956392, Loss: 0.258184
+There are 256 Triples in this batch.
+Epoch: 0-48, pos_loss: 0.709666, neg_loss: 0.954661, Loss: 0.239653
+There are 256 Triples in this batch.
+Epoch: 0-49, pos_loss: 0.684671, neg_loss: 0.953058, Loss: 0.225146
+There are 256 Triples in this batch.
+Epoch: 0-50, pos_loss: 0.695645, neg_loss: 0.949493, Loss: 0.256516
+There are 256 Triples in this batch.
+Epoch: 0-51, pos_loss: 0.696562, neg_loss: 0.950509, Loss: 0.247993
+There are 256 Triples in this batch.
+Epoch: 0-52, pos_loss: 0.655964, neg_loss: 0.897775, Loss: 0.244451
+There are 256 Triples in this batch.
+Epoch: 0-53, pos_loss: 0.625200, neg_loss: 0.886738, Loss: 0.219097
+There are 256 Triples in this batch.
+Epoch: 0-54, pos_loss: 0.639986, neg_loss: 0.872344, Loss: 0.258088
+There are 256 Triples in this batch.
+Epoch: 0-55, pos_loss: 0.619356, neg_loss: 0.881236, Loss: 0.225883
+There are 256 Triples in this batch.
+Epoch: 0-56, pos_loss: 0.636861, neg_loss: 0.827715, Loss: 0.296975
+There are 256 Triples in this batch.
+Epoch: 0-57, pos_loss: 0.638547, neg_loss: 0.866099, Loss: 0.258396
+There are 256 Triples in this batch.
+Epoch: 0-58, pos_loss: 0.633830, neg_loss: 0.881831, Loss: 0.227198
+There are 256 Triples in this batch.
+Epoch: 0-59, pos_loss: 0.631962, neg_loss: 0.873917, Loss: 0.240096
+There are 256 Triples in this batch.
+Epoch: 0-60, pos_loss: 0.606807, neg_loss: 0.854511, Loss: 0.218513
+There are 256 Triples in this batch.
+Epoch: 0-61, pos_loss: 0.626945, neg_loss: 0.834734, Loss: 0.279698
+There are 256 Triples in this batch.
+Epoch: 0-62, pos_loss: 0.584742, neg_loss: 0.853497, Loss: 0.236910
+There are 256 Triples in this batch.
+Epoch: 0-63, pos_loss: 0.602806, neg_loss: 0.857993, Loss: 0.231849
+There are 256 Triples in this batch.
+Epoch: 0-64, pos_loss: 0.647506, neg_loss: 0.902978, Loss: 0.245705
+There are 256 Triples in this batch.
+Epoch: 0-65, pos_loss: 0.615514, neg_loss: 0.862495, Loss: 0.224864
+There are 256 Triples in this batch.
+Epoch: 0-66, pos_loss: 0.659171, neg_loss: 0.901738, Loss: 0.270418
+There are 256 Triples in this batch.
+Epoch: 0-67, pos_loss: 0.641548, neg_loss: 0.930994, Loss: 0.226212
+There are 256 Triples in this batch.
+Epoch: 0-68, pos_loss: 0.687586, neg_loss: 0.969654, Loss: 0.240394
+There are 256 Triples in this batch.
+Epoch: 0-69, pos_loss: 0.654723, neg_loss: 0.917288, Loss: 0.257370
+There are 256 Triples in this batch.
+Epoch: 0-70, pos_loss: 0.679946, neg_loss: 0.950047, Loss: 0.256358
+There are 256 Triples in this batch.
+Epoch: 0-71, pos_loss: 0.693771, neg_loss: 0.996794, Loss: 0.223997
+There are 256 Triples in this batch.
+Epoch: 0-72, pos_loss: 0.718091, neg_loss: 0.995417, Loss: 0.227964
+There are 256 Triples in this batch.
+Epoch: 0-73, pos_loss: 0.734324, neg_loss: 1.010477, Loss: 0.233099
+There are 256 Triples in this batch.
+Epoch: 0-74, pos_loss: 0.734690, neg_loss: 1.011194, Loss: 0.223063
+There are 256 Triples in this batch.
+Epoch: 0-75, pos_loss: 0.746279, neg_loss: 1.025718, Loss: 0.233094
+There are 256 Triples in this batch.
+Epoch: 0-76, pos_loss: 0.736637, neg_loss: 1.001489, Loss: 0.236379
+There are 256 Triples in this batch.
+Epoch: 0-77, pos_loss: 0.759155, neg_loss: 1.062440, Loss: 0.219612
+There are 256 Triples in this batch.
+Epoch: 0-78, pos_loss: 0.762875, neg_loss: 1.015464, Loss: 0.259860
+There are 256 Triples in this batch.
+Epoch: 0-79, pos_loss: 0.741024, neg_loss: 1.041545, Loss: 0.199738
+There are 256 Triples in this batch.
+Epoch: 0-80, pos_loss: 0.788373, neg_loss: 1.049362, Loss: 0.238143
+There are 256 Triples in this batch.
+Epoch: 0-81, pos_loss: 0.752795, neg_loss: 1.036810, Loss: 0.183580
+There are 256 Triples in this batch.
+Epoch: 0-82, pos_loss: 0.800095, neg_loss: 1.084705, Loss: 0.219376
+There are 256 Triples in this batch.
+Epoch: 0-83, pos_loss: 0.772523, neg_loss: 1.016228, Loss: 0.255790
+There are 256 Triples in this batch.
+Epoch: 0-84, pos_loss: 0.784266, neg_loss: 1.067669, Loss: 0.226313
+There are 256 Triples in this batch.
+Epoch: 0-85, pos_loss: 0.744549, neg_loss: 1.039270, Loss: 0.234701
+There are 256 Triples in this batch.
+Epoch: 0-86, pos_loss: 0.745791, neg_loss: 1.030923, Loss: 0.221904
+There are 256 Triples in this batch.
+Epoch: 0-87, pos_loss: 0.757048, neg_loss: 1.039685, Loss: 0.208560
+There are 256 Triples in this batch.
+Epoch: 0-88, pos_loss: 0.738846, neg_loss: 1.011405, Loss: 0.205553
+There are 256 Triples in this batch.
+Epoch: 0-89, pos_loss: 0.760619, neg_loss: 1.011667, Loss: 0.247476
+There are 256 Triples in this batch.
+Epoch: 0-90, pos_loss: 0.778086, neg_loss: 1.049431, Loss: 0.232994
+There are 256 Triples in this batch.
+Epoch: 0-91, pos_loss: 0.785999, neg_loss: 1.048720, Loss: 0.228856
+There are 256 Triples in this batch.
+Epoch: 0-92, pos_loss: 0.779578, neg_loss: 1.073520, Loss: 0.213944
+There are 256 Triples in this batch.
+Epoch: 0-93, pos_loss: 0.774770, neg_loss: 1.069024, Loss: 0.197964
+There are 256 Triples in this batch.
+Epoch: 0-94, pos_loss: 0.795928, neg_loss: 1.087494, Loss: 0.217164
+There are 256 Triples in this batch.
+Epoch: 0-95, pos_loss: 0.781946, neg_loss: 1.045606, Loss: 0.230161
+There are 256 Triples in this batch.
+Epoch: 0-96, pos_loss: 0.794054, neg_loss: 1.088034, Loss: 0.204956
+There are 256 Triples in this batch.
+Epoch: 0-97, pos_loss: 0.786751, neg_loss: 1.061750, Loss: 0.235778
+There are 256 Triples in this batch.
+Epoch: 0-98, pos_loss: 0.814180, neg_loss: 1.129960, Loss: 0.213619
+There are 256 Triples in this batch.
+Epoch: 0-99, pos_loss: 0.828795, neg_loss: 1.156480, Loss: 0.200679
+There are 256 Triples in this batch.
+Epoch: 0-100, pos_loss: 0.843806, neg_loss: 1.161855, Loss: 0.214715
+There are 256 Triples in this batch.
+Epoch: 0-101, pos_loss: 0.815268, neg_loss: 1.123590, Loss: 0.207916
+There are 256 Triples in this batch.
+Epoch: 0-102, pos_loss: 0.821357, neg_loss: 1.134261, Loss: 0.235131
+There are 256 Triples in this batch.
+Epoch: 0-103, pos_loss: 0.829777, neg_loss: 1.114185, Loss: 0.247026
+There are 256 Triples in this batch.
+Epoch: 0-104, pos_loss: 0.848687, neg_loss: 1.161991, Loss: 0.215597
+There are 256 Triples in this batch.
+Epoch: 0-105, pos_loss: 0.824977, neg_loss: 1.139260, Loss: 0.194395
+There are 256 Triples in this batch.
+Epoch: 0-106, pos_loss: 0.824915, neg_loss: 1.139119, Loss: 0.203788
+There are 256 Triples in this batch.
+Epoch: 0-107, pos_loss: 0.868511, neg_loss: 1.146391, Loss: 0.255642
+There are 256 Triples in this batch.
+Epoch: 0-108, pos_loss: 0.903686, neg_loss: 1.195956, Loss: 0.225290
+There are 256 Triples in this batch.
+Epoch: 0-109, pos_loss: 0.873668, neg_loss: 1.136060, Loss: 0.243110
+There are 256 Triples in this batch.
+Epoch: 0-110, pos_loss: 0.863293, neg_loss: 1.188684, Loss: 0.185108
+There are 256 Triples in this batch.
+Epoch: 0-111, pos_loss: 0.897641, neg_loss: 1.217513, Loss: 0.189399
+There are 256 Triples in this batch.
+Epoch: 0-112, pos_loss: 0.910126, neg_loss: 1.211107, Loss: 0.199242
+There are 256 Triples in this batch.
+Epoch: 0-113, pos_loss: 0.897611, neg_loss: 1.221083, Loss: 0.192312
+There are 256 Triples in this batch.
+Epoch: 0-114, pos_loss: 0.892656, neg_loss: 1.246496, Loss: 0.165867
+There are 256 Triples in this batch.
+Epoch: 0-115, pos_loss: 0.892624, neg_loss: 1.203131, Loss: 0.212540
+There are 256 Triples in this batch.
+Epoch: 0-116, pos_loss: 0.944412, neg_loss: 1.281839, Loss: 0.184267
+There are 256 Triples in this batch.
+Epoch: 0-117, pos_loss: 0.931529, neg_loss: 1.297797, Loss: 0.169086
+There are 256 Triples in this batch.
+Epoch: 0-118, pos_loss: 0.975709, neg_loss: 1.320409, Loss: 0.208010
+There are 256 Triples in this batch.
+Epoch: 0-119, pos_loss: 1.003390, neg_loss: 1.335547, Loss: 0.204315
+There are 256 Triples in this batch.
+Epoch: 0-120, pos_loss: 0.996887, neg_loss: 1.333672, Loss: 0.221488
+There are 256 Triples in this batch.
+Epoch: 0-121, pos_loss: 0.971317, neg_loss: 1.338316, Loss: 0.175613
+There are 256 Triples in this batch.
+Epoch: 0-122, pos_loss: 0.979396, neg_loss: 1.335881, Loss: 0.195478
+There are 256 Triples in this batch.
+Epoch: 0-123, pos_loss: 0.999393, neg_loss: 1.349041, Loss: 0.227754
+There are 256 Triples in this batch.
+Epoch: 0-124, pos_loss: 1.012493, neg_loss: 1.381127, Loss: 0.174803
+There are 256 Triples in this batch.
+Epoch: 0-125, pos_loss: 1.033229, neg_loss: 1.380406, Loss: 0.202630
+There are 256 Triples in this batch.
+Epoch: 0-126, pos_loss: 1.044389, neg_loss: 1.415057, Loss: 0.172622
+There are 256 Triples in this batch.
+Epoch: 0-127, pos_loss: 1.058346, neg_loss: 1.413333, Loss: 0.187187
+There are 256 Triples in this batch.
+Epoch: 0-128, pos_loss: 1.056014, neg_loss: 1.449930, Loss: 0.156864
+There are 256 Triples in this batch.
+Epoch: 0-129, pos_loss: 1.094880, neg_loss: 1.421328, Loss: 0.221768
+There are 256 Triples in this batch.
+Epoch: 0-130, pos_loss: 1.089814, neg_loss: 1.440968, Loss: 0.212391
+There are 256 Triples in this batch.
+Epoch: 0-131, pos_loss: 1.075226, neg_loss: 1.440788, Loss: 0.194481
+There are 256 Triples in this batch.
+Epoch: 0-132, pos_loss: 1.076571, neg_loss: 1.411639, Loss: 0.214131
+There are 256 Triples in this batch.
+Epoch: 0-133, pos_loss: 1.072501, neg_loss: 1.423138, Loss: 0.193819
+There are 256 Triples in this batch.
+Epoch: 0-134, pos_loss: 1.046136, neg_loss: 1.422983, Loss: 0.176157
+There are 256 Triples in this batch.
+Epoch: 0-135, pos_loss: 1.040202, neg_loss: 1.410389, Loss: 0.180117
+There are 256 Triples in this batch.
+Epoch: 0-136, pos_loss: 1.029303, neg_loss: 1.447539, Loss: 0.155751
+There are 256 Triples in this batch.
+Epoch: 0-137, pos_loss: 1.039636, neg_loss: 1.416555, Loss: 0.183421
+There are 256 Triples in this batch.
+Epoch: 0-138, pos_loss: 1.085820, neg_loss: 1.442397, Loss: 0.217750
+There are 256 Triples in this batch.
+Epoch: 0-139, pos_loss: 1.035194, neg_loss: 1.393520, Loss: 0.233141
+There are 256 Triples in this batch.
+Epoch: 0-140, pos_loss: 1.032024, neg_loss: 1.430425, Loss: 0.197697
+There are 256 Triples in this batch.
+Epoch: 0-141, pos_loss: 1.043668, neg_loss: 1.399138, Loss: 0.190955
+There are 256 Triples in this batch.
+Epoch: 0-142, pos_loss: 1.035421, neg_loss: 1.435293, Loss: 0.184818
+There are 256 Triples in this batch.
+Epoch: 0-143, pos_loss: 1.052659, neg_loss: 1.441625, Loss: 0.160415
+There are 256 Triples in this batch.
+Epoch: 0-144, pos_loss: 1.066219, neg_loss: 1.452040, Loss: 0.171418
+There are 256 Triples in this batch.
+Epoch: 0-145, pos_loss: 1.030731, neg_loss: 1.386132, Loss: 0.192573
+There are 256 Triples in this batch.
+Epoch: 0-146, pos_loss: 1.084966, neg_loss: 1.406110, Loss: 0.237236
+There are 256 Triples in this batch.
+Epoch: 0-147, pos_loss: 1.064119, neg_loss: 1.391872, Loss: 0.205068
+There are 256 Triples in this batch.
+Epoch: 0-148, pos_loss: 1.024815, neg_loss: 1.367118, Loss: 0.188990
+There are 256 Triples in this batch.
+Epoch: 0-149, pos_loss: 0.968736, neg_loss: 1.356795, Loss: 0.147802
+There are 256 Triples in this batch.
+Epoch: 0-150, pos_loss: 0.999501, neg_loss: 1.346606, Loss: 0.186155
+There are 256 Triples in this batch.
+Epoch: 0-151, pos_loss: 1.022402, neg_loss: 1.372640, Loss: 0.181550
+There are 256 Triples in this batch.
+Epoch: 0-152, pos_loss: 1.048790, neg_loss: 1.377325, Loss: 0.243286
+There are 256 Triples in this batch.
+Epoch: 0-153, pos_loss: 1.018922, neg_loss: 1.389992, Loss: 0.216071
+There are 256 Triples in this batch.
+Epoch: 0-154, pos_loss: 0.989104, neg_loss: 1.368554, Loss: 0.203192
+There are 256 Triples in this batch.
+Epoch: 0-155, pos_loss: 0.972417, neg_loss: 1.392342, Loss: 0.155807
+There are 256 Triples in this batch.
+Epoch: 0-156, pos_loss: 1.000563, neg_loss: 1.371775, Loss: 0.189211
+There are 256 Triples in this batch.
+Epoch: 0-157, pos_loss: 0.995876, neg_loss: 1.366678, Loss: 0.222906
+There are 256 Triples in this batch.
+Epoch: 0-158, pos_loss: 0.998070, neg_loss: 1.372071, Loss: 0.190680
+There are 256 Triples in this batch.
+Epoch: 0-159, pos_loss: 0.939155, neg_loss: 1.304585, Loss: 0.179503
+There are 256 Triples in this batch.
+Epoch: 0-160, pos_loss: 0.966192, neg_loss: 1.351233, Loss: 0.168846
+There are 256 Triples in this batch.
+Epoch: 0-161, pos_loss: 0.946768, neg_loss: 1.332455, Loss: 0.172540
+There are 256 Triples in this batch.
+Epoch: 0-162, pos_loss: 0.961881, neg_loss: 1.319327, Loss: 0.162130
+There are 256 Triples in this batch.
+Epoch: 0-163, pos_loss: 0.980273, neg_loss: 1.314338, Loss: 0.189163
+There are 256 Triples in this batch.
+Epoch: 0-164, pos_loss: 0.988210, neg_loss: 1.322876, Loss: 0.186048
+There are 256 Triples in this batch.
+Epoch: 0-165, pos_loss: 0.973536, neg_loss: 1.286795, Loss: 0.214124
+There are 256 Triples in this batch.
+Epoch: 0-166, pos_loss: 0.950552, neg_loss: 1.301147, Loss: 0.189628
+There are 256 Triples in this batch.
+Epoch: 0-167, pos_loss: 0.934502, neg_loss: 1.284796, Loss: 0.173118
+There are 256 Triples in this batch.
+Epoch: 0-168, pos_loss: 0.960454, neg_loss: 1.295211, Loss: 0.174884
+There are 256 Triples in this batch.
+Epoch: 0-169, pos_loss: 0.923582, neg_loss: 1.270915, Loss: 0.162665
+There are 256 Triples in this batch.
+Epoch: 0-170, pos_loss: 0.933717, neg_loss: 1.251060, Loss: 0.188952
+There are 256 Triples in this batch.
+Epoch: 0-171, pos_loss: 0.934148, neg_loss: 1.297175, Loss: 0.178872
+There are 256 Triples in this batch.
+Epoch: 0-172, pos_loss: 0.948578, neg_loss: 1.245998, Loss: 0.222922
+There are 256 Triples in this batch.
+Epoch: 0-173, pos_loss: 0.965194, neg_loss: 1.261158, Loss: 0.209318
+There are 256 Triples in this batch.
+Epoch: 0-174, pos_loss: 0.959933, neg_loss: 1.327927, Loss: 0.149698
+There are 256 Triples in this batch.
+Epoch: 0-175, pos_loss: 0.922051, neg_loss: 1.266413, Loss: 0.154567
+There are 256 Triples in this batch.
+Epoch: 0-176, pos_loss: 0.967971, neg_loss: 1.281559, Loss: 0.196131
+There are 256 Triples in this batch.
+Epoch: 0-177, pos_loss: 0.977261, neg_loss: 1.313525, Loss: 0.187605
+There are 256 Triples in this batch.
+Epoch: 0-178, pos_loss: 0.983518, neg_loss: 1.358493, Loss: 0.146052
+There are 256 Triples in this batch.
+Epoch: 0-179, pos_loss: 0.986153, neg_loss: 1.341051, Loss: 0.182617
+There are 256 Triples in this batch.
+Epoch: 0-180, pos_loss: 0.998222, neg_loss: 1.319746, Loss: 0.216808
+There are 256 Triples in this batch.
+Epoch: 0-181, pos_loss: 1.005725, neg_loss: 1.341213, Loss: 0.193336
+There are 256 Triples in this batch.
+Epoch: 0-182, pos_loss: 1.019235, neg_loss: 1.390543, Loss: 0.186616
+There are 256 Triples in this batch.
+Epoch: 0-183, pos_loss: 0.997211, neg_loss: 1.347741, Loss: 0.210609
+There are 256 Triples in this batch.
+Epoch: 0-184, pos_loss: 1.019194, neg_loss: 1.405923, Loss: 0.165749
+There are 256 Triples in this batch.
+Epoch: 0-185, pos_loss: 1.044667, neg_loss: 1.408089, Loss: 0.170414
+There are 256 Triples in this batch.
+Epoch: 0-186, pos_loss: 1.038783, neg_loss: 1.420172, Loss: 0.174014
+There are 256 Triples in this batch.
+Epoch: 0-187, pos_loss: 1.056550, neg_loss: 1.410557, Loss: 0.201677
+There are 256 Triples in this batch.
+Epoch: 0-188, pos_loss: 1.053363, neg_loss: 1.436146, Loss: 0.175100
+There are 256 Triples in this batch.
+Epoch: 0-189, pos_loss: 1.040272, neg_loss: 1.432752, Loss: 0.180770
+There are 256 Triples in this batch.
+Epoch: 0-190, pos_loss: 1.092471, neg_loss: 1.418641, Loss: 0.206808
+There are 256 Triples in this batch.
+Epoch: 0-191, pos_loss: 1.041922, neg_loss: 1.398517, Loss: 0.184200
+There are 256 Triples in this batch.
+Epoch: 0-192, pos_loss: 1.101499, neg_loss: 1.493301, Loss: 0.188632
+There are 256 Triples in this batch.
+Epoch: 0-193, pos_loss: 1.086414, neg_loss: 1.447014, Loss: 0.204222
+There are 256 Triples in this batch.
+Epoch: 0-194, pos_loss: 1.064302, neg_loss: 1.377652, Loss: 0.221211
+There are 256 Triples in this batch.
+Epoch: 0-195, pos_loss: 1.057621, neg_loss: 1.403429, Loss: 0.174805
+There are 256 Triples in this batch.
+Epoch: 0-196, pos_loss: 1.057619, neg_loss: 1.387602, Loss: 0.196224
+There are 256 Triples in this batch.
+Epoch: 0-197, pos_loss: 1.063711, neg_loss: 1.356137, Loss: 0.207433
+There are 256 Triples in this batch.
+Epoch: 0-198, pos_loss: 1.057422, neg_loss: 1.423156, Loss: 0.147322
+There are 256 Triples in this batch.
+Epoch: 0-199, pos_loss: 1.055024, neg_loss: 1.387874, Loss: 0.171732
+There are 256 Triples in this batch.
+Epoch: 0-200, pos_loss: 1.025918, neg_loss: 1.378191, Loss: 0.180203
+There are 256 Triples in this batch.
+Epoch: 0-201, pos_loss: 1.029404, neg_loss: 1.431813, Loss: 0.138215
+There are 256 Triples in this batch.
+Epoch: 0-202, pos_loss: 1.049853, neg_loss: 1.412739, Loss: 0.164615
+There are 256 Triples in this batch.
+Epoch: 0-203, pos_loss: 1.054627, neg_loss: 1.416682, Loss: 0.169907
+There are 256 Triples in this batch.
+Epoch: 0-204, pos_loss: 1.077370, neg_loss: 1.415634, Loss: 0.205061
+There are 256 Triples in this batch.
+Epoch: 0-205, pos_loss: 1.083354, neg_loss: 1.415691, Loss: 0.190743
+There are 256 Triples in this batch.
+Epoch: 0-206, pos_loss: 1.064331, neg_loss: 1.457038, Loss: 0.147411
+There are 256 Triples in this batch.
+Epoch: 0-207, pos_loss: 1.055764, neg_loss: 1.474846, Loss: 0.140760
+There are 256 Triples in this batch.
+Epoch: 0-208, pos_loss: 1.058767, neg_loss: 1.424310, Loss: 0.174461
+There are 256 Triples in this batch.
+Epoch: 0-209, pos_loss: 1.049351, neg_loss: 1.428564, Loss: 0.173231
+There are 256 Triples in this batch.
+Epoch: 0-210, pos_loss: 1.020299, neg_loss: 1.439910, Loss: 0.160735
+There are 256 Triples in this batch.
+Epoch: 0-211, pos_loss: 1.028511, neg_loss: 1.471486, Loss: 0.171260
+There are 256 Triples in this batch.
+Epoch: 0-212, pos_loss: 1.054275, neg_loss: 1.462047, Loss: 0.178305
+There are 256 Triples in this batch.
+Epoch: 0-213, pos_loss: 1.033169, neg_loss: 1.493660, Loss: 0.165744
+There are 256 Triples in this batch.
+Epoch: 0-214, pos_loss: 1.048867, neg_loss: 1.466263, Loss: 0.173232
+There are 256 Triples in this batch.
+Epoch: 0-215, pos_loss: 1.050214, neg_loss: 1.471051, Loss: 0.156869
+There are 256 Triples in this batch.
+Epoch: 0-216, pos_loss: 1.098286, neg_loss: 1.534103, Loss: 0.156220
+There are 256 Triples in this batch.
+Epoch: 0-217, pos_loss: 1.068719, neg_loss: 1.456451, Loss: 0.190919
+There are 256 Triples in this batch.
+Epoch: 0-218, pos_loss: 1.058954, neg_loss: 1.449559, Loss: 0.179203
+There are 256 Triples in this batch.
+Epoch: 0-219, pos_loss: 1.028056, neg_loss: 1.444302, Loss: 0.158123
+There are 256 Triples in this batch.
+Epoch: 0-220, pos_loss: 1.054895, neg_loss: 1.482656, Loss: 0.182358
+There are 256 Triples in this batch.
+Epoch: 0-221, pos_loss: 1.055173, neg_loss: 1.460188, Loss: 0.204199
+There are 256 Triples in this batch.
+Epoch: 0-222, pos_loss: 1.077115, neg_loss: 1.476771, Loss: 0.195395
+There are 256 Triples in this batch.
+Epoch: 0-223, pos_loss: 1.042445, neg_loss: 1.461535, Loss: 0.160231
+There are 256 Triples in this batch.
+Epoch: 0-224, pos_loss: 1.019373, neg_loss: 1.471917, Loss: 0.145989
+There are 256 Triples in this batch.
+Epoch: 0-225, pos_loss: 1.037228, neg_loss: 1.431220, Loss: 0.185581
+There are 256 Triples in this batch.
+Epoch: 0-226, pos_loss: 1.032036, neg_loss: 1.407797, Loss: 0.196846
+There are 256 Triples in this batch.
+Epoch: 0-227, pos_loss: 1.037523, neg_loss: 1.450721, Loss: 0.157527
+There are 256 Triples in this batch.
+Epoch: 0-228, pos_loss: 1.034403, neg_loss: 1.421735, Loss: 0.182495
+There are 256 Triples in this batch.
+Epoch: 0-229, pos_loss: 1.037399, neg_loss: 1.410853, Loss: 0.172921
+There are 256 Triples in this batch.
+Epoch: 0-230, pos_loss: 1.066851, neg_loss: 1.490323, Loss: 0.119654
+There are 256 Triples in this batch.
+Epoch: 0-231, pos_loss: 1.076628, neg_loss: 1.451762, Loss: 0.177624
+There are 256 Triples in this batch.
+Epoch: 0-232, pos_loss: 1.069321, neg_loss: 1.434558, Loss: 0.174240
+There are 256 Triples in this batch.
+Epoch: 0-233, pos_loss: 1.070900, neg_loss: 1.436452, Loss: 0.181131
+There are 256 Triples in this batch.
+Epoch: 0-234, pos_loss: 1.049903, neg_loss: 1.428528, Loss: 0.173850
+There are 256 Triples in this batch.
+Epoch: 0-235, pos_loss: 1.128302, neg_loss: 1.453523, Loss: 0.216243
+There are 256 Triples in this batch.
+Epoch: 0-236, pos_loss: 1.052500, neg_loss: 1.391781, Loss: 0.186587
+There are 256 Triples in this batch.
+Epoch: 0-237, pos_loss: 1.048717, neg_loss: 1.426907, Loss: 0.157801
+There are 256 Triples in this batch.
+Epoch: 0-238, pos_loss: 1.068486, neg_loss: 1.421987, Loss: 0.148534
+There are 256 Triples in this batch.
+Epoch: 0-239, pos_loss: 1.089784, neg_loss: 1.449369, Loss: 0.169519
+There are 256 Triples in this batch.
+Epoch: 0-240, pos_loss: 1.050490, neg_loss: 1.425766, Loss: 0.159589
+There are 256 Triples in this batch.
+Epoch: 0-241, pos_loss: 1.087970, neg_loss: 1.479634, Loss: 0.150524
+There are 256 Triples in this batch.
+Epoch: 0-242, pos_loss: 1.092679, neg_loss: 1.467624, Loss: 0.201698
+There are 256 Triples in this batch.
+Epoch: 0-243, pos_loss: 1.090371, neg_loss: 1.521647, Loss: 0.124067
+There are 256 Triples in this batch.
+Epoch: 0-244, pos_loss: 1.078902, neg_loss: 1.469968, Loss: 0.153772
+There are 256 Triples in this batch.
+Epoch: 0-245, pos_loss: 1.089668, neg_loss: 1.486417, Loss: 0.150713
+There are 256 Triples in this batch.
+Epoch: 0-246, pos_loss: 1.073931, neg_loss: 1.465572, Loss: 0.143088
+There are 256 Triples in this batch.
+Epoch: 0-247, pos_loss: 1.118491, neg_loss: 1.519293, Loss: 0.180686
+There are 256 Triples in this batch.
+Epoch: 0-248, pos_loss: 1.120562, neg_loss: 1.490729, Loss: 0.188325
+There are 256 Triples in this batch.
+Epoch: 0-249, pos_loss: 1.099413, neg_loss: 1.542727, Loss: 0.134569
+There are 256 Triples in this batch.
+Epoch: 0-250, pos_loss: 1.098658, neg_loss: 1.552914, Loss: 0.137778
+There are 256 Triples in this batch.
+Epoch: 0-251, pos_loss: 1.125321, neg_loss: 1.531511, Loss: 0.167176
+There are 256 Triples in this batch.
+Epoch: 0-252, pos_loss: 1.136180, neg_loss: 1.544302, Loss: 0.167747
+There are 256 Triples in this batch.
+Epoch: 0-253, pos_loss: 1.104304, neg_loss: 1.544507, Loss: 0.128315
+There are 256 Triples in this batch.
+Epoch: 0-254, pos_loss: 1.142897, neg_loss: 1.521894, Loss: 0.184276
+There are 256 Triples in this batch.
+Epoch: 0-255, pos_loss: 1.149897, neg_loss: 1.528571, Loss: 0.187749
+There are 256 Triples in this batch.
+Epoch: 0-256, pos_loss: 1.149683, neg_loss: 1.556795, Loss: 0.160479
+There are 256 Triples in this batch.
+Epoch: 0-257, pos_loss: 1.137889, neg_loss: 1.489583, Loss: 0.207874
+There are 256 Triples in this batch.
+Epoch: 0-258, pos_loss: 1.178100, neg_loss: 1.549759, Loss: 0.200283
+There are 256 Triples in this batch.
+Epoch: 0-259, pos_loss: 1.154509, neg_loss: 1.524304, Loss: 0.183897
+There are 256 Triples in this batch.
+Epoch: 0-260, pos_loss: 1.151976, neg_loss: 1.500417, Loss: 0.218060
+There are 256 Triples in this batch.
+Epoch: 0-261, pos_loss: 1.148347, neg_loss: 1.484338, Loss: 0.193778
+There are 256 Triples in this batch.
+Epoch: 0-262, pos_loss: 1.134118, neg_loss: 1.505198, Loss: 0.183334
+There are 256 Triples in this batch.
+Epoch: 0-263, pos_loss: 1.124828, neg_loss: 1.504426, Loss: 0.131271
+There are 256 Triples in this batch.
+Epoch: 0-264, pos_loss: 1.133588, neg_loss: 1.533042, Loss: 0.131172
+There are 256 Triples in this batch.
+Epoch: 0-265, pos_loss: 1.133059, neg_loss: 1.486453, Loss: 0.187639
+There are 256 Triples in this batch.
+Epoch: 0-266, pos_loss: 1.135923, neg_loss: 1.524269, Loss: 0.150127
+There are 256 Triples in this batch.
+Epoch: 0-267, pos_loss: 1.176015, neg_loss: 1.513803, Loss: 0.180876
+There are 256 Triples in this batch.
+Epoch: 0-268, pos_loss: 1.120334, neg_loss: 1.502336, Loss: 0.154013
+There are 256 Triples in this batch.
+Epoch: 0-269, pos_loss: 1.104001, neg_loss: 1.531176, Loss: 0.122712
+There are 256 Triples in this batch.
+Epoch: 0-270, pos_loss: 1.108016, neg_loss: 1.496174, Loss: 0.171696
+There are 256 Triples in this batch.
+Epoch: 0-271, pos_loss: 1.151375, neg_loss: 1.545033, Loss: 0.166113
+There are 256 Triples in this batch.
+Epoch: 0-272, pos_loss: 1.104609, neg_loss: 1.499822, Loss: 0.157842
+There are 256 Triples in this batch.
+Epoch: 0-273, pos_loss: 1.134805, neg_loss: 1.549505, Loss: 0.156579
+There are 256 Triples in this batch.
+Epoch: 0-274, pos_loss: 1.125438, neg_loss: 1.590264, Loss: 0.144023
+There are 256 Triples in this batch.
+Epoch: 0-275, pos_loss: 1.142440, neg_loss: 1.555683, Loss: 0.186917
+There are 256 Triples in this batch.
+Epoch: 0-276, pos_loss: 1.110262, neg_loss: 1.529870, Loss: 0.151909
+There are 256 Triples in this batch.
+Epoch: 0-277, pos_loss: 1.111882, neg_loss: 1.531807, Loss: 0.143430
+There are 256 Triples in this batch.
+Epoch: 0-278, pos_loss: 1.139786, neg_loss: 1.557034, Loss: 0.166725
+There are 256 Triples in this batch.
+Epoch: 0-279, pos_loss: 1.123513, neg_loss: 1.580582, Loss: 0.151188
+There are 256 Triples in this batch.
+Epoch: 0-280, pos_loss: 1.098944, neg_loss: 1.515249, Loss: 0.155618
+There are 256 Triples in this batch.
+Epoch: 0-281, pos_loss: 1.134540, neg_loss: 1.556782, Loss: 0.163570
+There are 256 Triples in this batch.
+Epoch: 0-282, pos_loss: 1.139346, neg_loss: 1.546543, Loss: 0.193857
+There are 256 Triples in this batch.
+Epoch: 0-283, pos_loss: 1.142658, neg_loss: 1.566198, Loss: 0.183056
+There are 256 Triples in this batch.
+Epoch: 0-284, pos_loss: 1.112751, neg_loss: 1.581424, Loss: 0.116311
+There are 256 Triples in this batch.
+Epoch: 0-285, pos_loss: 1.133941, neg_loss: 1.553507, Loss: 0.152087
+There are 256 Triples in this batch.
+Epoch: 0-286, pos_loss: 1.141804, neg_loss: 1.549718, Loss: 0.164818
+There are 256 Triples in this batch.
+Epoch: 0-287, pos_loss: 1.141541, neg_loss: 1.591487, Loss: 0.140681
+There are 256 Triples in this batch.
+Epoch: 0-288, pos_loss: 1.140074, neg_loss: 1.524495, Loss: 0.165570
+There are 256 Triples in this batch.
+Epoch: 0-289, pos_loss: 1.111620, neg_loss: 1.481675, Loss: 0.173376
+There are 256 Triples in this batch.
+Epoch: 0-290, pos_loss: 1.172498, neg_loss: 1.518972, Loss: 0.205682
+There are 256 Triples in this batch.
+Epoch: 0-291, pos_loss: 1.160537, neg_loss: 1.560749, Loss: 0.172119
+There are 256 Triples in this batch.
+Epoch: 0-292, pos_loss: 1.121109, neg_loss: 1.500842, Loss: 0.160466
+There are 256 Triples in this batch.
+Epoch: 0-293, pos_loss: 1.158259, neg_loss: 1.525459, Loss: 0.182393
+There are 256 Triples in this batch.
+Epoch: 0-294, pos_loss: 1.132918, neg_loss: 1.475242, Loss: 0.181985
+There are 256 Triples in this batch.
+Epoch: 0-295, pos_loss: 1.151733, neg_loss: 1.548942, Loss: 0.143503
+There are 256 Triples in this batch.
+Epoch: 0-296, pos_loss: 1.144991, neg_loss: 1.530118, Loss: 0.154044
+There are 256 Triples in this batch.
+Epoch: 0-297, pos_loss: 1.145668, neg_loss: 1.497505, Loss: 0.174946
+There are 256 Triples in this batch.
+Epoch: 0-298, pos_loss: 1.139439, neg_loss: 1.520173, Loss: 0.158852
+There are 256 Triples in this batch.
+Epoch: 0-299, pos_loss: 1.169675, neg_loss: 1.536243, Loss: 0.172089
+There are 256 Triples in this batch.
+Epoch: 0-300, pos_loss: 1.134508, neg_loss: 1.541363, Loss: 0.114872
+There are 256 Triples in this batch.
+Epoch: 0-301, pos_loss: 1.133504, neg_loss: 1.530152, Loss: 0.149759
+There are 256 Triples in this batch.
+Epoch: 0-302, pos_loss: 1.153859, neg_loss: 1.571758, Loss: 0.133816
+There are 256 Triples in this batch.
+Epoch: 0-303, pos_loss: 1.113758, neg_loss: 1.553523, Loss: 0.116259
+There are 256 Triples in this batch.
+Epoch: 0-304, pos_loss: 1.144918, neg_loss: 1.563008, Loss: 0.150593
+There are 256 Triples in this batch.
+Epoch: 0-305, pos_loss: 1.139987, neg_loss: 1.557814, Loss: 0.159752
+There are 256 Triples in this batch.
+Epoch: 0-306, pos_loss: 1.162417, neg_loss: 1.573141, Loss: 0.175762
+There are 256 Triples in this batch.
+Epoch: 0-307, pos_loss: 1.180348, neg_loss: 1.583325, Loss: 0.175680
+There are 256 Triples in this batch.
+Epoch: 0-308, pos_loss: 1.147936, neg_loss: 1.596381, Loss: 0.153707
+There are 256 Triples in this batch.
+Epoch: 0-309, pos_loss: 1.184500, neg_loss: 1.625474, Loss: 0.197001
+There are 256 Triples in this batch.
+Epoch: 0-310, pos_loss: 1.173021, neg_loss: 1.633961, Loss: 0.143034
+There are 256 Triples in this batch.
+Epoch: 0-311, pos_loss: 1.167694, neg_loss: 1.639152, Loss: 0.140412
+There are 256 Triples in this batch.
+Epoch: 0-312, pos_loss: 1.214447, neg_loss: 1.666779, Loss: 0.143131
+There are 256 Triples in this batch.
+Epoch: 0-313, pos_loss: 1.168125, neg_loss: 1.654121, Loss: 0.162543
+There are 256 Triples in this batch.
+Epoch: 0-314, pos_loss: 1.182612, neg_loss: 1.646763, Loss: 0.167789
+There are 256 Triples in this batch.
+Epoch: 0-315, pos_loss: 1.169501, neg_loss: 1.590007, Loss: 0.165047
+There are 256 Triples in this batch.
+Epoch: 0-316, pos_loss: 1.185090, neg_loss: 1.626381, Loss: 0.166324
+There are 256 Triples in this batch.
+Epoch: 0-317, pos_loss: 1.179976, neg_loss: 1.673210, Loss: 0.123266
+There are 256 Triples in this batch.
+Epoch: 0-318, pos_loss: 1.190522, neg_loss: 1.622185, Loss: 0.166779
+There are 256 Triples in this batch.
+Epoch: 0-319, pos_loss: 1.180291, neg_loss: 1.622475, Loss: 0.165628
+There are 256 Triples in this batch.
+Epoch: 0-320, pos_loss: 1.204621, neg_loss: 1.638682, Loss: 0.156011
+There are 256 Triples in this batch.
+Epoch: 0-321, pos_loss: 1.176831, neg_loss: 1.635029, Loss: 0.149444
+There are 256 Triples in this batch.
+Epoch: 0-322, pos_loss: 1.178220, neg_loss: 1.608359, Loss: 0.164925
+There are 256 Triples in this batch.
+Epoch: 0-323, pos_loss: 1.227208, neg_loss: 1.646425, Loss: 0.180160
+There are 256 Triples in this batch.
+Epoch: 0-324, pos_loss: 1.206519, neg_loss: 1.667335, Loss: 0.142232
+There are 256 Triples in this batch.
+Epoch: 0-325, pos_loss: 1.185029, neg_loss: 1.643693, Loss: 0.125217
+There are 256 Triples in this batch.
+Epoch: 0-326, pos_loss: 1.203716, neg_loss: 1.622348, Loss: 0.156177
+There are 256 Triples in this batch.
+Epoch: 0-327, pos_loss: 1.201652, neg_loss: 1.643382, Loss: 0.144730
+There are 256 Triples in this batch.
+Epoch: 0-328, pos_loss: 1.230662, neg_loss: 1.645659, Loss: 0.160901
+There are 256 Triples in this batch.
+Epoch: 0-329, pos_loss: 1.205569, neg_loss: 1.658664, Loss: 0.152583
+There are 256 Triples in this batch.
+Epoch: 0-330, pos_loss: 1.211108, neg_loss: 1.627064, Loss: 0.168329
+There are 256 Triples in this batch.
+Epoch: 0-331, pos_loss: 1.235845, neg_loss: 1.711850, Loss: 0.150466
+There are 256 Triples in this batch.
+Epoch: 0-332, pos_loss: 1.217999, neg_loss: 1.646324, Loss: 0.177726
+There are 256 Triples in this batch.
+Epoch: 0-333, pos_loss: 1.225809, neg_loss: 1.670888, Loss: 0.143106
+There are 256 Triples in this batch.
+Epoch: 0-334, pos_loss: 1.250680, neg_loss: 1.668163, Loss: 0.165839
+There are 256 Triples in this batch.
+Epoch: 0-335, pos_loss: 1.249957, neg_loss: 1.703564, Loss: 0.152841
+There are 256 Triples in this batch.
+Epoch: 0-336, pos_loss: 1.233832, neg_loss: 1.630988, Loss: 0.176986
+There are 256 Triples in this batch.
+Epoch: 0-337, pos_loss: 1.235476, neg_loss: 1.661596, Loss: 0.191578
+There are 256 Triples in this batch.
+Epoch: 0-338, pos_loss: 1.260810, neg_loss: 1.647771, Loss: 0.188095
+There are 256 Triples in this batch.
+Epoch: 0-339, pos_loss: 1.238519, neg_loss: 1.662238, Loss: 0.167681
+There are 256 Triples in this batch.
+Epoch: 0-340, pos_loss: 1.241710, neg_loss: 1.694953, Loss: 0.141507
+There are 256 Triples in this batch.
+Epoch: 0-341, pos_loss: 1.197285, neg_loss: 1.649462, Loss: 0.138064
+There are 256 Triples in this batch.
+Epoch: 0-342, pos_loss: 1.271453, neg_loss: 1.644367, Loss: 0.194363
+There are 256 Triples in this batch.
+Epoch: 0-343, pos_loss: 1.259036, neg_loss: 1.710675, Loss: 0.143849
+There are 256 Triples in this batch.
+Epoch: 0-344, pos_loss: 1.206218, neg_loss: 1.650143, Loss: 0.126170
+There are 256 Triples in this batch.
+Epoch: 0-345, pos_loss: 1.231370, neg_loss: 1.681631, Loss: 0.155434
+There are 256 Triples in this batch.
+Epoch: 0-346, pos_loss: 1.217616, neg_loss: 1.642124, Loss: 0.149185
+There are 256 Triples in this batch.
+Epoch: 0-347, pos_loss: 1.209659, neg_loss: 1.675467, Loss: 0.147039
+There are 256 Triples in this batch.
+Epoch: 0-348, pos_loss: 1.230186, neg_loss: 1.677357, Loss: 0.152184
+There are 256 Triples in this batch.
+Epoch: 0-349, pos_loss: 1.238502, neg_loss: 1.667091, Loss: 0.160569
+There are 256 Triples in this batch.
+Epoch: 0-350, pos_loss: 1.242459, neg_loss: 1.685161, Loss: 0.155733
+There are 256 Triples in this batch.
+Epoch: 0-351, pos_loss: 1.231691, neg_loss: 1.651245, Loss: 0.160285
+There are 256 Triples in this batch.
+Epoch: 0-352, pos_loss: 1.224445, neg_loss: 1.668491, Loss: 0.161352
+There are 256 Triples in this batch.
+Epoch: 0-353, pos_loss: 1.220520, neg_loss: 1.668177, Loss: 0.157387
+There are 256 Triples in this batch.
+Epoch: 0-354, pos_loss: 1.248674, neg_loss: 1.736258, Loss: 0.160233
+There are 256 Triples in this batch.
+Epoch: 0-355, pos_loss: 1.230986, neg_loss: 1.693643, Loss: 0.135709
+There are 256 Triples in this batch.
+Epoch: 0-356, pos_loss: 1.224974, neg_loss: 1.670379, Loss: 0.150641
+There are 256 Triples in this batch.
+Epoch: 0-357, pos_loss: 1.234775, neg_loss: 1.676754, Loss: 0.126206
+There are 256 Triples in this batch.
+Epoch: 0-358, pos_loss: 1.268116, neg_loss: 1.706898, Loss: 0.146668
+There are 256 Triples in this batch.
+Epoch: 0-359, pos_loss: 1.266141, neg_loss: 1.717033, Loss: 0.167323
+There are 256 Triples in this batch.
+Epoch: 0-360, pos_loss: 1.259847, neg_loss: 1.691454, Loss: 0.167308
+There are 256 Triples in this batch.
+Epoch: 0-361, pos_loss: 1.265685, neg_loss: 1.655151, Loss: 0.215414
+There are 256 Triples in this batch.
+Epoch: 0-362, pos_loss: 1.242133, neg_loss: 1.669917, Loss: 0.137784
+There are 256 Triples in this batch.
+Epoch: 0-363, pos_loss: 1.251982, neg_loss: 1.649263, Loss: 0.132279
+There are 256 Triples in this batch.
+Epoch: 0-364, pos_loss: 1.255280, neg_loss: 1.630874, Loss: 0.193948
+There are 256 Triples in this batch.
+Epoch: 0-365, pos_loss: 1.302149, neg_loss: 1.681727, Loss: 0.175474
+There are 256 Triples in this batch.
+Epoch: 0-366, pos_loss: 1.275865, neg_loss: 1.656008, Loss: 0.172078
+There are 256 Triples in this batch.
+Epoch: 0-367, pos_loss: 1.231602, neg_loss: 1.625120, Loss: 0.133965
+There are 256 Triples in this batch.
+Epoch: 0-368, pos_loss: 1.276702, neg_loss: 1.629325, Loss: 0.191831
+There are 256 Triples in this batch.
+Epoch: 0-369, pos_loss: 1.267149, neg_loss: 1.670606, Loss: 0.155025
+There are 256 Triples in this batch.
+Epoch: 0-370, pos_loss: 1.268810, neg_loss: 1.663082, Loss: 0.145987
+There are 256 Triples in this batch.
+Epoch: 0-371, pos_loss: 1.250161, neg_loss: 1.663191, Loss: 0.126604
+There are 256 Triples in this batch.
+Epoch: 0-372, pos_loss: 1.269669, neg_loss: 1.651512, Loss: 0.150454
+There are 256 Triples in this batch.
+Epoch: 0-373, pos_loss: 1.248158, neg_loss: 1.645398, Loss: 0.155348
+There are 256 Triples in this batch.
+Epoch: 0-374, pos_loss: 1.270787, neg_loss: 1.654286, Loss: 0.158677
+There are 256 Triples in this batch.
+Epoch: 0-375, pos_loss: 1.300747, neg_loss: 1.715500, Loss: 0.133339
+There are 256 Triples in this batch.
+Epoch: 0-376, pos_loss: 1.280439, neg_loss: 1.639284, Loss: 0.196839
+There are 256 Triples in this batch.
+Epoch: 0-377, pos_loss: 1.293640, neg_loss: 1.695355, Loss: 0.150338
+There are 256 Triples in this batch.
+Epoch: 0-378, pos_loss: 1.258511, neg_loss: 1.686467, Loss: 0.111780
+There are 256 Triples in this batch.
+Epoch: 0-379, pos_loss: 1.275482, neg_loss: 1.699272, Loss: 0.151363
+There are 256 Triples in this batch.
+Epoch: 0-380, pos_loss: 1.294158, neg_loss: 1.675004, Loss: 0.169298
+There are 256 Triples in this batch.
+Epoch: 0-381, pos_loss: 1.274780, neg_loss: 1.705670, Loss: 0.153582
+There are 117 Triples in this batch.
+Epoch: 0-382, pos_loss: 1.318762, neg_loss: 1.767542, Loss: 0.136063
+There are 256 Triples in this batch.
+Epoch: 1-1, pos_loss: 1.274393, neg_loss: 1.739368, Loss: 0.103513
+There are 256 Triples in this batch.
+Epoch: 1-2, pos_loss: 1.330183, neg_loss: 1.805141, Loss: 0.101699
+There are 256 Triples in this batch.
+Epoch: 1-3, pos_loss: 1.303731, neg_loss: 1.786988, Loss: 0.111890
+There are 256 Triples in this batch.
+Epoch: 1-4, pos_loss: 1.315977, neg_loss: 1.787464, Loss: 0.120432
+There are 256 Triples in this batch.
+Epoch: 1-5, pos_loss: 1.316966, neg_loss: 1.801137, Loss: 0.110935
+There are 256 Triples in this batch.
+Epoch: 1-6, pos_loss: 1.302667, neg_loss: 1.763067, Loss: 0.102228
+There are 256 Triples in this batch.
+Epoch: 1-7, pos_loss: 1.286448, neg_loss: 1.809397, Loss: 0.091445
+There are 256 Triples in this batch.
+Epoch: 1-8, pos_loss: 1.321519, neg_loss: 1.845528, Loss: 0.105750
+There are 256 Triples in this batch.
+Epoch: 1-9, pos_loss: 1.377316, neg_loss: 1.896572, Loss: 0.113413
+There are 256 Triples in this batch.
+Epoch: 1-10, pos_loss: 1.326291, neg_loss: 1.863459, Loss: 0.085577
+There are 256 Triples in this batch.
+Epoch: 1-11, pos_loss: 1.344827, neg_loss: 1.909690, Loss: 0.077213
+There are 256 Triples in this batch.
+Epoch: 1-12, pos_loss: 1.395183, neg_loss: 1.922413, Loss: 0.119842
+There are 256 Triples in this batch.
+Epoch: 1-13, pos_loss: 1.388268, neg_loss: 1.935438, Loss: 0.114022
+There are 256 Triples in this batch.
+Epoch: 1-14, pos_loss: 1.415791, neg_loss: 1.972305, Loss: 0.109553
+There are 256 Triples in this batch.
+Epoch: 1-15, pos_loss: 1.380261, neg_loss: 1.978746, Loss: 0.058365
+There are 256 Triples in this batch.
+Epoch: 1-16, pos_loss: 1.407736, neg_loss: 1.994958, Loss: 0.068375
+There are 256 Triples in this batch.
+Epoch: 1-17, pos_loss: 1.405776, neg_loss: 1.947861, Loss: 0.124143
+There are 256 Triples in this batch.
+Epoch: 1-18, pos_loss: 1.443411, neg_loss: 2.023983, Loss: 0.109858
+There are 256 Triples in this batch.
+Epoch: 1-19, pos_loss: 1.412251, neg_loss: 1.997853, Loss: 0.092881
+There are 256 Triples in this batch.
+Epoch: 1-20, pos_loss: 1.393801, neg_loss: 2.021869, Loss: 0.082002
+There are 256 Triples in this batch.
+Epoch: 1-21, pos_loss: 1.433875, neg_loss: 1.978481, Loss: 0.121732
+There are 256 Triples in this batch.
+Epoch: 1-22, pos_loss: 1.427200, neg_loss: 2.053085, Loss: 0.089811
+There are 256 Triples in this batch.
+Epoch: 1-23, pos_loss: 1.431195, neg_loss: 2.054515, Loss: 0.072891
+There are 256 Triples in this batch.
+Epoch: 1-24, pos_loss: 1.456357, neg_loss: 2.046282, Loss: 0.105982
+There are 256 Triples in this batch.
+Epoch: 1-25, pos_loss: 1.422026, neg_loss: 2.018697, Loss: 0.089604
+There are 256 Triples in this batch.
+Epoch: 1-26, pos_loss: 1.457024, neg_loss: 2.072141, Loss: 0.088810
+There are 256 Triples in this batch.
+Epoch: 1-27, pos_loss: 1.426371, neg_loss: 1.992466, Loss: 0.133826
+There are 256 Triples in this batch.
+Epoch: 1-28, pos_loss: 1.458693, neg_loss: 2.040759, Loss: 0.134157
+There are 256 Triples in this batch.
+Epoch: 1-29, pos_loss: 1.436861, neg_loss: 2.091886, Loss: 0.078910
+There are 256 Triples in this batch.
+Epoch: 1-30, pos_loss: 1.460230, neg_loss: 2.090073, Loss: 0.080839
+There are 256 Triples in this batch.
+Epoch: 1-31, pos_loss: 1.450681, neg_loss: 1.996396, Loss: 0.145070
+There are 256 Triples in this batch.
+Epoch: 1-32, pos_loss: 1.467903, neg_loss: 2.057086, Loss: 0.126743
+There are 256 Triples in this batch.
+Epoch: 1-33, pos_loss: 1.446339, neg_loss: 2.021092, Loss: 0.129735
+There are 256 Triples in this batch.
+Epoch: 1-34, pos_loss: 1.400254, neg_loss: 2.019173, Loss: 0.103351
+There are 256 Triples in this batch.
+Epoch: 1-35, pos_loss: 1.399371, neg_loss: 1.964524, Loss: 0.098482
+There are 256 Triples in this batch.
+Epoch: 1-36, pos_loss: 1.399942, neg_loss: 1.925205, Loss: 0.116978
+There are 256 Triples in this batch.
+Epoch: 1-37, pos_loss: 1.421498, neg_loss: 1.960383, Loss: 0.090175
+There are 256 Triples in this batch.
+Epoch: 1-38, pos_loss: 1.440889, neg_loss: 1.986183, Loss: 0.090485
+There are 256 Triples in this batch.
+Epoch: 1-39, pos_loss: 1.404034, neg_loss: 1.958228, Loss: 0.074872
+There are 256 Triples in this batch.
+Epoch: 1-40, pos_loss: 1.466845, neg_loss: 1.976901, Loss: 0.102469
+There are 256 Triples in this batch.
+Epoch: 1-41, pos_loss: 1.413659, neg_loss: 1.963650, Loss: 0.095255
+There are 256 Triples in this batch.
+Epoch: 1-42, pos_loss: 1.449224, neg_loss: 1.992749, Loss: 0.073708
+There are 256 Triples in this batch.
+Epoch: 1-43, pos_loss: 1.426921, neg_loss: 1.990120, Loss: 0.060910
+There are 256 Triples in this batch.
+Epoch: 1-44, pos_loss: 1.435737, neg_loss: 1.964852, Loss: 0.130331
+There are 256 Triples in this batch.
+Epoch: 1-45, pos_loss: 1.454490, neg_loss: 1.983897, Loss: 0.089235
+There are 256 Triples in this batch.
+Epoch: 1-46, pos_loss: 1.433172, neg_loss: 1.998239, Loss: 0.079437
+There are 256 Triples in this batch.
+Epoch: 1-47, pos_loss: 1.437024, neg_loss: 2.029205, Loss: 0.071313
+There are 256 Triples in this batch.
+Epoch: 1-48, pos_loss: 1.443767, neg_loss: 1.986462, Loss: 0.109186
+There are 256 Triples in this batch.
+Epoch: 1-49, pos_loss: 1.439819, neg_loss: 2.051423, Loss: 0.103083
+There are 256 Triples in this batch.
+Epoch: 1-50, pos_loss: 1.482871, neg_loss: 2.108080, Loss: 0.081439
+There are 256 Triples in this batch.
+Epoch: 1-51, pos_loss: 1.484061, neg_loss: 2.085395, Loss: 0.100196
+There are 256 Triples in this batch.
+Epoch: 1-52, pos_loss: 1.462946, neg_loss: 2.071521, Loss: 0.074321
+There are 256 Triples in this batch.
+Epoch: 1-53, pos_loss: 1.456309, neg_loss: 2.077310, Loss: 0.120284
+There are 256 Triples in this batch.
+Epoch: 1-54, pos_loss: 1.456085, neg_loss: 2.096648, Loss: 0.097513
+There are 256 Triples in this batch.
+Epoch: 1-55, pos_loss: 1.461556, neg_loss: 2.147803, Loss: 0.095848
+There are 256 Triples in this batch.
+Epoch: 1-56, pos_loss: 1.434590, neg_loss: 2.100423, Loss: 0.118221
+There are 256 Triples in this batch.
+Epoch: 1-57, pos_loss: 1.458769, neg_loss: 2.123651, Loss: 0.098199
+There are 256 Triples in this batch.
+Epoch: 1-58, pos_loss: 1.482007, neg_loss: 2.128440, Loss: 0.086277
+There are 256 Triples in this batch.
+Epoch: 1-59, pos_loss: 1.457061, neg_loss: 2.117196, Loss: 0.092906
+There are 256 Triples in this batch.
+Epoch: 1-60, pos_loss: 1.433734, neg_loss: 2.117645, Loss: 0.065429
+There are 256 Triples in this batch.
+Epoch: 1-61, pos_loss: 1.461199, neg_loss: 2.057325, Loss: 0.102453
+There are 256 Triples in this batch.
+Epoch: 1-62, pos_loss: 1.513352, neg_loss: 2.153506, Loss: 0.099349
+There are 256 Triples in this batch.
+Epoch: 1-63, pos_loss: 1.504108, neg_loss: 2.130628, Loss: 0.113910
+There are 256 Triples in this batch.
+Epoch: 1-64, pos_loss: 1.437520, neg_loss: 2.049279, Loss: 0.092523
+There are 256 Triples in this batch.
+Epoch: 1-65, pos_loss: 1.522451, neg_loss: 2.085460, Loss: 0.119344
+There are 256 Triples in this batch.
+Epoch: 1-66, pos_loss: 1.481621, neg_loss: 2.101255, Loss: 0.085909
+There are 256 Triples in this batch.
+Epoch: 1-67, pos_loss: 1.448220, neg_loss: 2.038162, Loss: 0.131304
+There are 256 Triples in this batch.
+Epoch: 1-68, pos_loss: 1.449751, neg_loss: 2.045898, Loss: 0.126217
+There are 256 Triples in this batch.
+Epoch: 1-69, pos_loss: 1.462785, neg_loss: 2.055225, Loss: 0.112996
+There are 256 Triples in this batch.
+Epoch: 1-70, pos_loss: 1.514218, neg_loss: 2.134522, Loss: 0.095055
+There are 256 Triples in this batch.
+Epoch: 1-71, pos_loss: 1.506944, neg_loss: 2.105322, Loss: 0.095407
+There are 256 Triples in this batch.
+Epoch: 1-72, pos_loss: 1.450161, neg_loss: 2.063341, Loss: 0.076130
+There are 256 Triples in this batch.
+Epoch: 1-73, pos_loss: 1.474331, neg_loss: 2.095206, Loss: 0.097285
+There are 256 Triples in this batch.
+Epoch: 1-74, pos_loss: 1.488948, neg_loss: 2.044019, Loss: 0.133102
+There are 256 Triples in this batch.
+Epoch: 1-75, pos_loss: 1.496812, neg_loss: 2.128809, Loss: 0.108048
+There are 256 Triples in this batch.
+Epoch: 1-76, pos_loss: 1.465878, neg_loss: 2.051393, Loss: 0.067151
+There are 256 Triples in this batch.
+Epoch: 1-77, pos_loss: 1.511267, neg_loss: 2.096523, Loss: 0.106143
+There are 256 Triples in this batch.
+Epoch: 1-78, pos_loss: 1.496187, neg_loss: 2.030018, Loss: 0.112367
+There are 256 Triples in this batch.
+Epoch: 1-79, pos_loss: 1.508518, neg_loss: 2.082530, Loss: 0.100477
+There are 256 Triples in this batch.
+Epoch: 1-80, pos_loss: 1.504023, neg_loss: 2.047395, Loss: 0.114789
+There are 256 Triples in this batch.
+Epoch: 1-81, pos_loss: 1.508430, neg_loss: 2.118221, Loss: 0.075367
+There are 256 Triples in this batch.
+Epoch: 1-82, pos_loss: 1.494509, neg_loss: 2.036583, Loss: 0.118008
+There are 256 Triples in this batch.
+Epoch: 1-83, pos_loss: 1.515823, neg_loss: 2.085763, Loss: 0.109587
+There are 256 Triples in this batch.
+Epoch: 1-84, pos_loss: 1.541184, neg_loss: 2.060849, Loss: 0.132208
+There are 256 Triples in this batch.
+Epoch: 1-85, pos_loss: 1.477484, neg_loss: 2.053441, Loss: 0.087082
+There are 256 Triples in this batch.
+Epoch: 1-86, pos_loss: 1.509931, neg_loss: 2.015207, Loss: 0.132511
+There are 256 Triples in this batch.
+Epoch: 1-87, pos_loss: 1.512852, neg_loss: 2.048703, Loss: 0.076202
+There are 256 Triples in this batch.
+Epoch: 1-88, pos_loss: 1.481341, neg_loss: 2.002209, Loss: 0.107627
+There are 256 Triples in this batch.
+Epoch: 1-89, pos_loss: 1.489315, neg_loss: 2.072406, Loss: 0.078291
+There are 256 Triples in this batch.
+Epoch: 1-90, pos_loss: 1.540848, neg_loss: 2.074991, Loss: 0.111306
+There are 256 Triples in this batch.
+Epoch: 1-91, pos_loss: 1.504016, neg_loss: 2.089171, Loss: 0.096838
+There are 256 Triples in this batch.
+Epoch: 1-92, pos_loss: 1.496549, neg_loss: 2.013861, Loss: 0.126944
+There are 256 Triples in this batch.
+Epoch: 1-93, pos_loss: 1.463620, neg_loss: 2.025364, Loss: 0.115603
+There are 256 Triples in this batch.
+Epoch: 1-94, pos_loss: 1.445282, neg_loss: 2.017079, Loss: 0.102535
+There are 256 Triples in this batch.
+Epoch: 1-95, pos_loss: 1.475641, neg_loss: 2.061120, Loss: 0.088140
+There are 256 Triples in this batch.
+Epoch: 1-96, pos_loss: 1.466921, neg_loss: 2.066930, Loss: 0.066929
+There are 256 Triples in this batch.
+Epoch: 1-97, pos_loss: 1.476264, neg_loss: 2.080413, Loss: 0.091614
+There are 256 Triples in this batch.
+Epoch: 1-98, pos_loss: 1.443315, neg_loss: 2.097995, Loss: 0.054438
+There are 256 Triples in this batch.
+Epoch: 1-99, pos_loss: 1.476835, neg_loss: 2.067915, Loss: 0.136918
+There are 256 Triples in this batch.
+Epoch: 1-100, pos_loss: 1.474122, neg_loss: 2.057702, Loss: 0.089449
+There are 256 Triples in this batch.
+Epoch: 1-101, pos_loss: 1.454564, neg_loss: 2.092577, Loss: 0.070569
+There are 256 Triples in this batch.
+Epoch: 1-102, pos_loss: 1.470662, neg_loss: 2.012484, Loss: 0.099807
+There are 256 Triples in this batch.
+Epoch: 1-103, pos_loss: 1.464326, neg_loss: 2.033858, Loss: 0.104292
+There are 256 Triples in this batch.
+Epoch: 1-104, pos_loss: 1.468649, neg_loss: 2.073400, Loss: 0.084668
+There are 256 Triples in this batch.
+Epoch: 1-105, pos_loss: 1.468613, neg_loss: 2.069145, Loss: 0.113128
+There are 256 Triples in this batch.
+Epoch: 1-106, pos_loss: 1.442657, neg_loss: 2.060385, Loss: 0.077071
+There are 256 Triples in this batch.
+Epoch: 1-107, pos_loss: 1.441327, neg_loss: 2.037506, Loss: 0.090005
+There are 256 Triples in this batch.
+Epoch: 1-108, pos_loss: 1.426730, neg_loss: 2.021219, Loss: 0.088836
+There are 256 Triples in this batch.
+Epoch: 1-109, pos_loss: 1.472460, neg_loss: 2.089793, Loss: 0.094688
+There are 256 Triples in this batch.
+Epoch: 1-110, pos_loss: 1.460202, neg_loss: 2.056834, Loss: 0.121302
+There are 256 Triples in this batch.
+Epoch: 1-111, pos_loss: 1.468104, neg_loss: 2.070326, Loss: 0.107697
+There are 256 Triples in this batch.
+Epoch: 1-112, pos_loss: 1.474378, neg_loss: 2.113169, Loss: 0.107122
+There are 256 Triples in this batch.
+Epoch: 1-113, pos_loss: 1.484999, neg_loss: 2.116246, Loss: 0.091457
+There are 256 Triples in this batch.
+Epoch: 1-114, pos_loss: 1.477290, neg_loss: 2.083284, Loss: 0.094993
+There are 256 Triples in this batch.
+Epoch: 1-115, pos_loss: 1.448389, neg_loss: 2.087603, Loss: 0.082101
+There are 256 Triples in this batch.
+Epoch: 1-116, pos_loss: 1.518180, neg_loss: 2.104808, Loss: 0.115795
+There are 256 Triples in this batch.
+Epoch: 1-117, pos_loss: 1.524407, neg_loss: 2.099645, Loss: 0.121570
+There are 256 Triples in this batch.
+Epoch: 1-118, pos_loss: 1.504997, neg_loss: 2.122435, Loss: 0.094715
+There are 256 Triples in this batch.
+Epoch: 1-119, pos_loss: 1.470375, neg_loss: 2.086191, Loss: 0.084105
+There are 256 Triples in this batch.
+Epoch: 1-120, pos_loss: 1.537146, neg_loss: 2.125211, Loss: 0.080666
+There are 256 Triples in this batch.
+Epoch: 1-121, pos_loss: 1.500725, neg_loss: 2.104505, Loss: 0.087483
+There are 256 Triples in this batch.
+Epoch: 1-122, pos_loss: 1.518322, neg_loss: 2.102288, Loss: 0.092044
+There are 256 Triples in this batch.
+Epoch: 1-123, pos_loss: 1.539821, neg_loss: 2.105037, Loss: 0.112775
+There are 256 Triples in this batch.
+Epoch: 1-124, pos_loss: 1.513022, neg_loss: 2.177998, Loss: 0.069450
+There are 256 Triples in this batch.
+Epoch: 1-125, pos_loss: 1.541199, neg_loss: 2.160477, Loss: 0.090391
+There are 256 Triples in this batch.
+Epoch: 1-126, pos_loss: 1.478348, neg_loss: 2.132541, Loss: 0.081038
+There are 256 Triples in this batch.
+Epoch: 1-127, pos_loss: 1.539490, neg_loss: 2.106466, Loss: 0.121583
+There are 256 Triples in this batch.
+Epoch: 1-128, pos_loss: 1.540477, neg_loss: 2.150089, Loss: 0.109364
+There are 256 Triples in this batch.
+Epoch: 1-129, pos_loss: 1.539199, neg_loss: 2.183438, Loss: 0.091467
+There are 256 Triples in this batch.
+Epoch: 1-130, pos_loss: 1.522173, neg_loss: 2.128806, Loss: 0.092371
+There are 256 Triples in this batch.
+Epoch: 1-131, pos_loss: 1.527837, neg_loss: 2.182321, Loss: 0.080203
+There are 256 Triples in this batch.
+Epoch: 1-132, pos_loss: 1.538808, neg_loss: 2.175236, Loss: 0.082857
+There are 256 Triples in this batch.
+Epoch: 1-133, pos_loss: 1.549957, neg_loss: 2.148354, Loss: 0.100988
+There are 256 Triples in this batch.
+Epoch: 1-134, pos_loss: 1.611365, neg_loss: 2.210995, Loss: 0.104888
+There are 256 Triples in this batch.
+Epoch: 1-135, pos_loss: 1.557670, neg_loss: 2.156540, Loss: 0.125756
+There are 256 Triples in this batch.
+Epoch: 1-136, pos_loss: 1.549066, neg_loss: 2.198548, Loss: 0.088604
+There are 256 Triples in this batch.
+Epoch: 1-137, pos_loss: 1.544196, neg_loss: 2.157736, Loss: 0.095443
+There are 256 Triples in this batch.
+Epoch: 1-138, pos_loss: 1.576735, neg_loss: 2.179641, Loss: 0.099463
+There are 256 Triples in this batch.
+Epoch: 1-139, pos_loss: 1.568672, neg_loss: 2.157079, Loss: 0.115785
+There are 256 Triples in this batch.
+Epoch: 1-140, pos_loss: 1.568942, neg_loss: 2.164306, Loss: 0.135821
+There are 256 Triples in this batch.
+Epoch: 1-141, pos_loss: 1.535567, neg_loss: 2.113638, Loss: 0.120927
+There are 256 Triples in this batch.
+Epoch: 1-142, pos_loss: 1.523690, neg_loss: 2.153209, Loss: 0.102064
+There are 256 Triples in this batch.
+Epoch: 1-143, pos_loss: 1.547887, neg_loss: 2.137350, Loss: 0.115368
+There are 256 Triples in this batch.
+Epoch: 1-144, pos_loss: 1.526153, neg_loss: 2.105967, Loss: 0.093430
+There are 256 Triples in this batch.
+Epoch: 1-145, pos_loss: 1.515663, neg_loss: 2.110444, Loss: 0.099502
+There are 256 Triples in this batch.
+Epoch: 1-146, pos_loss: 1.550638, neg_loss: 2.121327, Loss: 0.110501
+There are 256 Triples in this batch.
+Epoch: 1-147, pos_loss: 1.498114, neg_loss: 2.086302, Loss: 0.106522
+There are 256 Triples in this batch.
+Epoch: 1-148, pos_loss: 1.558112, neg_loss: 2.128121, Loss: 0.090252
+There are 256 Triples in this batch.
+Epoch: 1-149, pos_loss: 1.529959, neg_loss: 2.110678, Loss: 0.087731
+There are 256 Triples in this batch.
+Epoch: 1-150, pos_loss: 1.524428, neg_loss: 2.115383, Loss: 0.093612
+There are 256 Triples in this batch.
+Epoch: 1-151, pos_loss: 1.510534, neg_loss: 2.088665, Loss: 0.092641
+There are 256 Triples in this batch.
+Epoch: 1-152, pos_loss: 1.571335, neg_loss: 2.121462, Loss: 0.105433
+There are 256 Triples in this batch.
+Epoch: 1-153, pos_loss: 1.563541, neg_loss: 2.134476, Loss: 0.100110
+There are 256 Triples in this batch.
+Epoch: 1-154, pos_loss: 1.541720, neg_loss: 2.093969, Loss: 0.112147
+There are 256 Triples in this batch.
+Epoch: 1-155, pos_loss: 1.549937, neg_loss: 2.095182, Loss: 0.104732
+There are 256 Triples in this batch.
+Epoch: 1-156, pos_loss: 1.545521, neg_loss: 2.091125, Loss: 0.117325
+There are 256 Triples in this batch.
+Epoch: 1-157, pos_loss: 1.539659, neg_loss: 2.123287, Loss: 0.090601
+There are 256 Triples in this batch.
+Epoch: 1-158, pos_loss: 1.545527, neg_loss: 2.159677, Loss: 0.112680
+There are 256 Triples in this batch.
+Epoch: 1-159, pos_loss: 1.563733, neg_loss: 2.149357, Loss: 0.094629
+There are 256 Triples in this batch.
+Epoch: 1-160, pos_loss: 1.553470, neg_loss: 2.082658, Loss: 0.135916
+There are 256 Triples in this batch.
+Epoch: 1-161, pos_loss: 1.545545, neg_loss: 2.145085, Loss: 0.079982
+There are 256 Triples in this batch.
+Epoch: 1-162, pos_loss: 1.538829, neg_loss: 2.147309, Loss: 0.109013
+There are 256 Triples in this batch.
+Epoch: 1-163, pos_loss: 1.545633, neg_loss: 2.099796, Loss: 0.107102
+There are 256 Triples in this batch.
+Epoch: 1-164, pos_loss: 1.512789, neg_loss: 2.123521, Loss: 0.087066
+There are 256 Triples in this batch.
+Epoch: 1-165, pos_loss: 1.576859, neg_loss: 2.134861, Loss: 0.097913
+There are 256 Triples in this batch.
+Epoch: 1-166, pos_loss: 1.490648, neg_loss: 2.095847, Loss: 0.091372
+There are 256 Triples in this batch.
+Epoch: 1-167, pos_loss: 1.528813, neg_loss: 2.140277, Loss: 0.093288
+There are 256 Triples in this batch.
+Epoch: 1-168, pos_loss: 1.511676, neg_loss: 2.095535, Loss: 0.113060
+There are 256 Triples in this batch.
+Epoch: 1-169, pos_loss: 1.526777, neg_loss: 2.116610, Loss: 0.102652
+There are 256 Triples in this batch.
+Epoch: 1-170, pos_loss: 1.528697, neg_loss: 2.155044, Loss: 0.073047
+There are 256 Triples in this batch.
+Epoch: 1-171, pos_loss: 1.535657, neg_loss: 2.141660, Loss: 0.090008
+There are 256 Triples in this batch.
+Epoch: 1-172, pos_loss: 1.554025, neg_loss: 2.117169, Loss: 0.094126
+There are 97653 Triples with 4650 anomalies in the graph.
