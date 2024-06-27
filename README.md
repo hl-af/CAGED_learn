@@ -3,9 +3,12 @@ Pytorch-based implementation of CAGED, and the description of the model and the 
 
 学习CAGED模型
 
+
 ## Requirements
 
 All the required packages can be installed by running `pip install -r requirements.txt`.
+
+需要下载bert-base-uncased模型文件
 
 ## Knowledge Graph Error Detection
 

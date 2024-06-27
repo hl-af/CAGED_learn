@@ -20828,3 +20828,4 @@ Epoch: 1-171, pos_loss: 1.535657, neg_loss: 2.141660, Loss: 0.090008
 There are 256 Triples in this batch.
 Epoch: 1-172, pos_loss: 1.554025, neg_loss: 2.117169, Loss: 0.094126
 There are 97653 Triples with 4650 anomalies in the graph.
+There are 97653 Triples with 4650 anomalies in the graph.

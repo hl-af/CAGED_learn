@@ -3,7 +3,31 @@ import torch.nn as nn
 from torch.autograd import Variable
 from torch.nn import functional as F
 import numpy as np
-import logging
+from transformers import BertTokenizer, BertModel
+
+class NBert(nn.Module):
+
+    def __init__(self):
+        model_name = 'bert-base-uncased'
+        self.tokenizer = BertTokenizer.from_pretrained(model_name)
+        self.model = BertModel.from_pretrained(model_name)
+
+
+    def forward(self, input):
+        # 加载预训练的BERT模型和分词器
+        model_name = 'bert-base-uncased'
+
+        # 对句子进行编码
+        inputs = self.tokenizer(input, return_tensors='pt', padding=True, truncation=True, max_length=512)
+
+        # 将模型设置为评估模式
+        self.model.eval()
+
+        # 获取模型输出
+        with torch.no_grad():
+            outputs = self.model(**inputs)
+
+        return outputs
 
 class GraphAttentionLayer1(nn.Module):
     """
@@ -70,6 +94,7 @@ class BiLSTM_Attention(torch.nn.Module):
         self.seq_length = 3
         self.BiLSTM_input_size = args.BiLSTM_input_size
         self.num_neighbor = args.num_neighbor
+        self.bert = NBert()
         self.lstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True, bidirectional=True)
         #self.fc = nn.Linear(hidden_size * 2 * self.seq_length, num_classes)  # 2 for bidirection
         self.device = device
@@ -137,6 +162,11 @@ class BiLSTM_Attention(torch.nn.Module):
         # [batch_size * 2 * 2, num_neighbor+1, dim_embedding] dim_embedding = hidden_size * 2 * seq_length
 
         out_att = self.attention(out)
+
+        # bert编辑
+        batch_triples = torch.cat((batch_h, batch_r), dim=1)
+        batch_triples = torch.cat((batch_triples, batch_t), dim=1)  # (40960,300)
+        out_bert = self.bert.forward(batch_triples)
         # [batch_size * 2 * 2, dim_embedding]
         # out_att = self.attention_0(out[0:args.num_neighbor + 1])
         # print('input to linear', out.shape)
