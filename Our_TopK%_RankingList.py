@@ -105,7 +105,7 @@ def train(args, dataset, device):
     # model.load_state_dict(torch.load(model_saved_path))
     # Model BiLSTM_Attention
     model = BiLSTM_Attention(args, args.BiLSTM_input_size, args.BiLSTM_hidden_size, args.BiLSTM_num_layers, args.dropout,
-                             args.alpha, args.mu, device).to(device)
+                             args.alpha, args.mu, device,dataset).to(device)
     criterion = nn.MarginRankingLoss(args.gama) # 对应公式（8），损失函数，用于训练过程中计算模型的损失值
     optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate)
     #

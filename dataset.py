@@ -17,6 +17,7 @@ class Reader:
 
         self.num_anomalies = 0
         self.triples = []
+        self.ori_triples = []
         self.start_batch = 0
         self.path = path
 
@@ -103,7 +104,7 @@ class Reader:
                     tail_id = self.get_add_ent_id(tail)
 
                     self.triples.append((head_id, rel_id, tail_id))
-
+                    self.ori_triples.append((head, rel, tail))
                     self.A[(head_id, tail_id)] = rel_id
                     # self.A[head_id][tail_id] = rel_id
 

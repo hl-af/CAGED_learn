@@ -1,3 +1,5 @@
+import os
+
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
@@ -8,24 +10,44 @@ from transformers import BertTokenizer, BertModel
 class NBert(nn.Module):
 
     def __init__(self):
-        model_name = 'bert-base-uncased'
-        self.tokenizer = BertTokenizer.from_pretrained(model_name)
-        self.model = BertModel.from_pretrained(model_name)
+        super(NBert, self).__init__()  # 确保调用父类的初始化方法
+        bert_model_name = 'bert-base-uncased'
+        root_path = os.path.dirname(__file__)
+        # 加载预训练的BERT模型和分词器
+        bert_model_name = 'bert-base-uncased'
+        path = os.path.join(root_path, 'checkpoints', bert_model_name)
+        self.tokenizer = BertTokenizer.from_pretrained(path)
+        self.model = BertModel.from_pretrained(path)
 
 
-    def forward(self, input):
+    def forward(self, batch_h, batch_r, batch_t,device):
         # 加载预训练的BERT模型和分词器
         model_name = 'bert-base-uncased'
 
-        # 对句子进行编码
-        inputs = self.tokenizer(input, return_tensors='pt', padding=True, truncation=True, max_length=512)
+        str_batch_h = list(map(str, batch_h.tolist()))
+        str_batch_r = list(map(str, batch_r.tolist()))
+        str_batch_t = list(map(str, batch_t.tolist()))
 
+        # 对句子进行编码
+        inputs = self.tokenizer(str_batch_h,str_batch_r,str_batch_t, return_tensors='pt', padding=True, truncation=True, max_length=512)
+        # encoded_dict = self.tokenizer.encode_plus(
+        #     str_batch_h,str_batch_r,str_batch_t,
+        #     add_special_tokens=True,
+        #     padding='max_length',
+        #     truncation=True,
+        #     return_attention_mask=True,
+        #     return_tensors='pt'
+        # )
+        input_ids = inputs['input_ids']
+        attention_masks = inputs['attention_mask']
+        input_ids, attention_mask = input_ids.to(device), attention_masks.to(device)
         # 将模型设置为评估模式
         self.model.eval()
-
+        # input_ids = encoded_dict['input_ids']
+        # attention_masks = encoded_dict['attention_mask']
         # 获取模型输出
         with torch.no_grad():
-            outputs = self.model(**inputs)
+            outputs = self.model(input_ids,attention_masks)
 
         return outputs
 
@@ -84,11 +106,12 @@ class GraphAttentionLayer1(nn.Module):
 
 
 class BiLSTM_Attention(torch.nn.Module):
-    def __init__(self, args, input_size, hidden_size, num_layers, dropout, alpha, mu, device):
+    def __init__(self, args, input_size, hidden_size, num_layers, dropout, alpha, mu, device, dataset):
         super(BiLSTM_Attention, self).__init__()
         # self.ent_embeddings = nn.Embedding(args.total_ent + 1, args.embedding_dim)
         # self.rel_embeddings = nn.Embedding(args.total_rel + 1, args.embedding_dim)
         # self.init_weights()
+        self.dataset = dataset
         self.hidden_size = hidden_size
         self.num_layers = num_layers
         self.seq_length = 3
@@ -163,10 +186,7 @@ class BiLSTM_Attention(torch.nn.Module):
 
         out_att = self.attention(out)
 
-        # bert编辑
-        batch_triples = torch.cat((batch_h, batch_r), dim=1)
-        batch_triples = torch.cat((batch_triples, batch_t), dim=1)  # (40960,300)
-        out_bert = self.bert.forward(batch_triples)
+        out_bert = self.bert.forward(batch_h,batch_r,batch_t,self.device)
         # [batch_size * 2 * 2, dim_embedding]
         # out_att = self.attention_0(out[0:args.num_neighbor + 1])
         # print('input to linear', out.shape)
