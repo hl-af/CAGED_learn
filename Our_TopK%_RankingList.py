@@ -130,13 +130,14 @@ def train(args, dataset, device):
             out = out.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
             # 原始out_att：（1024，600） reshape后（256，4，60）
             out_att = out_att.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
+            out_bert = out_bert.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
 
             pos_h = out[:, 0, :] # 256,600
             pos_z0 = out_att[:, 0, :] # 256，600
-            pos_z1 = out_att[:, 1, :]# 256，600
+            pos_z1 = out_bert[:, 1, :]# 256，600 todo 讨论：这里可能不需要这样运算，
             neg_h = out[:, 1, :] # 256，600
             neg_z0 = out_att[:, 2, :] # 256，600
-            neg_z1 = out_att[:, 3, :] # 256，600
+            neg_z1 = out_bert[:, 3, :] # 256，600
 
             # loss function
             # positive

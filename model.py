@@ -24,12 +24,15 @@ class NBert(nn.Module):
         # 加载预训练的BERT模型和分词器
         model_name = 'bert-base-uncased'
 
+        str_all = []
         str_batch_h = list(map(str, batch_h.tolist()))
         str_batch_r = list(map(str, batch_r.tolist()))
         str_batch_t = list(map(str, batch_t.tolist()))
 
+        # x = batch_triples_emb.view(-1, 3, self.BiLSTM_input_size)
+
         # 对句子进行编码
-        inputs = self.tokenizer(str_batch_h,str_batch_r,str_batch_t, return_tensors='pt', padding=True, truncation=True, max_length=512)
+        inputs = self.tokenizer(str_batch_h, str_batch_r, str_batch_t, return_tensors='pt', padding=True, truncation=True, max_length=512)
         # encoded_dict = self.tokenizer.encode_plus(
         #     str_batch_h,str_batch_r,str_batch_t,
         #     add_special_tokens=True,
@@ -47,8 +50,7 @@ class NBert(nn.Module):
         # attention_masks = encoded_dict['attention_mask']
         # 获取模型输出
         with torch.no_grad():
-            outputs = self.model(input_ids,attention_masks)
-
+            outputs = self.model(input_ids, attention_masks)
         return outputs
 
 class GraphAttentionLayer1(nn.Module):
@@ -58,19 +60,20 @@ class GraphAttentionLayer1(nn.Module):
 
     def __init__(self, in_features, out_features, dropout, alpha, mu=0.001, concat=False):
         super(GraphAttentionLayer1, self).__init__()
-        self.in_features = in_features  
-        self.out_features = out_features 
-        self.dropout = dropout 
-        self.alpha = alpha 
+        self.in_features = in_features
+        self.out_features = out_features
+        self.dropout = dropout
+        self.alpha = alpha
         self.concat = concat
         self.mu = mu
 
         self.W = nn.Parameter(torch.zeros(size=(in_features, out_features)))
-        nn.init.xavier_uniform_(self.W.data, gain=1.414) 
+        nn.init.xavier_uniform_(self.W.data, gain=1.414)
         self.a = nn.Parameter(torch.zeros(size=(2 * out_features, 1)))
-        nn.init.xavier_uniform_(self.a.data, gain=1.414)  
 
-        
+        nn.init.xavier_uniform_(self.a.data, gain=1.414)
+
+
         self.leakyrelu = nn.LeakyReLU(self.alpha)
 
     # 图注意力网络（Graph Attention Network，GAT）
@@ -79,7 +82,7 @@ class GraphAttentionLayer1(nn.Module):
         inp: input_fea [Batch_size, N, in_features]
         """
         h = torch.matmul(inp, self.W)  # [batch_size, N, out_features]
-        N = h.size()[1]  
+        N = h.size()[1]
         B = h.size()[0]  # B batch_size
 
         a = h[:, 0, :].unsqueeze(1).repeat(1, N, 1)  # [batch_size, N, out_features]
@@ -88,7 +91,7 @@ class GraphAttentionLayer1(nn.Module):
         # a_input = torch.cat([h.repeat(1, 1, N).view(args.batch_size, N * N, -1), h.repeat(1, N, 1)], dim=2).view(args.batch_size, N, -1, 2 * self.out_features)
 
         e = self.leakyrelu(torch.matmul(a_input, self.a))
-        # [batch_size, N, 1] 
+        # [batch_size, N, 1]
 
         attention = F.softmax(e, dim=1)  # [batch_size, N, 1]
         attention = attention - self.mu
@@ -98,7 +101,7 @@ class GraphAttentionLayer1(nn.Module):
         # print(attention)
         attention = attention.view(B, 1, N)
         h_prime = torch.matmul(attention, h).squeeze(1)  # [batch_size, 1, N]*[batch_size, N, out_features] => [batch_size, 1, out_features]
-       
+
         if self.concat:
             return F.elu(h_prime)
         else:
@@ -136,6 +139,17 @@ class BiLSTM_Attention(torch.nn.Module):
         uniform_range = 6 / np.sqrt(args.embedding_dim) # 0.6
         self.ent_embeddings.weight.data.uniform_(-uniform_range, uniform_range)
         self.rel_embeddings.weight.data.uniform_(-uniform_range, uniform_range)
+        '''
+        1、线性层投影 (Linear Layer Projection)：
+        使用一个线性层（全连接层）将一个向量投影到另一个向量的维度。例如，你可以使用一个线性层将 out1 的维度从 768 变为 600。
+        2、插值 (Interpolation)：
+        使用插值方法将一个向量调整到另一个向量的维度。这对于简单的情况下也适用。
+        3、重复或切片 (Repetition or Slicing)：根据需要重复或切片向量。
+        本文使用了线性层投影
+        768: bert的隐藏层大小
+        '''
+        self.linear = nn.Linear(768, self.hidden_size * 2 * self.seq_length)  # 将 768 投影到 600
+
 
     def forward(self, batch_h, batch_r, batch_t):
         # head, relation, tail = torch.chunk(inputTriple,
@@ -193,4 +207,21 @@ class BiLSTM_Attention(torch.nn.Module):
         # Decode the hidden state of the last time step
         #out = self.fc(out_lstm)
         out = out.reshape(-1, self.num_neighbor * 2 + 2, self.hidden_size * 2 * self.seq_length)
-        return out[:, 0, :], out_att, out_bert.pooler_output
+        bert_hidden_state = out_bert.last_hidden_state[:, 0, :]
+        # todo 讨论，线性投影会可能会丢失数据
+        bert_hidden_state_proj = self.linear(bert_hidden_state)  # 将 bert_hidden_state 投影到 self.hidden_size * 2 * self.seq_length 维度
+
+        # 平均池化（Average Pooling）：将 800 维度上的输出分块平均为 20。
+        # 最大池化（Max Pooling）：将 800 维度上的输出分块取最大值为 20
+        bert_pooled_output = average_pooling(bert_hidden_state_proj, self.num_neighbor + 1)
+        return out[:, 0, :], out_att, bert_pooled_output
+
+# 平均池化（Average Pooling）：将 800 维度上的输出分块平均为 20。
+def average_pooling(output, pool_size):
+    """
+    output: [800, 600] tensor
+    pool_size: size to pool into, in this case, 20
+    """
+    output = output.view(-1, pool_size, output.size(-1))  # reshape to [20, 40, 600]
+    output = output.mean(dim=1)  # average pooling to get [20, 600]
+    return output
