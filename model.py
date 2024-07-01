@@ -193,4 +193,4 @@ class BiLSTM_Attention(torch.nn.Module):
         # Decode the hidden state of the last time step
         #out = self.fc(out_lstm)
         out = out.reshape(-1, self.num_neighbor * 2 + 2, self.hidden_size * 2 * self.seq_length)
-        return out[:, 0, :], out_att
+        return out[:, 0, :], out_att, out_bert.pooler_output
