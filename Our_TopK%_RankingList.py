@@ -122,7 +122,7 @@ def train(args, dataset, device):
             batch_t = torch.LongTensor(batch_t).to(device)
             batch_r = torch.LongTensor(batch_r).to(device)
 
-            out, out_att = model(batch_h, batch_r, batch_t) # Bi-LSTM和自注意力的输出.out是lstm的输出；out_att是注意力神经网络的输出
+            out, out_att, out_bert = model(batch_h, batch_r, batch_t) # Bi-LSTM和自注意力的输出.out是lstm的输出；out_att是注意力神经网络的输出
 
             # running_time = time.time()
             # print("Time used in running model", math.fabs(end_read_time - running_time))
