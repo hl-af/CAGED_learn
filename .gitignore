@@ -61,6 +61,7 @@ coverage.xml
 cover/
 share
 checkpoints/bert-base-uncased
+checkpoints/WN18RR
 bin
 WN18RR
 .idea
