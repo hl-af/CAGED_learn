@@ -7,6 +7,9 @@ from torch.nn import functional as F
 import numpy as np
 from transformers import BertTokenizer, BertModel
 
+import tokenizer_utils
+from pre_tokenizer import TokenizedTripleReader
+
 
 class NBert(nn.Module):
 
@@ -19,39 +22,44 @@ class NBert(nn.Module):
         path = os.path.join(root_path, 'checkpoints', bert_model_name)
         self.tokenizer = BertTokenizer.from_pretrained(path)
         self.model = BertModel.from_pretrained(path)
+        self.tokenizer_reader = TokenizedTripleReader(input_file='data/WN18RR/tokenized_triples.json')
+        self.dataset_tokenizer_dict = self.tokenizer_reader.load_tokenized_triples()
 
     def forward(self, batch_h, batch_r, batch_t, device):
-        # 加载预训练的BERT模型和分词器
-        model_name = 'bert-base-uncased'
-
-        str_all = []
         str_batch_h = list(map(str, batch_h.tolist()))
         str_batch_r = list(map(str, batch_r.tolist()))
         str_batch_t = list(map(str, batch_t.tolist()))
 
-        # x = batch_triples_emb.view(-1, 3, self.BiLSTM_input_size)
+        input_ids_list = []
+        attention_mask_list = []
 
-        # 对句子进行编码
-        inputs = self.tokenizer(str_batch_h, str_batch_r, str_batch_t, return_tensors='pt', padding=True,
-                                truncation=True, max_length=512)
-        # encoded_dict = self.tokenizer.encode_plus(
-        #     str_batch_h,str_batch_r,str_batch_t,
-        #     add_special_tokens=True,
-        #     padding='max_length',
-        #     truncation=True,
-        #     return_attention_mask=True,
-        #     return_tensors='pt'
-        # )
-        input_ids = inputs['input_ids']
-        attention_masks = inputs['attention_mask']
-        input_ids, attention_mask = input_ids.to(device), attention_masks.to(device)
-        # 将模型设置为评估模式
+        for h, r, t in zip(str_batch_h, str_batch_r, str_batch_t):
+
+            key = tokenizer_utils.get_triple_key(h, r, t)
+            if key in self.dataset_tokenizer_dict:
+                input_ids_list.append(torch.tensor(self.dataset_tokenizer_dict[key]['input_ids']))
+                attention_mask_list.append(torch.tensor(self.dataset_tokenizer_dict[key]['attention_masks']))
+            else:
+                print(f"Warning: Triple {key} not found in dataset_tokenizer_dict")
+                # x = batch_triples_emb.view(-1, 3, self.BiLSTM_input_size)
+
+                # 对句子进行编码
+                inputs = self.tokenizer(str_batch_h, str_batch_r, str_batch_t, return_tensors='pt', padding=True,
+                                        truncation=True, max_length=512)
+                input_ids = inputs['input_ids']
+                attention_masks = inputs['attention_mask']
+                input_ids, attention_mask = input_ids.to(device), attention_masks.to(device)
+                input_ids_list.append(input_ids)
+                attention_mask_list.append(attention_masks)
+                # 将模型设置为评估模式
+
+        input_ids = torch.cat(input_ids_list, dim=0).to(device)
+        attention_mask = torch.cat(attention_mask_list, dim=0).to(device)
+
         self.model.eval()
-        # input_ids = encoded_dict['input_ids']
-        # attention_masks = encoded_dict['attention_mask']
-        # 获取模型输出
         with torch.no_grad():
-            outputs = self.model(input_ids, attention_masks)
+            outputs = self.model(input_ids, attention_mask)
+
         return outputs
 
 
@@ -143,16 +151,6 @@ class BiLSTM_Attention(torch.nn.Module):
         uniform_range = 6 / np.sqrt(args.embedding_dim)  # 0.6
         self.ent_embeddings.weight.data.uniform_(-uniform_range, uniform_range)
         self.rel_embeddings.weight.data.uniform_(-uniform_range, uniform_range)
-        '''
-        1、线性层投影 (Linear Layer Projection)：
-        使用一个线性层（全连接层）将一个向量投影到另一个向量的维度。例如，你可以使用一个线性层将 out1 的维度从 768 变为 600。
-        2、插值 (Interpolation)：
-        使用插值方法将一个向量调整到另一个向量的维度。这对于简单的情况下也适用。
-        3、重复或切片 (Repetition or Slicing)：根据需要重复或切片向量。
-        本文使用了线性层投影
-        768: bert的隐藏层大小
-        '''
-        self.linear = nn.Linear(768, self.hidden_size * 2 * self.seq_length)  # 将 768 投影到 600
 
     def forward(self, batch_h, batch_r, batch_t):
         # head, relation, tail = torch.chunk(inputTriple,
