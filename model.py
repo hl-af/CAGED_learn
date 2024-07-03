@@ -7,6 +7,7 @@ from torch.nn import functional as F
 import numpy as np
 from transformers import BertTokenizer, BertModel
 
+
 class NBert(nn.Module):
 
     def __init__(self):
@@ -19,8 +20,7 @@ class NBert(nn.Module):
         self.tokenizer = BertTokenizer.from_pretrained(path)
         self.model = BertModel.from_pretrained(path)
 
-
-    def forward(self, batch_h, batch_r, batch_t,device):
+    def forward(self, batch_h, batch_r, batch_t, device):
         # 加载预训练的BERT模型和分词器
         model_name = 'bert-base-uncased'
 
@@ -32,7 +32,8 @@ class NBert(nn.Module):
         # x = batch_triples_emb.view(-1, 3, self.BiLSTM_input_size)
 
         # 对句子进行编码
-        inputs = self.tokenizer(str_batch_h, str_batch_r, str_batch_t, return_tensors='pt', padding=True, truncation=True, max_length=512)
+        inputs = self.tokenizer(str_batch_h, str_batch_r, str_batch_t, return_tensors='pt', padding=True,
+                                truncation=True, max_length=512)
         # encoded_dict = self.tokenizer.encode_plus(
         #     str_batch_h,str_batch_r,str_batch_t,
         #     add_special_tokens=True,
@@ -53,6 +54,7 @@ class NBert(nn.Module):
             outputs = self.model(input_ids, attention_masks)
         return outputs
 
+
 class GraphAttentionLayer1(nn.Module):
     """
     Simple GAT layer, similar to https://arxiv.org/abs/1710.10903
@@ -72,7 +74,6 @@ class GraphAttentionLayer1(nn.Module):
         self.a = nn.Parameter(torch.zeros(size=(2 * out_features, 1)))
 
         nn.init.xavier_uniform_(self.a.data, gain=1.414)
-
 
         self.leakyrelu = nn.LeakyReLU(self.alpha)
 
@@ -100,7 +101,8 @@ class GraphAttentionLayer1(nn.Module):
         attention = F.dropout(attention, self.dropout, training=self.training)  # dropout
         # print(attention)
         attention = attention.view(B, 1, N)
-        h_prime = torch.matmul(attention, h).squeeze(1)  # [batch_size, 1, N]*[batch_size, N, out_features] => [batch_size, 1, out_features]
+        h_prime = torch.matmul(attention, h).squeeze(
+            1)  # [batch_size, 1, N]*[batch_size, N, out_features] => [batch_size, 1, out_features]
 
         if self.concat:
             return F.elu(h_prime)
@@ -122,21 +124,23 @@ class BiLSTM_Attention(torch.nn.Module):
         self.num_neighbor = args.num_neighbor
         self.bert = NBert()
         self.lstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True, bidirectional=True)
-        #self.fc = nn.Linear(hidden_size * 2 * self.seq_length, num_classes)  # 2 for bidirection
+        # self.fc = nn.Linear(hidden_size * 2 * self.seq_length, num_classes)  # 2 for bidirection
         self.device = device
-        self.attention = GraphAttentionLayer1(self.hidden_size * 2 * self.seq_length, self.hidden_size * 2 * self.seq_length, dropout=dropout, alpha=alpha, mu=mu, concat=False)
+        self.attention = GraphAttentionLayer1(self.hidden_size * 2 * self.seq_length,
+                                              self.hidden_size * 2 * self.seq_length, dropout=dropout, alpha=alpha,
+                                              mu=mu, concat=False)
         # self.attentions = [GraphAttentionLayer(self.hidden_size * 2 * self.seq_length, self.hidden_size * 2 * self.seq_length, dropout=dropout, alpha=alpha, concat=False) for _ in
         #                    range(nheads)]
         # for i, attention in enumerate(self.attentions):
         #     self.add_module('attention_{}'.format(i), attention)
-        self.ent_embeddings = nn.Embedding(args.total_ent, args.embedding_dim) # （40943，100）
-        self.rel_embeddings = nn.Embedding(args.total_rel, args.embedding_dim) # （11，100）
+        self.ent_embeddings = nn.Embedding(args.total_ent, args.embedding_dim)  # （40943，100）
+        self.rel_embeddings = nn.Embedding(args.total_rel, args.embedding_dim)  # （11，100）
 
         # print(toarray_float(ent_vec).shape)
         # print(args.total_ent, args.total_rel, args.embedding_dim)
         # self.ent_embeddings.weight.data.copy_(torch.from_numpy(ent_vec))
         # self.rel_embeddings.weight.data.copy_(torch.from_numpy(rel_vec))
-        uniform_range = 6 / np.sqrt(args.embedding_dim) # 0.6
+        uniform_range = 6 / np.sqrt(args.embedding_dim)  # 0.6
         self.ent_embeddings.weight.data.uniform_(-uniform_range, uniform_range)
         self.rel_embeddings.weight.data.uniform_(-uniform_range, uniform_range)
         '''
@@ -150,7 +154,6 @@ class BiLSTM_Attention(torch.nn.Module):
         '''
         self.linear = nn.Linear(768, self.hidden_size * 2 * self.seq_length)  # 将 768 投影到 600
 
-
     def forward(self, batch_h, batch_r, batch_t):
         # head, relation, tail = torch.chunk(inputTriple,
         #                                    chunks=3,
@@ -160,12 +163,12 @@ class BiLSTM_Attention(torch.nn.Module):
         # relation = torch.squeeze(self.rel_embeddings(relation), dim=1)
         # print(batch_t.cpu())
         # print(batch_r.cpu())
-        head = self.ent_embeddings(batch_h) # 获取嵌入向量 (40960,100)
-        relation = self.rel_embeddings(batch_r) # (40960,100)
-        tail = self.ent_embeddings(batch_t) #(40960,100)
+        head = self.ent_embeddings(batch_h)  # 获取嵌入向量 (40960,100)
+        relation = self.rel_embeddings(batch_r)  # (40960,100)
+        tail = self.ent_embeddings(batch_t)  # (40960,100)
 
         batch_triples_emb = torch.cat((head, relation), dim=1)
-        batch_triples_emb = torch.cat((batch_triples_emb, tail), dim=1) # (40960,300)
+        batch_triples_emb = torch.cat((batch_triples_emb, tail), dim=1)  # (40960,300)
         x = batch_triples_emb.view(-1, 3, self.BiLSTM_input_size)
         # ent_vec, rel_vec = dataset.ent_vec, dataset.rel_vec
         #
@@ -187,11 +190,11 @@ class BiLSTM_Attention(torch.nn.Module):
         # [B, 3, input_size] B = batch_size * 2 * 2 * (num_neighbor+1)
         # x = x.to(device)
 
-        h0 = torch.zeros(self.num_layers * 2, x.size(0), self.hidden_size).to(self.device)# 2 for bidirection
+        h0 = torch.zeros(self.num_layers * 2, x.size(0), self.hidden_size).to(self.device)  # 2 for bidirection
         c0 = torch.zeros(self.num_layers * 2, x.size(0), self.hidden_size).to(self.device)
 
         # Forward propagate LSTM
-        out, _ = self.lstm(x, (h0, c0)) # 前向传播，得到输出向量 # out: tensor of shape (B, seq_length, hidden_size*2)
+        out, _ = self.lstm(x, (h0, c0))  # 前向传播，得到输出向量 # out: tensor of shape (B, seq_length, hidden_size*2)
 
         # print('out_lstm', out_lstm.shape)
         out = out.reshape(-1, self.hidden_size * 2 * self.seq_length)
@@ -200,23 +203,14 @@ class BiLSTM_Attention(torch.nn.Module):
 
         out_att = self.attention(out)
 
-        out_bert = self.bert.forward(batch_h,batch_r,batch_t,self.device)
+        out_bert = self.bert.forward(batch_h, batch_r, batch_t, self.device)
         # [batch_size * 2 * 2, dim_embedding]
         # out_att = self.attention_0(out[0:args.num_neighbor + 1])
         # print('input to linear', out.shape)
         # Decode the hidden state of the last time step
-        #out = self.fc(out_lstm)
+        # out = self.fc(out_lstm)
         out = out.reshape(-1, self.num_neighbor + 1, self.hidden_size * 2 * self.seq_length)
         bert_hidden_state = out_bert.last_hidden_state[:, 0, :]
-        bert_hidden_state = bert_hidden_state.reshape(-1,self.num_neighbor + 1,self.hidden_size * 2 * self.seq_length) # (4B,self.num_neighbor + 1,self.hidden_size * 2 * self.seq_length)
+        bert_hidden_state = bert_hidden_state.reshape(-1, self.num_neighbor + 1,
+                                                      self.hidden_size * 2 * self.seq_length)  # (4B,self.num_neighbor + 1,self.hidden_size * 2 * self.seq_length)
         return out[:, 0, :], out_att, bert_hidden_state[:, 0, :]
-
-# 平均池化（Average Pooling）：将 800 维度上的输出分块平均为 20。
-def average_pooling(output, pool_size):
-    """
-    output: [800, 600] tensor
-    pool_size: size to pool into, in this case, 20
-    """
-    output = output.view(-1, pool_size, output.size(-1))  # reshape to [20, 40, 600]
-    output = output.mean(dim=1)  # average pooling to get [20, 600]
-    return output
