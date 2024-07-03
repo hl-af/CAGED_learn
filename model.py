@@ -206,15 +206,10 @@ class BiLSTM_Attention(torch.nn.Module):
         # print('input to linear', out.shape)
         # Decode the hidden state of the last time step
         #out = self.fc(out_lstm)
-        out = out.reshape(-1, self.num_neighbor * 2 + 2, self.hidden_size * 2 * self.seq_length)
+        out = out.reshape(-1, self.num_neighbor + 1, self.hidden_size * 2 * self.seq_length)
         bert_hidden_state = out_bert.last_hidden_state[:, 0, :]
-        # todo 讨论，线性投影会可能会丢失数据
-        bert_hidden_state_proj = self.linear(bert_hidden_state)  # 将 bert_hidden_state 投影到 self.hidden_size * 2 * self.seq_length 维度
-
-        # 平均池化（Average Pooling）：将 800 维度上的输出分块平均为 20。
-        # 最大池化（Max Pooling）：将 800 维度上的输出分块取最大值为 20
-        bert_pooled_output = average_pooling(bert_hidden_state_proj, self.num_neighbor + 1)
-        return out[:, 0, :], out_att, bert_pooled_output
+        bert_hidden_state = bert_hidden_state.reshape(-1,self.num_neighbor + 1,self.hidden_size * 2 * self.seq_length) # (4B,self.num_neighbor + 1,self.hidden_size * 2 * self.seq_length)
+        return out[:, 0, :], out_att, bert_hidden_state[:, 0, :]
 
 # 平均池化（Average Pooling）：将 800 维度上的输出分块平均为 20。
 def average_pooling(output, pool_size):

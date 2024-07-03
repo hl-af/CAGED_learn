@@ -36,13 +36,13 @@ def main():
     parser.add_argument('--dir_emb_rel', default="relation2vec.txt", help='pretrain entity embeddings')
     parser.add_argument('--num_batch', default=2740, type=int, help='number of batch')
     parser.add_argument('--num_train', default=0, type=int, help='number of triples')
-    parser.add_argument('--batch_size', default=256, type=int, help='batch size')
+    parser.add_argument('--batch_size', default=5, type=int, help='batch size')
     parser.add_argument('--total_ent', default=0, type=int, help='number of entities')
     parser.add_argument('--total_rel', default=0, type=int, help='number of relations')
 
     # model architecture
     parser.add_argument('--BiLSTM_input_size', default=100, type=int, help='BiLSTM input size')
-    parser.add_argument('--BiLSTM_hidden_size', default=100, type=int, help='BiLSTM hidden size')
+    parser.add_argument('--BiLSTM_hidden_size', default=128, type=int, help='BiLSTM hidden size')
     parser.add_argument('--BiLSTM_num_layers', default=2, type=int, help='BiLSTM layers')
     parser.add_argument('--BiLSTM_num_classes', default=1, type=int, help='BiLSTM class')
     parser.add_argument('--num_neighbor', default=39, type=int, help='number of neighbors')
@@ -87,6 +87,7 @@ def train(args, dataset, device):
     data_path = args.data_path
     model_name = args.model
     all_triples = dataset.train_data
+    # all_triples = all_triples[0:10,-1]
     # labels = dataset.labels
     train_idx = list(range(len(all_triples) // 2))
     num_iterations = math.ceil(dataset.num_triples_with_anomalies / args.batch_size)
@@ -127,17 +128,17 @@ def train(args, dataset, device):
             # running_time = time.time()
             # print("Time used in running model", math.fabs(end_read_time - running_time))
             # 原始out：512 * 600 ，reshape后（256，2，600）
-            out = out.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
-            # 原始out_att：（1024，600） reshape后（256，4，60）
-            out_att = out_att.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
-            out_bert = out_bert.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
+            out = out.reshape(2*batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
+            # 原始out_att：（1024，600） reshape后（256，4，600）
+            out_att = out_att.reshape(2*batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
+            out_bert = out_bert.reshape(2*batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
 
             pos_h = out[:, 0, :] # 256,600
             pos_z0 = out_att[:, 0, :] # 256，600
-            pos_z1 = out_bert[:, 1, :]# 256，600 todo 讨论：这里可能不需要这样运算，
+            pos_z1 = out_bert[:, 0, :]# 256，600
             neg_h = out[:, 1, :] # 256，600
-            neg_z0 = out_att[:, 2, :] # 256，600
-            neg_z1 = out_bert[:, 3, :] # 256，600
+            neg_z0 = out_att[:, 1, :] # 256，600
+            neg_z1 = out_bert[:, 1, :] # 256，600
 
             # loss function
             # positive
@@ -154,7 +155,7 @@ def train(args, dataset, device):
                                   neg_h[:, 2 * 2 * args.BiLSTM_hidden_size:2 * 3 * args.BiLSTM_hidden_size], p=2,
                                   dim=1)
 
-            y = -torch.ones(batch_size).to(device)
+            y = -torch.ones(2*batch_size).to(device)
             loss = criterion(pos_loss, neg_loss, y)
 
             optimizer.zero_grad()
