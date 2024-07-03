@@ -80,6 +80,19 @@ class TripleProcessor:
                         print(f"Error reading line: {line.strip()}. Error: {e}")
         return triples
 
+    def pad_list_to_length_8(self,input_list):
+        target_length = 8
+        current_length = len(input_list)
+
+        # 如果当前长度小于目标长度
+        if current_length < target_length:
+            # 计算需要填充的0的数量
+            padding_length = target_length - current_length
+            # 填充0
+            input_list.extend([0] * padding_length)
+
+        return input_list
+
     def process_and_save_triples(self):
         triples = self.read_triples()
         tokenized_triples = {}
@@ -91,8 +104,10 @@ class TripleProcessor:
                 print('进度:{}%'.format(i / triples_len * 100))
             inputs = self.tokenizer(str(head), str(rel), str(tail), return_tensors='pt', padding=True,
                                     truncation=True, max_length=self.max_length)
-            input_ids = inputs['input_ids'].tolist()  # convert tensor to list
-            attention_masks = inputs['attention_mask'].tolist()  # convert tensor to list
+            input_ids = inputs['input_ids'].tolist()[0]  # convert tensor to list
+            input_ids = self.pad_list_to_length_8(input_ids)
+            attention_masks = inputs['attention_mask'].tolist()[0]  # convert tensor to list
+            attention_masks = self.pad_list_to_length_8(attention_masks)
             triple_key = tokenizer_utils.get_triple_key(head, rel, tail)
             tokenized_triples[triple_key] = {
                 'input_ids': input_ids,
