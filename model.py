@@ -122,10 +122,10 @@ class BiLSTM_Attention(torch.nn.Module):
         self.seq_length = 3
         self.BiLSTM_input_size = args.BiLSTM_input_size
         self.num_neighbor = args.num_neighbor
-        self.bert = NBert()
+        self.device = device
+        self.bert = NBert().to(device)
         self.lstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True, bidirectional=True)
         # self.fc = nn.Linear(hidden_size * 2 * self.seq_length, num_classes)  # 2 for bidirection
-        self.device = device
         self.attention = GraphAttentionLayer1(self.hidden_size * 2 * self.seq_length,
                                               self.hidden_size * 2 * self.seq_length, dropout=dropout, alpha=alpha,
                                               mu=mu, concat=False)
