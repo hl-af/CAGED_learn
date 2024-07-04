@@ -1,4 +1,5 @@
 import os
+import time
 
 import torch
 import torch.nn as nn
@@ -32,15 +33,13 @@ class NBert(nn.Module):
 
         input_ids_list = []
         attention_mask_list = []
-
+        start_time = time.time()
         for h, r, t in zip(str_batch_h, str_batch_r, str_batch_t):
-
             key = tokenizer_utils.get_triple_key(h, r, t)
             if key in self.dataset_tokenizer_dict:
                 input_ids_list.append(self.dataset_tokenizer_dict[key]['input_ids'])
                 attention_mask_list.append(self.dataset_tokenizer_dict[key]['attention_masks'])
             else:
-                # print(f"Warning: Triple {key} not found in dataset_tokenizer_dict")
                 # x = batch_triples_emb.view(-1, 3, self.BiLSTM_input_size)
 
                 # 对句子进行编码
@@ -53,11 +52,13 @@ class NBert(nn.Module):
                 # 将模型设置为评估模式
 
         input_ids, attention_mask = input_ids.to(device), attention_masks.to(device)
-
+        end_time = time.time()
+        print(f"tokenizer读取模块 - 代码运行时间: {end_time - start_time} 秒")
         self.model.eval()
         with torch.no_grad():
             outputs = self.model(input_ids, attention_mask)
-
+        end_time2 = time.time()
+        print(f"model输出模块 - 代码运行时间: {end_time2 - end_time} 秒")
         return outputs
 
 
