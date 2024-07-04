@@ -44,7 +44,7 @@ class NBert(nn.Module):
         # )
         input_ids = inputs['input_ids']
         attention_masks = inputs['attention_mask']
-        input_ids, attention_mask = input_ids.to(device), attention_masks.to(device)
+        input_ids, attention_masks = input_ids.to(device), attention_masks.to(device)
         # 将模型设置为评估模式
         self.model.eval()
         # input_ids = encoded_dict['input_ids']
