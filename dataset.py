@@ -1,3 +1,5 @@
+import os
+
 import numpy as np
 import random
 import torch
@@ -33,7 +35,7 @@ class Reader:
         self.num_entity = self.num_ent()
         self.num_relation = self.num_rel()
         print('entity&relation: ', self.num_entity, self.num_relation)
-
+        # bp_triples_label是构建的正负样本集合
         self.bp_triples_label = self.inject_anomaly(args)
 
         self.num_triples_with_anomalies = len(self.bp_triples_label)
@@ -182,6 +184,7 @@ class Reader:
                 neg_triples.append((head, rel, new_tail))
         return neg_triples
 
+    # 修改给定的正样本三元组的一部分（head、relation 或 tail）来生成异常三元组。生成的异常三元组更接近原始三元组。
     def generate_anomalous_triples(self, pos_triples):
         neg_triples = []
         for head, rel, tail in pos_triples:
@@ -222,6 +225,7 @@ class Reader:
             neg_triples.append(anomaly)
         return neg_triples
 
+    # 通过完全随机的方式生成指定数量的异常三元组，不依赖于正样本三元组
     def generate_anomalous_triples_2(self, num_anomaly):
         neg_triples = []
         for i in range(num_anomaly):
@@ -239,6 +243,41 @@ class Reader:
 
             neg_triples.append(anomaly)
         return neg_triples
+
+    def generate_anomalous_triples_similarity(self, num_anomaly):
+        """
+        read triplets from  files
+        :return: a Python Dict, {train: [], dev: [], test: []}
+        """
+        data_paths = {
+            'anomaly': os.path.join(self.data_path, self.complex,str(int(self.anomaly_ratio*100)),'anomaly_triples.txt')
+        }
+
+        for mode in data_paths:
+            data_path = data_paths[mode]
+            raw_data = list()
+
+            # 1. read triplets from files
+            with open(data_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    h, r, t = str(line).strip().split('\t')
+                    raw_data.append((h, r, t))
+
+            # 2. filter triplets which have no textual information
+            data = list()
+            num = 0
+
+            for h, r, t in raw_data:
+                if (h in self.entities) and (t in self.entities) and (r in self.relations):
+                    data.append((h, r, t))
+                    num = num + 1
+                if num > num_anomaly:
+                    break
+
+            if len(raw_data) > len(data):
+                raise ValueError('There are some triplets missing textual information')
+
+        return data
 
     def shred_triples(self, triples):
         h_dix = [triples[i][0] for i in range(len(triples))]
@@ -263,7 +302,7 @@ class Reader:
         bp_triples_label = self.bp_triples_label
         labels = [bp_triples_label[i][1] for i in range(len(bp_triples_label))]
         bp_triples = [bp_triples_label[i][0] for i in range(len(bp_triples_label))]
-        bn_triples = self.generate_anomalous_triples(bp_triples)
+        bn_triples = self.generate_anomalous_triples_similarity(len(bp_triples))
         all_triples = bp_triples + bn_triples
 
         return self.toarray(all_triples), self.toarray(labels)
@@ -295,7 +334,7 @@ class Reader:
         # idx = random.sample(range(0, self.num_original_triples - 1), num_anomalies)
         idx = random.sample(range(0, self.num_original_triples - 1), self.num_anomalies // 2)
         selected_triples = [original_triples[idx[i]] for i in range(len(idx))]
-        anomalies = self.generate_anomalous_triples(selected_triples) + self.generate_anomalous_triples_2(self.num_anomalies // 2)
+        anomalies = self.generate_anomalous_triples_similarity(self.num_anomalies // 2)
 
         triple_label = [(original_triples[i], 0) for i in range(len(original_triples))]
         anomaly_label = [(anomalies[i], 1) for i in range(len(anomalies))]
