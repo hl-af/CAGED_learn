@@ -1,5 +1,4 @@
 # Contrastive Knowledge Graph Error Detection
-Pytorch-based implementation of CAGED, and the description of the model and the results can be found in the paper: "Contrastive Knowledge Graph Error Detection".
 
 学习CAGED模型
 
@@ -10,13 +9,13 @@ All the required packages can be installed by running `pip install -r requiremen
 
 需要下载bert-base-uncased模型文件
 
-## Knowledge Graph Error Detection
+## 生成噪声
+生成语义近似噪声
 
-Data pre-processing:
 
-Following the previous study[1,2], we employ three real-world datasets that are constructed with noisy triples to be 5%, 10% and 15% of the whole KGs based on the popular benchmarks, i.e. FB15k, WN18RR and NELL-995.
-
-To replicate the experiments from our paper:
+python gen_anomaly.py --model_path checkpoints/bert-base-uncased --dataset wn18rr --device cpu --max_seq_length 64 --batch_size 256 --lm_lr 1e-4 --lm_label_smoothing 0.8 --num_workers 8 --pin_memory True
+   
+## 运行模型
 
 Train：
 
@@ -26,17 +25,4 @@ Train：
 Test：
 
 `python Our_TopK%_RankingList.py --dataset "WN18RR" --mode test --anomaly_ratio 0.05 --mu 0.005 --lam 0.1`
-
-
-
-## Acknowledgment
-This repo is built upon the following work:
-```
-[1] "Triple trustworthiness measurement for knowledge graph".
-https://github.com/TJUNLP/TTMF.git
-
-[2] "Does william shakespeare REALLY write hamlet? knowledge representation learning with confidence".
-https://github.com/thunlp/CKRL.git
-```
-
 

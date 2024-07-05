@@ -12,8 +12,7 @@ from tqdm import tqdm
 from transformers import BertForMaskedLM, BertTokenizer
 from torch.utils.data import Dataset, DataLoader
 from data_process.bert import Bert
-
-from TransE import TransE
+from data_process.TransE import TransE
 os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
 
 
@@ -118,7 +117,7 @@ class Similarity_Trainer:
     def get_similar_result(self):
         # initialize the model
         tokenizer_path = self.config['model_path']
-        self.tokenizer = BertTokenizer.from_pretrained(tokenizer_path, do_basic_tokenize=False)
+        self.tokenizer = BertTokenizer.from_pretrained(os.path.join(tokenizer_path), do_basic_tokenize=False)
         text_offset = self.resize_tokenizer()
         self.model = self._load_model(self.config, self.tokenizer)
 

@@ -9,7 +9,7 @@ import json
 import numpy as np
 import torch
 from tqdm import tqdm
-from similarity_trainer import Similarity_Trainer
+from data_process.similarity_trainer import Similarity_Trainer
 from transformers import BertForMaskedLM, BertTokenizer
 import argparse
 
@@ -462,8 +462,7 @@ def get_args( anomaly_ratio):
     # args['anomaly_type'] = anomaly_type
     args['anomaly_ratio'] = anomaly_ratio
     root_path = os.path.dirname(__file__)
-    root_path = os.path.dirname(root_path)
-    path = os.path.join(root_path, 'dataset', args['dataset'])  
+    path = os.path.join(root_path, 'dataset', args['dataset'])
     args['dataset_path'] = path
     return args
 
