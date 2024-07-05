@@ -263,7 +263,10 @@ class Reader:
             with open(data_path, 'r', encoding='utf-8') as f:
                 for line in f:
                     h, r, t = str(line).strip().split('\t')
-                    data.append((h, r, t))
+                    head_id = self.get_add_ent_id(h)
+                    rel_id = self.get_add_rel_id(r)
+                    tail_id = self.get_add_ent_id(t)
+                    data.append((head_id, rel_id, tail_id))
                     num = num + 1
                 if num > num_anomaly:
                     break
