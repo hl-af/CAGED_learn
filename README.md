@@ -5,9 +5,13 @@
 
 ## Requirements
 
-All the required packages can be installed by running `pip install -r requirements.txt`.
+1. All the required packages can be installed by running `pip install -r requirements.txt`.
 
-需要下载bert-base-uncased模型文件
+
+2. 需要下载bert-base-uncased模型文件放入checkpoints目录中
+   
+
+3. 需要在dataset中放入节点描述文件wn18rr/support
 
 ## 生成噪声
 生成语义近似噪声
