@@ -54,7 +54,10 @@ class Anomaly_Generator():
         self.num_original_triples = len(self.triples)
 
         self.triple_ori_set = set(self.triples)
-        self.num_anomalies = int((self.anomaly_ratio * self.num_original_triples) / (1 - self.anomaly_ratio))
+        if self.anomaly_ratio == 1:
+            self.num_anomalies = int((self.anomaly_ratio * self.num_original_triples))
+        else:
+            self.num_anomalies = int((self.anomaly_ratio * self.num_original_triples) / (1 - self.anomaly_ratio))
         # self.num_anomalies = int(self.anomaly_ratio * self.num_original_triples)
 
         self.selected_triples, self.anomalies = self.inject_anomaly()            
