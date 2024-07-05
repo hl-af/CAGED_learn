@@ -89,7 +89,8 @@ def train(args, dataset, device):
     # all_triples = all_triples[0:10,-1]
     # labels = dataset.labels
     train_idx = list(range(len(all_triples) // 2))
-    num_iterations = math.ceil(dataset.num_triples_with_anomalies / args.batch_size)
+    # num_iterations = math.ceil(dataset.num_triples_with_anomalies / args.batch_size)
+    num_iterations = 2
     total_num_anomalies = dataset.num_anomalies
     logging.basicConfig(level=logging.INFO)
     file_handler = logging.FileHandler(os.path.join(args.log_folder, model_name + "_" + args.dataset + "_" + str(
@@ -110,7 +111,7 @@ def train(args, dataset, device):
                              args.alpha, args.mu, device, dataset).to(device)
     criterion = nn.MarginRankingLoss(args.gama)  # 对应公式（8），损失函数，用于训练过程中计算模型的损失值
     optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate)
-    #
+    args.max_epoch = 1
     for k in range(args.max_epoch):
         for it in range(num_iterations):
             # start_read_time = time.time()
@@ -203,7 +204,7 @@ def test(args, dataset, device):
 
     model1 = BiLSTM_Attention(args, args.BiLSTM_input_size, args.BiLSTM_hidden_size, args.BiLSTM_num_layers,
                               args.dropout,
-                              args.alpha, args.mu, device).to(device)
+                              args.alpha, args.mu, device, dataset).to(device)
     model1.load_state_dict(torch.load(model_saved_path))
     model1.eval()
     with torch.no_grad():
@@ -224,10 +225,11 @@ def test(args, dataset, device):
             batch_t = torch.LongTensor(batch_t).to(device)
             batch_r = torch.LongTensor(batch_r).to(device)
             labels = labels.to(device)
-            out, out_att = model1(batch_h, batch_r, batch_t)
-            out_att = out_att.reshape(batch_size, 2, 2 * 3 * args.BiLSTM_hidden_size)
+            out, out_att, out_bert = model1(batch_h, batch_r, batch_t)
+            out_att = out_att.reshape(2 * batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
+            out_bert = out_bert.reshape(2 * batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
             out_att_view0 = out_att[:, 0, :]
-            out_att_view1 = out_att[:, 1, :]
+            out_att_view1 = out_bert[:, 0, :]
             # [B, 600] [B, 600]
 
             loss = args.lam * torch.norm(out_att_view0 - out_att_view1, p=2, dim=1) + \
@@ -297,9 +299,9 @@ def test(args, dataset, device):
 
             logging.info(
                 '[Test][%s][%s] Precision %f -- %f : %f' % (
-                args.dataset, model_name, args.anomaly_ratio, ratios[i], precision))
+                    args.dataset, model_name, args.anomaly_ratio, ratios[i], precision))
             logging.info('[Test][%s][%s] Recall  %f-- %f : %f' % (
-            args.dataset, model_name, args.anomaly_ratio, ratios[i], recall))
+                args.dataset, model_name, args.anomaly_ratio, ratios[i], recall))
             logging.info('[Test][%s][%s] anomalies in total: %d -- discovered:%d -- K : %d' % (
                 args.dataset, model_name, total_num_anomalies, anomaly_discovered[num_k - 1], num_k))
 
