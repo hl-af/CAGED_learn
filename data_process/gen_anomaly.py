@@ -467,7 +467,7 @@ def get_args( anomaly_ratio):
 
 if __name__ == '__main__':
 
-    anomaly_ratios = [0.0005]
+    anomaly_ratios = [1]
 
     for anomaly_ratio in anomaly_ratios:
         config = get_args(anomaly_ratio)

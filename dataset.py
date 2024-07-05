@@ -21,6 +21,7 @@ class Reader:
         self.triples = []
         self.ori_triples = []
         self.start_batch = 0
+        self.complex = 'mixture_anomaly'
         self.path = path
 
         self.A = {}
@@ -250,33 +251,22 @@ class Reader:
         :return: a Python Dict, {train: [], dev: [], test: []}
         """
         data_paths = {
-            'anomaly': os.path.join(self.data_path, self.complex,str(int(self.anomaly_ratio*100)),'anomaly_triples.txt')
+            'anomaly': os.path.join(self.path, self.complex, 'anomaly_triples.txt')
         }
 
         for mode in data_paths:
             data_path = data_paths[mode]
-            raw_data = list()
+            data = list()
+            num = 0
 
             # 1. read triplets from files
             with open(data_path, 'r', encoding='utf-8') as f:
                 for line in f:
                     h, r, t = str(line).strip().split('\t')
-                    raw_data.append((h, r, t))
-
-            # 2. filter triplets which have no textual information
-            data = list()
-            num = 0
-
-            for h, r, t in raw_data:
-                if (h in self.entities) and (t in self.entities) and (r in self.relations):
                     data.append((h, r, t))
                     num = num + 1
                 if num > num_anomaly:
                     break
-
-            if len(raw_data) > len(data):
-                raise ValueError('There are some triplets missing textual information')
-
         return data
 
     def shred_triples(self, triples):
