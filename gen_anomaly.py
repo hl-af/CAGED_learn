@@ -288,13 +288,16 @@ class Anomaly_Generator():
         selected_tripls = None
         sample_num = self.num_anomalies
         # randomly replaced
-        idx = random.sample(range(0, self.num_original_triples - 1), int(sample_num * 1.1))
         # selected_triples1 = [original_triples[idx[i]] for i in range(len(idx))]
         # # replaced entities randomly
         # anomalies1 = self.randomly_replaced(selected_triples1)
 
         # similarly replaced
-        idx = random.sample(range(0, self.num_original_triples - 1), int(sample_num * 1.1))
+        if self.num_original_triples <= int(sample_num * 1.1):
+            idx = [id for id in range(0, self.num_original_triples)]
+        else:
+            idx = random.sample(range(0, self.num_original_triples - 1), int(sample_num * 1.1))
+
         selected_triples2 = [original_triples[idx[i]] for i in range(len(idx))]
         selected_triples2, anomalies2 = self.similarly_bert_replaced(selected_triples2)
         selected_triples2 = selected_triples2[:int(sample_num * 1.1)]
