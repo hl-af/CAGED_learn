@@ -4,7 +4,7 @@ import torch
 import math
 import matplotlib.pyplot as plt
 from random import shuffle
-import os   
+import os
 import json
 import numpy as np
 import torch
@@ -13,8 +13,11 @@ from data_process.similarity_trainer import Similarity_Trainer
 from transformers import BertForMaskedLM, BertTokenizer
 import argparse
 
+ratios = [1]  # 异常比例调整为1
+
+
 class Anomaly_Generator():
-    def __init__(self,config):
+    def __init__(self, config):
 
         self.data_path = config['dataset_path']
         self.dataset_name = config['dataset']
@@ -45,7 +48,6 @@ class Anomaly_Generator():
         print(f'Number of entities: {len(self.entities)}; Number of relations: {len(self.relations)}')
 
         # 2.1 expand the tokenizer for BERT
-       
 
         self.lines = self.read_lines()
         self.num_entity = len(self.id2ent)
@@ -60,54 +62,37 @@ class Anomaly_Generator():
             self.num_anomalies = int((self.anomaly_ratio * self.num_original_triples) / (1 - self.anomaly_ratio))
         # self.num_anomalies = int(self.anomaly_ratio * self.num_original_triples)
 
-        self.selected_triples, self.anomalies = self.inject_anomaly()            
+        self.selected_triples, self.anomalies = self.inject_anomaly()
         self.calculate_distribution()
         self.output()
-        
-                
-    
-            
+
     def get_next_hop_neighbor(self, origin_hop_neighbor):
         next_hop_neighbor = {}
         for (h, r, t) in tqdm(self.triples):
-            if h in next_hop_neighbor.keys():                
+            if h in next_hop_neighbor.keys():
                 next_hop_neighbor[h] = next_hop_neighbor[h].union(origin_hop_neighbor[t])
             else:
                 next_hop_neighbor[h] = origin_hop_neighbor[t]
-                
-            if t in next_hop_neighbor.keys():                
+
+            if t in next_hop_neighbor.keys():
                 next_hop_neighbor[t] = next_hop_neighbor[t].union(origin_hop_neighbor[h])
             else:
                 next_hop_neighbor[t] = origin_hop_neighbor[h]
-                
-        return next_hop_neighbor    
-            
 
-        
+        return next_hop_neighbor
 
-
-            
-            
-            
-        
-        
-   
-    
     def calculate_distribution(self):
         n2rel = dict()
         n2ent = dict()
         for key, value in self.r2num.items():
             if value not in n2rel.keys():
                 n2rel[value] = 0
-            n2rel[value]+=1
+            n2rel[value] += 1
         for key, value in self.e2num.items():
             if value not in n2ent.keys():
                 n2ent[value] = 0
-            n2ent[value]+=1
+            n2ent[value] += 1
 
-
-        
-            
     def get_add_ent_id(self, ent, add=True):
         if ent in self.ent2id:
             ent_id = self.ent2id[ent]
@@ -116,8 +101,8 @@ class Anomaly_Generator():
             self.ent2id[ent] = ent_id
             self.id2ent[ent_id] = ent
         else:
-            #print(ent)
-            ent_id=-1
+            # print(ent)
+            ent_id = -1
 
         return ent_id
 
@@ -131,16 +116,16 @@ class Anomaly_Generator():
         return rel_id
 
     def output(self):
-        ratios = [0.05]
+
         for ratio in ratios:
             num_anomalies = int((ratio * self.num_original_triples) / (1 - ratio))
             type = "mixture_anomaly"
-            folder_path = os.path.join(self.data_path,type,str(int(ratio*100)))
+            folder_path = os.path.join(self.data_path, type, str(int(ratio * 100)))
             if not os.path.exists(folder_path):
                 os.makedirs(folder_path)
             data_paths = {
-                'selected_triples': os.path.join(self.data_path,type,str(int(ratio*100)), 'selected_triples.txt'),
-                'anomaly_triples': os.path.join(self.data_path,type,str(int(ratio*100)), 'anomaly_triples.txt'),
+                'selected_triples': os.path.join(self.data_path, type, str(int(ratio * 100)), 'selected_triples.txt'),
+                'anomaly_triples': os.path.join(self.data_path, type, str(int(ratio * 100)), 'anomaly_triples.txt'),
             }
             data = self.selected_triples
             for mode in data_paths:
@@ -179,7 +164,7 @@ class Anomaly_Generator():
         relation_path = os.path.join(self.data_path, 'support', 'relation.json')
         relations = json.load(open(relation_path, 'r', encoding='utf-8'))
         for idx, r in enumerate(relations):  # 237
-            sep1, sep2, sep3, sep4, sep5 = f'[R_{idx}_SEP1]', f'[R_{idx}_SEP2]', f'[R_{idx}_SEP3]', f'[R_{idx}_SEP4]',  f'[R_{idx}_SEP5]'
+            sep1, sep2, sep3, sep4, sep5 = f'[R_{idx}_SEP1]', f'[R_{idx}_SEP2]', f'[R_{idx}_SEP3]', f'[R_{idx}_SEP4]', f'[R_{idx}_SEP5]'
             name = relations[r]['name']
             relations[r] = {
                 'sep1': sep1,  # sep1 to sep4 are used as soft prompts
@@ -236,20 +221,19 @@ class Anomaly_Generator():
                         self.e2num[tail_id] = 0
                     self.r2num[rel_id] += 1
                     self.e2num[head_id] += 1
-                    self.e2num[tail_id] += 1 
+                    self.e2num[tail_id] += 1
                     if head_id in self.e2neighbor.keys():
                         self.e2neighbor[head_id].add(tail_id)
                     else:
-                        self.e2neighbor[head_id]= set()
+                        self.e2neighbor[head_id] = set()
                         self.e2neighbor[head_id].add(tail_id)
-                        
+
                     if tail_id in self.e2neighbor.keys():
                         self.e2neighbor[tail_id].add(head_id)
                     else:
-                        self.e2neighbor[tail_id]= set()
+                        self.e2neighbor[tail_id] = set()
                         self.e2neighbor[tail_id].add(head_id)
-                    
-                    
+
             if len(raw_data) > len(data):
                 raise ValueError('There are some triplets missing textual information')
             lines[mode] = data
@@ -265,7 +249,7 @@ class Anomaly_Generator():
         construct the vocab for our KGE module
         :return: two Python Dict
         """
-        tokens = ['[CLS]','[PAD]', '[MASK]', '[SEP]', self.no_relation_token]
+        tokens = ['[CLS]', '[PAD]', '[MASK]', '[SEP]', self.no_relation_token]
         entity_names = [e for e in self.entities]
         relation_names = []
         for r in self.relations:
@@ -297,35 +281,32 @@ class Anomaly_Generator():
             new_pos_triples.append((head, rel, tail))
         return new_pos_triples
 
-
-
-
     def inject_anomaly(self):
         print("Inject anomalies!")
         original_triples = self.triples
         triple_size = len(original_triples)
         selected_tripls = None
-        sample_num = self.num_anomalies//3
+        sample_num = self.num_anomalies
         # randomly replaced
         idx = random.sample(range(0, self.num_original_triples - 1), int(sample_num * 1.1))
         # selected_triples1 = [original_triples[idx[i]] for i in range(len(idx))]
         # # replaced entities randomly
         # anomalies1 = self.randomly_replaced(selected_triples1)
-        
+
         # similarly replaced
-        idx = random.sample(range(0, self.num_original_triples - 1), int(sample_num*1.1))
+        idx = random.sample(range(0, self.num_original_triples - 1), int(sample_num * 1.1))
         selected_triples2 = [original_triples[idx[i]] for i in range(len(idx))]
         selected_triples2, anomalies2 = self.similarly_bert_replaced(selected_triples2)
         selected_triples2 = selected_triples2[:int(sample_num * 1.1)]
-        anomalies2 = anomalies2[:int(sample_num*1.1)]
-        
+        anomalies2 = anomalies2[:int(sample_num * 1.1)]
+
         # adversarial replaced
         # use TransE to get the similar entity
         # selected_triples3, anomalies3 = self.adversarial_replaced(int(sample_num * 1.1))
         # selected_triples3 = selected_triples3[:int(sample_num * 1.1)]
         # anomalies3 = anomalies3[:int(sample_num*1.1)]
-        
-        candidate_selected_list =  selected_triples2
+
+        candidate_selected_list = selected_triples2
         candidate_anomaly_list = anomalies2
         final_anomaly_set = set()
         final_anomaly_list = []
@@ -337,14 +318,15 @@ class Anomaly_Generator():
             (h, r, t) = candidate_anomaly_list[i]
             if (h, r, t) not in final_anomaly_set:
                 final_anomaly_set.add((h, r, t))
-                final_anomaly_list.append((h,r,t))
+                final_anomaly_list.append((h, r, t))
                 final_selected_list.append(candidate_selected_list[i])
         selected_triples = final_selected_list[:self.num_anomalies]
         anomalies = final_anomaly_list[:self.num_anomalies]
         return selected_triples, anomalies
 
-    def adversarial_replaced(self,num_anomalies):
-        trainer = Similarity_Trainer(3, self.triples, self.config, self.id2ent, self.id2rel, self.ent2id, self.rel2id, self.entities, self.relations)
+    def adversarial_replaced(self, num_anomalies):
+        trainer = Similarity_Trainer(3, self.triples, self.config, self.id2ent, self.id2rel, self.ent2id, self.rel2id,
+                                     self.entities, self.relations)
         selected_triples, anomaly_triples = trainer.adversarial_train(num_anomalies)
         selected = [(selected_triples[i], anomaly_triples[i]) for i in range(len(selected_triples))]
         random.shuffle(selected)
@@ -352,13 +334,11 @@ class Anomaly_Generator():
         anomaly_triples = [sample[1] for sample in selected]
         return selected_triples, anomaly_triples
 
-
-
     def randomly_replaced(self, correct_triples):
         anomaly_set = []
         anomaly = None
         for head, rel, tail in correct_triples:
-            replace_pos = random.randint(0, 2)            
+            replace_pos = random.randint(0, 2)
             while anomaly in self.triple_ori_set or anomaly == None:
                 new_head, new_relation, new_tail = head, rel, tail
                 if replace_pos == 0:
@@ -373,14 +353,11 @@ class Anomaly_Generator():
         return anomaly_set
 
     def similarly_bert_replaced(self, selected_triples):
-        trainer =  Similarity_Trainer(2, self.triples, self.config, self.id2ent, self.id2rel, self.ent2id, self.rel2id, self.entities, self.relations, self.r2h_set, self.r2t_set)
+        trainer = Similarity_Trainer(2, self.triples, self.config, self.id2ent, self.id2rel, self.ent2id, self.rel2id,
+                                     self.entities, self.relations, self.r2h_set, self.r2t_set)
         r2h_similar_index, r2t_similar_index = trainer.get_similar_result()
         selected_triples, neg_triples = self.similarly_replaced(selected_triples, r2h_similar_index, r2t_similar_index)
         return selected_triples, neg_triples
-        
-
-
-
 
     def similarly_replaced(self, correct_triples, r2h_similar_index=None, r2t_similar_index=None):
         neg_triples = []
@@ -409,7 +386,7 @@ class Anomaly_Generator():
                     else:
                         # similar_index = r2h_similar_index[rel][head_pos]
                         prob = r2h_similar_index[rel][head_pos]
-                        similar_index = random.choices(list(range(len(head_list))), weights = prob, k=1)[0]
+                        similar_index = random.choices(list(range(len(head_list))), weights=prob, k=1)[0]
                         # similar_index = random.choices(list(range(len(head_list))),  k=1)[0]
                     new_head = int(self.get_add_ent_id(head_list[similar_index], False))
                 else:
@@ -418,16 +395,16 @@ class Anomaly_Generator():
                     else:
                         # similar_index = r2t_similar_index[rel][tail_pos]
                         prob = r2t_similar_index[rel][tail_pos]
-                        similar_index = random.choices(list(range(len(tail_list))), weights = prob, k=1)[0]
+                        similar_index = random.choices(list(range(len(tail_list))), weights=prob, k=1)[0]
                         # similar_index = random.choices(list(range(len(tail_list))),  k=1)[0]
                     new_tail = int(self.get_add_ent_id(tail_list[similar_index], False))
-                
+
                 anomaly = (new_head, new_relation, new_tail)
-                
+
                 # skip the neighbor:
                 # if new_head in self.e2neighbor[new_tail] or new_tail in self.e2neighbor[new_head]:
                 #     anomaly = None
-                    
+
                 if count >= 30:
                     count = -1
                     break
@@ -438,12 +415,10 @@ class Anomaly_Generator():
         return new_selected_triples, neg_triples
 
 
-
-
-def get_args( anomaly_ratio):
+def get_args(anomaly_ratio):
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, default='fb15k-237', help='select a dataset: fb15k-237 or wn18rr')
-    
+
     parser.add_argument('--model_path', type=str, default='checkpoints/fb15k-237/bert-pretrained')
     parser.add_argument('--device', type=str, default='cuda:1', help='select a gpu like cuda:0')
     parser.add_argument('--task', type=str, default='generate_anomaly')
@@ -455,7 +430,6 @@ def get_args( anomaly_ratio):
     # 2. some unimportant parameters, only need to change when your server/pc changes, I do not change these
     parser.add_argument('--num_workers', type=int, default=32, help='num workers for Dataloader')
     parser.add_argument('--pin_memory', type=bool, default=True, help='pin memory')
-
 
     args = parser.parse_args()
     args = vars(args)
@@ -469,7 +443,7 @@ def get_args( anomaly_ratio):
 
 if __name__ == '__main__':
 
-    anomaly_ratios = [1]
+    anomaly_ratios = ratios
 
     for anomaly_ratio in anomaly_ratios:
         config = get_args(anomaly_ratio)
