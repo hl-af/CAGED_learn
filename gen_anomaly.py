@@ -118,7 +118,12 @@ class Anomaly_Generator():
     def output(self):
 
         for ratio in ratios:
-            num_anomalies = int((ratio * self.num_original_triples) / (1 - ratio))
+
+            if ratio == 1:
+                num_anomalies = int((ratio * self.num_original_triples))
+            else:
+                num_anomalies = int((ratio * self.num_original_triples) / (1 - ratio))
+
             type = "mixture_anomaly"
             folder_path = os.path.join(self.data_path, type, str(int(ratio * 100)))
             if not os.path.exists(folder_path):
