@@ -190,7 +190,8 @@ class Anomaly_Generator():
         data_paths = {
             'train': os.path.join(self.data_path, 'train.txt'),
             'dev': os.path.join(self.data_path, 'dev.txt'),
-            'test': os.path.join(self.data_path, 'test.txt')
+            'test': os.path.join(self.data_path, 'test.txt'),
+            'valid': os.path.join(self.data_path, 'valid.txt')
         }
 
         lines = dict()
