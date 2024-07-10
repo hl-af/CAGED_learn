@@ -89,8 +89,7 @@ def train(args, dataset, device):
     # all_triples = all_triples[0:10,-1]
     # labels = dataset.labels
     train_idx = list(range(len(all_triples) // 2))
-    # num_iterations = math.ceil(dataset.num_triples_with_anomalies / args.batch_size)
-    num_iterations = 1
+    num_iterations = math.ceil(dataset.num_triples_with_anomalies / args.batch_size)
     total_num_anomalies = dataset.num_anomalies
     logging.basicConfig(level=logging.INFO)
     file_handler = logging.FileHandler(os.path.join(args.log_folder, model_name + "_" + args.dataset + "_" + str(
@@ -112,7 +111,6 @@ def train(args, dataset, device):
     criterion = nn.MarginRankingLoss(args.gama)  # 对应公式（8），损失函数，用于训练过程中计算模型的损失值
     optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate)
     #
-    args.max_epoch = 1
     for k in range(args.max_epoch):
         for it in range(num_iterations):
             # start_read_time = time.time()
@@ -215,7 +213,6 @@ def test(args, dataset, device):
         start_id = 0
         # epochs = int(len(dataset.bp_triples_label) / 100)
         # 2720
-        num_iterations = 2
         for i in range(num_iterations):
             # start_read_time = time.time()
             batch_h, batch_r, batch_t, labels, start_id, batch_size = get_pair_batch_test(dataset, args.batch_size,
