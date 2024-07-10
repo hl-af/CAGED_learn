@@ -268,8 +268,8 @@ class Reader:
                     tail_id = self.get_add_ent_id(t)
                     data.append((head_id, rel_id, tail_id))
                     num = num + 1
-                if num > num_anomaly:
-                    break
+                    if num > num_anomaly:
+                        break
         return data
 
     def shred_triples(self, triples):
@@ -325,9 +325,9 @@ class Reader:
         #
 
         # idx = random.sample(range(0, self.num_original_triples - 1), num_anomalies)
-        idx = random.sample(range(0, self.num_original_triples - 1), self.num_anomalies // 2)
-        selected_triples = [original_triples[idx[i]] for i in range(len(idx))]
-        anomalies = self.generate_anomalous_triples_similarity(self.num_anomalies // 2)
+        # idx = random.sample(range(0, self.num_original_triples - 1), self.num_anomalies // 2)
+        # selected_triples = [original_triples[idx[i]] for i in range(len(idx))]
+        anomalies = self.generate_anomalous_triples_similarity(self.num_anomalies)
 
         triple_label = [(original_triples[i], 0) for i in range(len(original_triples))]
         anomaly_label = [(anomalies[i], 1) for i in range(len(anomalies))]
