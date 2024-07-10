@@ -270,8 +270,6 @@ class Reader:
                     tail_id = self.get_add_ent_id(t)
                     data.append((head_id, rel_id, tail_id))
                     num = num + 1
-                    if num > num_anomaly:
-                        break
         return data
 
     def shred_triples(self, triples):
