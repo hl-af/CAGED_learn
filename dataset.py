@@ -262,7 +262,7 @@ class Reader:
             # 1. read triplets from files
             with open(data_path, 'r', encoding='utf-8') as f:
                 for line in f:
-                    if num > num_anomaly:
+                    if num >= num_anomaly:
                         break
                     h, r, t = str(line).strip().split('\t')
                     head_id = self.get_add_ent_id(h)
