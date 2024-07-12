@@ -295,7 +295,7 @@ class Reader:
         bp_triples_label = self.bp_triples_label
         labels = [bp_triples_label[i][1] for i in range(len(bp_triples_label))]
         bp_triples = [bp_triples_label[i][0] for i in range(len(bp_triples_label))]
-        bn_triples = self.generate_anomalous_triples_similarity(len(bp_triples))
+        bn_triples = self.generate_anomalous_triples(bp_triples)
         all_triples = bp_triples + bn_triples
 
         return self.toarray(all_triples), self.toarray(labels)
