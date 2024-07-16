@@ -131,17 +131,17 @@ def train(args, dataset, device):
             # running_time = time.time()
             # print("Time used in running model", math.fabs(end_read_time - running_time))
             # 原始out：512 * 600 ，reshape后（256，2，600）
-            out = out.reshape(2 * batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
+            out = out.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
             # 原始out_att：（1024，600） reshape后（256，4，600）
             out_att = out_att.reshape(2 * batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
-            out_bert = out_bert.reshape(2 * batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
+            out_bert = out_bert.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
 
             pos_h = out[:, 0, :]  # 256,600
-            pos_z0 = out_att[:, 0, :]  # 256，600
-            pos_z1 = out_bert[:, 0, :]  # 256，600
+            pos_z0 = out_bert[:, 0, :]  # 256，600
+            pos_z1 = out_bert[:, 1, :]  # 256，600
             neg_h = out[:, 1, :]  # 256，600
-            neg_z0 = out_att[:, 1, :]  # 256，600
-            neg_z1 = out_bert[:, 1, :]  # 256，600
+            neg_z0 = out_bert[:, 2, :]  # 256，600
+            neg_z1 = out_bert[:, 3, :]  # 256，600
 
             # loss function
             # positive
@@ -158,7 +158,7 @@ def train(args, dataset, device):
                                   neg_h[:, 2 * 2 * args.BiLSTM_hidden_size:2 * 3 * args.BiLSTM_hidden_size], p=2,
                                   dim=1)
 
-            y = -torch.ones(2 * batch_size).to(device)
+            y = -torch.ones(batch_size).to(device)
             loss = criterion(pos_loss, neg_loss, y)
 
             optimizer.zero_grad()
