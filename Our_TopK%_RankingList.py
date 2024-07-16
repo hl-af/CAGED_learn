@@ -89,8 +89,7 @@ def train(args, dataset, device):
     # all_triples = all_triples[0:10,-1]
     # labels = dataset.labels
     train_idx = list(range(len(all_triples) // 2))
-    # num_iterations = math.ceil(dataset.num_triples_with_anomalies / args.batch_size)
-    num_iterations = 1
+    num_iterations = math.ceil(dataset.num_triples_with_anomalies / args.batch_size)
     total_num_anomalies = dataset.num_anomalies
     logging.basicConfig(level=logging.INFO)
     file_handler = logging.FileHandler(os.path.join(args.log_folder, model_name + "_" + args.dataset + "_" + str(
@@ -112,7 +111,6 @@ def train(args, dataset, device):
     criterion = nn.MarginRankingLoss(args.gama)  # 对应公式（8），损失函数，用于训练过程中计算模型的损失值
     optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate)
     #
-    args.max_epoch = 1
     for k in range(args.max_epoch):
         for it in range(num_iterations):
             # start_read_time = time.time()
@@ -126,14 +124,13 @@ def train(args, dataset, device):
             batch_t = torch.LongTensor(batch_t).to(device)
             batch_r = torch.LongTensor(batch_r).to(device)
 
-            out, out_att, out_bert = model(batch_h, batch_r, batch_t)  # Bi-LSTM和自注意力的输出.out是lstm的输出；out_att是注意力神经网络的输出
+            out, out_bert = model(batch_h, batch_r, batch_t)  # Bi-LSTM和自注意力的输出.out是lstm的输出；out_att是注意力神经网络的输出
 
             # running_time = time.time()
             # print("Time used in running model", math.fabs(end_read_time - running_time))
             # 原始out：512 * 600 ，reshape后（256，2，600）
             out = out.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
             # 原始out_att：（1024，600） reshape后（256，4，600）
-            out_att = out_att.reshape(2 * batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
             out_bert = out_bert.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
 
             pos_h = out[:, 0, :]  # 256,600
@@ -215,7 +212,6 @@ def test(args, dataset, device):
         start_id = 0
         # epochs = int(len(dataset.bp_triples_label) / 100)
         # 2720
-        num_iterations = 2
         for i in range(num_iterations):
             # start_read_time = time.time()
             batch_h, batch_r, batch_t, labels, start_id, batch_size = get_pair_batch_test(dataset, args.batch_size,
@@ -228,12 +224,13 @@ def test(args, dataset, device):
             batch_r = torch.LongTensor(batch_r).to(device)
             labels = labels.to(device)
             labels_copy = labels.clone()
-            labels = torch.cat((labels, labels_copy), dim=0) # 扩充长度为2B,对齐两个视图
-            out, out_att, out_bert = model1(batch_h, batch_r, batch_t)
-            out_att = out_att.reshape(2 * batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
-            out_bert = out_bert.reshape(2 * batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
-            out_att_view0 = out_att[:, 0, :]
-            out_att_view1 = out_bert[:, 0, :]
+            labels = torch.cat((labels, labels_copy), dim=0)  # 扩充长度为2B,对齐两个视图
+            out, out_bert = model1(batch_h, batch_r, batch_t)
+            out = out.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
+            out = out[:, 0, :]
+            out_bert = out_bert.reshape(batch_size, -1, 2 * 3 * args.BiLSTM_hidden_size)
+            out_att_view0 = out_bert[:, 0, :]
+            out_att_view1 = out_bert[:, 1, :]
             # [B, 600] [B, 600]
             loss = args.lam * torch.norm(out_att_view0 - out_att_view1, p=2, dim=1) + \
                    torch.norm(out[:, 0:2 * args.BiLSTM_hidden_size] +

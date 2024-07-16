@@ -201,7 +201,7 @@ class BiLSTM_Attention(torch.nn.Module):
         out = out.reshape(-1, self.num_neighbor + 1, self.hidden_size * 2 * self.seq_length)
         # [batch_size * 2 * 2, num_neighbor+1, dim_embedding] dim_embedding = hidden_size * 2 * seq_length
 
-        out_att = self.attention(out)
+        # out_att = self.attention(out)
 
         out_bert = self.bert.forward(batch_h, batch_r, batch_t, self.device)
         # [batch_size * 2 * 2, dim_embedding]
@@ -213,4 +213,4 @@ class BiLSTM_Attention(torch.nn.Module):
         bert_hidden_state = out_bert.last_hidden_state[:, 0, :]
         bert_hidden_state = bert_hidden_state.reshape(-1, self.num_neighbor + 1,
                                                       self.hidden_size * 2 * self.seq_length)  # (4B,self.num_neighbor + 1,self.hidden_size * 2 * self.seq_length)
-        return out[:, 0, :], out_att, bert_hidden_state[:, 0, :]
+        return out[:, 0, :],bert_hidden_state[:, 0, :]
