@@ -20,6 +20,31 @@ class NBert(nn.Module):
         self.tokenizer = BertTokenizer.from_pretrained(path)
         self.model = BertModel.from_pretrained(path)
 
+    def find_duplicate_tensor(self, tensors):
+        first_row = tensors[0]
+        duplicate_found = False
+        for i in range(1, tensors.size(0)):
+            if torch.equal(first_row, tensors[i]):
+                duplicate_found = True
+                print(f"Duplicate found at row {i}")
+
+        if not duplicate_found:
+            print("No duplicates found.")
+
+    def check_duplicates_list(self, matrix):
+        # 获取第 0 维数组
+        first_row = matrix[0]
+
+        # 遍历数组的其他行，检查是否有相同的
+        duplicate_found = False
+        for i in range(1, len(matrix)):
+            if first_row == matrix[i]:
+                duplicate_found = True
+                print(f"Duplicate found at row {i}: {matrix[i]}")
+
+        if not duplicate_found:
+            print("No duplicates found.")
+
     def forward(self, batch_h, batch_r, batch_t, device):
         # 加载预训练的BERT模型和分词器
         model_name = 'bert-base-uncased'
@@ -28,7 +53,8 @@ class NBert(nn.Module):
         str_batch_h = list(map(str, batch_h.tolist()))
         str_batch_r = list(map(str, batch_r.tolist()))
         str_batch_t = list(map(str, batch_t.tolist()))
-
+        combined_list = [[str_batch_h[i], str_batch_r[i], str_batch_t[i]] for i in range(len(str_batch_h))]
+        self.check_duplicates_list(combined_list)
         # x = batch_triples_emb.view(-1, 3, self.BiLSTM_input_size)
 
         # 对句子进行编码
@@ -213,4 +239,4 @@ class BiLSTM_Attention(torch.nn.Module):
         bert_hidden_state = out_bert.last_hidden_state[:, 0, :]
         bert_hidden_state = bert_hidden_state.reshape(-1, self.num_neighbor + 1,
                                                       self.hidden_size * 2 * self.seq_length)  # (4B,self.num_neighbor + 1,self.hidden_size * 2 * self.seq_length)
-        return out[:, 0, :],bert_hidden_state[:, 0, :]
+        return out[:, 0, :], bert_hidden_state[:, 0, :]
