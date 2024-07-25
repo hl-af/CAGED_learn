@@ -54,7 +54,6 @@ class NBert(nn.Module):
         str_batch_r = list(map(str, batch_r.tolist()))
         str_batch_t = list(map(str, batch_t.tolist()))
         combined_list = [[str_batch_h[i], str_batch_r[i], str_batch_t[i]] for i in range(len(str_batch_h))]
-        self.check_duplicates_list(combined_list)
         # x = batch_triples_emb.view(-1, 3, self.BiLSTM_input_size)
 
         # 对句子进行编码
@@ -237,6 +236,6 @@ class BiLSTM_Attention(torch.nn.Module):
         # out = self.fc(out_lstm)
         out = out.reshape(-1, self.num_neighbor + 1, self.hidden_size * 2 * self.seq_length)
         bert_hidden_state = out_bert.last_hidden_state[:, 0, :]
-        bert_hidden_state = bert_hidden_state.reshape(-1, self.num_neighbor + 1,
+        bert_hidden_state = bert_hidden_state.reshape(-1, 2 * self.num_neighbor + 2,
                                                       self.hidden_size * 2 * self.seq_length)  # (4B,self.num_neighbor + 1,self.hidden_size * 2 * self.seq_length)
-        return out[:, 0, :], bert_hidden_state[:, 0, :]
+        return out[:, 0, :], bert_hidden_state[:, 0, :], bert_hidden_state[:, 39, :]
