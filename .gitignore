@@ -2,7 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.idea
+pythonProject.iml
 # C extensions
 *.so
 
@@ -102,7 +103,7 @@ celerybeat-schedule
 
 # SageMath parsed files
 *.sage.py
-
+*.log
 # Environments
 .env
 .env.*
