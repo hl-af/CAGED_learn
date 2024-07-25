@@ -238,4 +238,4 @@ class BiLSTM_Attention(torch.nn.Module):
         bert_hidden_state = out_bert.last_hidden_state[:, 0, :]
         bert_hidden_state = bert_hidden_state.reshape(-1, 2 * self.num_neighbor + 2,
                                                       self.hidden_size * 2 * self.seq_length)  # (4B,self.num_neighbor + 1,self.hidden_size * 2 * self.seq_length)
-        return out[:, 0, :], bert_hidden_state[:, 0, :], bert_hidden_state[:, 39, :]
+        return out[:, 0, :], bert_hidden_state[:, 0, :], bert_hidden_state[:, self.num_neighbor, :]
